@@ -1,0 +1,10 @@
+*.pth
+*.plk
+/AutoFormer/
+/ckpts/
+/EM-darts1/
+/logs/
+/__pycache__/
+/.idea/
+/GLiT/
+/datasets/

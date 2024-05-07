@@ -1,0 +1,15 @@
+Resnet50:
+  num_classes: 600
+
+FVCNN:
+  num_classes: 600
+
+FVRASNet:
+  num_classes: 600
+
+LightweightCNN:
+  num_classes: 600
+
+MSMDGANet_CNN:
+  num_classes: 600
+
