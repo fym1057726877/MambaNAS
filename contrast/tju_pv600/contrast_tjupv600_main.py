@@ -23,8 +23,8 @@ def get_args_parser():
     parser.add_argument('--dataset', default="PV600", type=str)
 
     # Model parameters
-    parser.add_argument('--model-name', default='LightweightCNN', type=str,
-                        help='Name of model to train, one of [Resnet50, FVCNN, FVRASNet, LightweightCNN, MSMDGANet_CNN')
+    parser.add_argument('--model-name', default='FVCNN', type=str,
+                        help='Name of model to train, one of [Resnet50, FVCNN, FVRASNet, LightweightCNN, MSMDGANetCNN')
     parser.add_argument('--model-cfg', default=config_path, type=str, help='model configs file')
     parser.add_argument('--model-save-path', default=model_save_path, type=str, help='model_save_path')
 
@@ -60,7 +60,7 @@ def get_args_parser():
     # Learning rate schedule parameters
     parser.add_argument('--sched', default='cosine', type=str, metavar='SCHEDULER',
                         help='LR scheduler (default: "cosine"')
-    parser.add_argument('--lr', type=float, default=5e-4, metavar='LR',
+    parser.add_argument('--lr', type=float, default=1e-3, metavar='LR',
                         help='learning rate (default: 5e-4)')
     parser.add_argument('--lr-noise', type=float, nargs='+', default=None, metavar='pct, pct',
                         help='learning rate noise on/off epoch percentages')

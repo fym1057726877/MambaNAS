@@ -74,6 +74,7 @@ def train_one_epoch(
             images, soft_targets = mixup_fn(images, targets)
 
         output = model(images)
+        print(output.shape)
         if mixup_fn is not None:
             loss = criterion(output, soft_targets)
         else:

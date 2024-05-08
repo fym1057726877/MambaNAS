@@ -4,7 +4,7 @@ import torch
 import torchvision
 
 
-__all__ = ['Resnet50', 'FVCNN', 'FVRASNet', 'LightweightCNN', 'MSMDGANet_CNN']
+__all__ = ['Resnet50', 'FVCNN', 'FVRASNet', 'LightweightCNN', 'MSMDGANetCNN']
 
 
 class Resnet50(nn.Module):
@@ -71,7 +71,7 @@ class FVCNN(nn.Module):
 
 
 # PV-CNN  MSMDGANetCnn_wo_MaxPool
-class MSMDGANet_CNN(nn.Module):
+class MSMDGANetCNN(nn.Module):
     def __init__(self, num_classes):
         super().__init__()
         self.conv1 = nn.Conv2d(in_channels=1, out_channels=64, kernel_size=5, padding=2, stride=2)
@@ -86,8 +86,9 @@ class MSMDGANet_CNN(nn.Module):
         self.conv4 = nn.Conv2d(in_channels=256, out_channels=512, kernel_size=4)
         self.bn4 = nn.BatchNorm2d(512)
 
-        self.fc = nn.Linear(5 * 5 * 512, 800)
-        self.dropout = nn.Dropout()
+        # self.fc = nn.Linear(5 * 5 * 512, 800)
+        self.fc = nn.Linear(86528, 800)
+        self.dropout = nn.Dropout(p=0.2)
         self.output = nn.Linear(800, num_classes)
 
         self.relu = nn.ReLU()
@@ -99,15 +100,19 @@ class MSMDGANet_CNN(nn.Module):
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.relu(x)
+
         x = self.conv2(x)
         x = self.bn2(x)
         x = self.relu(x)
+
         x = self.conv3(x)
         x = self.bn3(x)
         x = self.relu(x)
+
         x = self.conv4(x)
         x = self.bn4(x)
         x = self.relu(x)
+
         x = x.reshape(x.size(0), -1)
         x = self.fc(x)
         x = self.dropout(x)
@@ -136,25 +141,6 @@ class MSMDGANet_CNN(nn.Module):
         return x
 
 
-class ConvBlock_wo_Maxpooling(nn.Module):
-    def __init__(self, in_c, out_c):
-        super(ConvBlock_wo_Maxpooling, self).__init__()
-        self.conv3x3 = nn.Conv2d(in_channels=in_c, out_channels=out_c, kernel_size=3, stride=2, padding=1)
-        self.bn1 = nn.BatchNorm2d(out_c)
-        self.conv1x1 = nn.Conv2d(in_channels=out_c, out_channels=out_c, kernel_size=1)
-        self.bn2 = nn.BatchNorm2d(out_c)
-        self.relu = nn.ReLU()
-
-    def forward(self, x):
-        x = self.conv3x3(x)
-        x = self.bn1(x)
-        x = self.relu(x)
-        x = self.conv1x1(x)
-        x = self.bn2(x)
-        x = self.relu(x)
-        return x
-
-
 class FVRASNet(nn.Module):
     def __init__(self, num_classes):
         super().__init__()
@@ -166,10 +152,10 @@ class FVRASNet(nn.Module):
         self.block2 = ConvBlock_wo_Maxpooling(in_c=channels[0], out_c=channels[1])
         self.block3 = ConvBlock_wo_Maxpooling(in_c=channels[1], out_c=channels[2])
         # self.fc1 = nn.Linear(in_features=256 * 4 * 4, out_features=256)  # for image size 64
-        self.fc1 = nn.Linear(in_features=256 * 8 * 8, out_features=512)  # for image size 128
+        self.fc1 = nn.Linear(in_features=256 * 8 * 8, out_features=1024)  # for image size 128
         self.dropout1 = nn.Dropout()
         # self.fc_out = nn.Linear(in_features=256, out_features=num_classes) # for image size 64
-        self.fc_out = nn.Linear(in_features=512, out_features=num_classes)  # for image size 128
+        self.fc_out = nn.Linear(in_features=1024, out_features=num_classes)  # for image size 128
         self.softmax = nn.Softmax(-1)
 
     def forward_features(self, x):
@@ -226,6 +212,25 @@ class LightweightCNN(nn.Module):
         x = x.reshape(x.size(0), -1)
         x = self.fc_out(x)
         x = self.softmax(x)
+        return x
+
+
+class ConvBlock_wo_Maxpooling(nn.Module):
+    def __init__(self, in_c, out_c):
+        super(ConvBlock_wo_Maxpooling, self).__init__()
+        self.conv3x3 = nn.Conv2d(in_channels=in_c, out_channels=out_c, kernel_size=3, stride=2, padding=1)
+        self.bn1 = nn.BatchNorm2d(out_c)
+        self.conv1x1 = nn.Conv2d(in_channels=out_c, out_channels=out_c, kernel_size=1)
+        self.bn2 = nn.BatchNorm2d(out_c)
+        self.relu = nn.ReLU()
+
+    def forward(self, x):
+        x = self.conv3x3(x)
+        x = self.bn1(x)
+        x = self.relu(x)
+        x = self.conv1x1(x)
+        x = self.bn2(x)
+        x = self.relu(x)
         return x
 
 

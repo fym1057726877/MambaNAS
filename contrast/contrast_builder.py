@@ -16,8 +16,8 @@ def build_model(model_name, cfg_path, logger, pretrained=False,
         model = FVCNN(num_classes=cfg_dict['num_classes']).to(device)
     elif model_name == 'LightweightCNN':
         model = LightweightCNN(num_classes=cfg_dict['num_classes']).to(device)
-    elif model_name == 'MSMDGANet_CNN':
-        model = MSMDGANet_CNN(num_classes=cfg_dict['num_classes']).to(device)
+    elif model_name == 'MSMDGANetCNN':
+        model = MSMDGANetCNN(num_classes=cfg_dict['num_classes']).to(device)
     else:
         raise RuntimeError(f'Model {model_name} not found.')
     logger.info(f"build model_name:{model_name} \nconfig:{cfg_dict}")

@@ -1,22 +1,17 @@
-import random
-from os.path import join
 
+
+import yaml
 import numpy as np
 import time
 import torch
 import torch.backends.cudnn as cudnn
-from pathlib import Path
-
-from lib import utils
-from supernet_engine import evaluate
-from model.supernet_transformer import Vision_TransformerSuper
+import random
 import argparse
-import os
-import yaml
-from lib.config import cfg, update_config_from_file
-
+from os.path import join
+from engine import evaluate
 from builder import build_dataloader, build_model
-from utils import get_project_path, get_logger
+from models.evolution import EvolutionSearcher
+from utils import project_path, get_logger
 
 
 def get_args_parser():
@@ -91,9 +86,9 @@ def get_args_parser():
                         help='LR decay rate (default: 0.1)')
 
     # * Mixup params
-    parser.add_argument('--mixup', type=float, default=0.8,
+    parser.add_argument('--mixup', type=float, default=1.0,
                         help='mixup alpha, mixup enabled if > 0. (default: 0.8)')
-    parser.add_argument('--cutmix', type=float, default=1.0,
+    parser.add_argument('--cutmix', type=float, default=0.0,
                         help='cutmix alpha, cutmix enabled if > 0. (default: 1.0)')
     parser.add_argument('--cutmix-minmax', type=float, nargs='+', default=None,
                         help='cutmix min/max ratio, overrides alpha and enables cutmix if set (default: None)')
@@ -118,11 +113,6 @@ def get_args_parser():
 def main(args):
     print(args)
     device = torch.device(args.device)
-    args_text = yaml.safe_dump(args.__dict__, default_flow_style=False)
-    # save configs for later experiments
-    with open(os.path.join(args.output_dir, "configs.yaml"), 'w') as f:
-        f.write(args_text)
-    # fix the seed for reproducibility
 
     torch.manual_seed(args.seed)
     np.random.seed(args.seed)
@@ -131,49 +121,32 @@ def main(args):
 
     args.prefetcher = not args.no_prefetcher
 
-    log_path = join(get_project_path("MambaNAS"), "logs", f"{args.model_name}.log.json")
+    log_path = join(project_path, "logs", f"{args.model_name}.log.json")
     logger = get_logger(file_name=log_path)
     logger.info("\n\n")
     logger.info(args)
     train_loader, test_loader, val_loader = build_dataloader(dataset=args.dataset)
-    model = build_model(model_name=args.model_name, cfg_path=args.model_cfg,
-                        logger=logger, device=device)
 
-    print(f"Creating SuperVisionTransformer")
-    print(cfg)
+    logger.info(f"Creating {args.model_name}")
+    model_save_path = args.model_save_path + args.model_name + '.pth'
+    model = build_model(model_name=args.model_name, cfg_path=args.model_cfg, pretrained=True,
+                        pretrained_ckpt=model_save_path, logger=logger, device=device)
 
-    model_without_ddp = model
-    if args.distributed:
-        model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[args.gpu])
-        model_without_ddp = model.module
+    cfg = yaml.safe_load(open(args.model_cfg))['search_space']
+    logger.info(cfg)
 
-    n_parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
-    print('number of params:', n_parameters)
-    if args.resume:
-        if args.resume.startswith('https'):
-            checkpoint = torch.hub.load_state_dict_from_url(
-                args.resume, map_location='cpu', check_hash=True)
-        else:
-            checkpoint = torch.load(args.resume, map_location='cpu')
-        print("resume from checkpoint: {}".format(args.resume))
-        model_without_ddp.load_state_dict(checkpoint['model'])
-
-    choices = {'num_heads': cfg.SEARCH_SPACE.NUM_HEADS, 'mlp_ratio': cfg.SEARCH_SPACE.MLP_RATIO,
-               'embed_dim': cfg.SEARCH_SPACE.EMBED_DIM, 'depth': cfg.SEARCH_SPACE.DEPTH}
+    choices = {'embed_dim': cfg['embed_dim'], 'expand_ratio': cfg['expand_ratio'],
+               'depth': cfg['depth'], 'd_state': cfg['d_state'], 'kernel_size': cfg['kernel_size']}
 
     t = time.time()
-    searcher = EvolutionSearcher(args, device, model, model_without_ddp, choices, data_loader_val, data_loader_test,
-                                 args.output_dir)
+    searcher = EvolutionSearcher(args=args, device=device, model=model, choices=choices,
+                                 val_loader=val_loader, test_loader=test_loader, output_dir=args.output_dir)
 
     searcher.search()
 
-    print('total searching time = {:.2f} hours'.format(
-        (time.time() - t) / 3600))
+    print('total searching time = {:.2f} hours'.format((time.time() - t) / 3600))
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser('AutoFormer evolution search', parents=[get_args_parser()])
-    args = parser.parse_args()
-    if args.output_dir:
-        Path(args.output_dir).mkdir(parents=True, exist_ok=True)
+    args = get_args_parser()
     main(args)

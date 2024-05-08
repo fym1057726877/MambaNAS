@@ -9,10 +9,9 @@ def decode_cand_tuple(cand_tuple):
 
 
 class EvolutionSearcher(object):
-    def __init__(self, args, device, model, model_without_ddp, choices, val_loader, test_loader, output_dir):
+    def __init__(self, args, device, model, choices, val_loader, test_loader, output_dir):
         self.device = device
         self.model = model
-        self.model_without_ddp = model_without_ddp
         self.args = args
 
         self.max_epochs = args.max_epochs
@@ -78,7 +77,7 @@ class EvolutionSearcher(object):
             'num_heads': num_heads,
             'embed_dim': [embed_dim] * depth
         }
-        n_parameters = self.model_without_ddp.get_sampled_params_numel(sampled_config)
+        n_parameters = self.model.get_sampled_params_numel(sampled_config)
         info['params'] = n_parameters / 10. ** 6
 
         if info['params'] > self.parameters_limits:

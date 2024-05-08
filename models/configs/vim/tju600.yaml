@@ -16,8 +16,8 @@ vim:
 
 
 super_vim:
-  embed_dim: 320
-  depth: 6
+  embed_dim: 256
+  depth: 8
   expand_ratio: 3
   d_state: 64
   kernel_size: 4
@@ -37,9 +37,9 @@ search_space:
     - 192
     - 256
   depth:
-    - 2
     - 4
     - 6
+    - 8
   expand_ratio:
     - 1
     - 2

@@ -10,6 +10,6 @@ FVRASNet:
 LightweightCNN:
   num_classes: 600
 
-MSMDGANet_CNN:
+MSMDGANetCNN:
   num_classes: 600
 
