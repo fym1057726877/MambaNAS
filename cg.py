@@ -1,5 +1,8 @@
 import argparse
 import os
+import random
+from os.path import join
+
 import numpy as np
 import torch
 import logging
@@ -12,7 +15,7 @@ from torch.nn import functional as F
 from torch import nn
 from models.supernet.super_ops import Super_Conv1d
 import yaml
-from utils import get_logger
+from utils import get_logger, project_path
 
 # xz: torch.Size([60, 64, 320])
 # A: torch.Size([960, 64])
@@ -94,9 +97,17 @@ from utils import get_logger
 # b = [a[j][i] for j in range(len(a)) for i in range(len(a)) if i != l[j]]
 # print(b)
 
-
-a = '1/2/3/4/5.pth'
-
-
-c = os.path.join(*a.split('/')[0:-1], '9.plk')
-print(c)
+# model_cfg_path = join(project_path, 'models', 'configs', 'vim', 'tju600.yaml')
+# cfg = yaml.safe_load(open(model_cfg_path))['search_space']
+#
+# choices = {'embed_dim': cfg['embed_dim'], 'expand_ratio': cfg['expand_ratio'],
+#            'depth': cfg['depth'], 'd_state': cfg['d_state'], 'kernel_size': cfg['kernel_size']}
+# cand_tuple = list()
+# dimensions = ['expand_ratio', 'd_state', 'kernel_size']
+# depth = random.choice(choices['depth'])
+# cand_tuple.append(depth)
+# for dimension in dimensions:
+#     for i in range(depth):
+#         cand_tuple.append(random.choice(choices[dimension]))
+# cand_tuple.append(random.choice(choices['embed_dim']))
+# print(tuple(cand_tuple))

@@ -121,7 +121,7 @@ class EvolutionSearcher(object):
 
     def get_random_cand(self):
         cand_tuple = list()
-        dimensions = ['mlp_ratio', 'num_heads']
+        dimensions = ['expand_ratio', 'd_state', 'kernel_size']
         depth = random.choice(self.choices['depth'])
         cand_tuple.append(depth)
         for dimension in dimensions:
@@ -231,10 +231,13 @@ class EvolutionSearcher(object):
         return res
 
     def search(self):
-        print(
-            'population_num = {} select_num = {} mutation_num = {} crossover_num = {} random_num = {} max_epochs = {}'.format(
-                self.population_num, self.select_num, self.mutation_num, self.crossover_num,
-                self.population_num - self.mutation_num - self.crossover_num, self.max_epochs))
+        print(f'population_num = { self.population_num} '
+              f'select_num = {self.select_num} '
+              f'mutation_num = {self.mutation_num} '
+              f'crossover_num = {self.crossover_num} '
+              f'random_num = {self.population_num - self.mutation_num - self.crossover_num} '
+              f'max_epochs = {self.max_epochs}'
+        )
 
         # self.load_checkpoint()
 

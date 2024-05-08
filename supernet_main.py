@@ -8,9 +8,13 @@ from torch.nn import CrossEntropyLoss
 from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy
 from timm.scheduler import create_scheduler
 from timm.optim import create_optimizer
-from utils import get_logger, get_project_path
+from utils import get_logger, project_path
 from engine import train_multi_epochs
 from builder import build_model, build_dataloader
+
+
+model_cfg_path = join(project_path, 'models', 'configs', 'vim', 'tju600.yaml')
+model_save_path = join(project_path, 'ckpts')
 
 
 def get_args_parser():
@@ -23,10 +27,10 @@ def get_args_parser():
     # Model parameters
     parser.add_argument('--model-name', default='super_vim', type=str, help='Name of model to train')
     parser.add_argument('--model-cfg',
-                        default='E:/fym/code/Pythonproject/MambaNAS/models/configs/vim/tju600.yaml',
+                        default=model_cfg_path,
                         type=str, help='model configs file')
     parser.add_argument('--model-save-path',
-                        default='E:/fym/code/Pythonproject/MambaNAS/ckpts/super_vim.pth',
+                        default=model_cfg_path,
                         type=str, help='model_save_path')
 
     # * Mixup params
@@ -94,7 +98,7 @@ def get_args_parser():
 
 def main(args):
     device = args.device
-    log_path = join(get_project_path("MambaNAS"), "logs", f"{args.model_name}.log.json")
+    log_path = join(project_path, "logs", f"{args.model_name}.log.json")
     logger = get_logger(file_name=log_path)
     logger.info("\n\n")
     logger.info(args)
