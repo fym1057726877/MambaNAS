@@ -2,26 +2,25 @@ import joblib
 import argparse
 import numpy as np
 from os.path import join
-from builder import build_dataloader, build_model
+from contrast.contrast_builder import build_dataloader, build_model
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score
-from utils import get_project_path, get_logger
+from utils import project_path, get_logger
+
+config_path = project_path + '/contrast/tju_pv600/configs.yaml'
+model_save_path = project_path + '/contrast/tju_pv600/ckpts/'
 
 
 def get_args_parser():
     parser = argparse.ArgumentParser("knn training and evaluation script")
-    parser.add_argument('--num-classes', default=600, type=int)
     parser.add_argument('--device', default="cuda:0", type=str)
     parser.add_argument('--dataset', default="PV600", type=str)
 
     # Model parameters
-    parser.add_argument('--model-name', default='super_vim', type=str, help='Name of model to train')
-    parser.add_argument('--model-cfg',
-                        default='E:/fym/code/Pythonproject/MambaNAS/models/configs/vim/tju600.yaml',
-                        type=str, help='model configs file')
-    parser.add_argument('--model-save-path',
-                        default='E:/fym/code/Pythonproject/MambaNAS/ckpts/super_vim.pth',
-                        type=str, help='model_save_path')
+    parser.add_argument('--model-name', default='LightweightCNN', type=str,
+                        help='Name of model to train, one of [Resnet50, FVCNN, FVRASNet, LightweightCNN, MSMDGANet_CNN')
+    parser.add_argument('--model-cfg', default=config_path, type=str, help='model configs file')
+    parser.add_argument('--model-save-path', default=model_save_path, type=str, help='model_save_path')
     return parser.parse_args()
 
 
@@ -44,7 +43,7 @@ def knn_train(model_name, cfg_path, pretrained_ckpt, dataset, logger=None, devic
                 features = np.concatenate((features, fea))
                 labels = np.concatenate((labels, y))
 
-        print(f"feature extracting finished, feature shape:{features.shape}, label:{labels.shape}")
+        logger.info(f"feature extracting finished, feature shape:{features.shape}, label:{labels.shape}")
         data = dict(features=features, labels=labels)
         return data
 
@@ -69,11 +68,13 @@ def knn_train(model_name, cfg_path, pretrained_ckpt, dataset, logger=None, devic
 
 
 def main(args):
-    log_path = join(get_project_path("MambaNAS"), "logs", f"{args.model_name}.log.json")
+    log_path = join(project_path, "logs", f"{args.model_name}.log.json")
     logger = get_logger(file_name=log_path)
     logger.info("\n\n")
     logger.info(args)
-    knn_train(model_name=args.model_name, cfg_path=args.model_cfg, pretrained_ckpt=args.model_save_path,
+
+    model_save_path = args.model_save_path + args.model_name + '.pth'
+    knn_train(model_name=args.model_name, cfg_path=args.model_cfg, pretrained_ckpt=model_save_path,
               dataset=args.dataset, logger=logger, device=args.device)
 
 

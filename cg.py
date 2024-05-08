@@ -1,5 +1,5 @@
 import argparse
-
+import os
 import numpy as np
 import torch
 import logging
@@ -86,10 +86,17 @@ from utils import get_logger
 # print(y_pred.shape)
 
 
-a = np.array([[0.2, 0.5, 0.3], [0.1, 0.8, 0.1], [0.5, 0.4, 0.1]], dtype=np.float32)
-l = np.array([1, 0, 2], dtype=np.int16)
+# a = np.array([[0.2, 0.5, 0.3], [0.1, 0.8, 0.1], [0.5, 0.4, 0.1]], dtype=np.float32)
+# l = np.array([1, 0, 2], dtype=np.int16)
+#
+# print([a[i][l[i]] for i in range(len(l))])
+#
+# b = [a[j][i] for j in range(len(a)) for i in range(len(a)) if i != l[j]]
+# print(b)
 
-print([a[i][l[i]] for i in range(len(l))])
 
-b = [a[j][i] for j in range(len(a)) for i in range(len(a)) if i != l[j]]
-print(b)
+a = '1/2/3/4/5.pth'
+
+
+c = os.path.join(*a.split('/')[0:-1], '9.plk')
+print(c)

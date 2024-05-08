@@ -205,7 +205,7 @@ def train_multi_epochs(
         )
 
         loss_history.append(float(log["Loss"]))
-        acc_history.append(test_acc)
+        acc_history.append(test_acc[0])
 
         if val_acc is None:
             val_acc = test_acc
@@ -229,7 +229,10 @@ def train_multi_epochs(
         }
         logger.info(total_log)
 
+    logger.info(f"acc history:{acc_history}")
+    logger.info(f"loss history:{loss_history}")
     logger.info("...............train and evaluate process finished...............")
+
     if draw_loss:
         epochs = np.arange(1, total_epochs + 1, 1, dtype=int).reshape(-1)
         loss_history = np.array(loss_history).reshape(-1)

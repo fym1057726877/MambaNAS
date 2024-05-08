@@ -5,7 +5,7 @@ from logging import handlers
 
 
 def get_logger(file_name, level=logging.INFO, mode="a", format="%(asctime)s %(levelname)s: %(message)s",
-               datamat="%Y-%m-%d %H:%M:%S", maxBytes=102400, backCount=5):
+               datamat="%Y-%m-%d %H:%M:%S", maxBytes=1024000, backCount=5):
     logger = logging.getLogger()
     logger.setLevel(level)
     formater = logging.Formatter(fmt=format, datefmt=datamat)

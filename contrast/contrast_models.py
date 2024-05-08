@@ -40,7 +40,7 @@ class FVCNN(nn.Module):
 
         self.softmax = nn.Softmax(-1)
 
-    def forward_feature(self, x):
+    def forward_features(self, x):
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.conv2(x)
@@ -95,7 +95,7 @@ class MSMDGANet_CNN(nn.Module):
 
         self.softmax = nn.Softmax(-1)
 
-    def forward_feature(self, x):
+    def forward_features(self, x):
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.relu(x)
@@ -172,7 +172,7 @@ class FVRASNet(nn.Module):
         self.fc_out = nn.Linear(in_features=512, out_features=num_classes)  # for image size 128
         self.softmax = nn.Softmax(-1)
 
-    def forward_feature(self, x):
+    def forward_features(self, x):
         x = self.conv1(x)
         x = self.bn1(x)
         x = self.relu(x)
@@ -210,7 +210,7 @@ class LightweightCNN(nn.Module):
         self.fc_out = nn.Linear(in_features=128 * 8 * 8, out_features=num_classes)
         self.softmax = nn.Softmax(-1)
 
-    def forward_feature(self, x):
+    def forward_features(self, x):
         x = self.stemBlock(x)
         x = self.stageblock1(x)
         x = self.stageblock2(x)

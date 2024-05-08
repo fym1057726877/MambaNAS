@@ -1,10 +1,8 @@
 
-import os
+
 import torch
-import joblib
 import argparse
 from os.path import join
-import numpy as np
 from timm.data import Mixup
 from torch.nn import CrossEntropyLoss
 from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy
@@ -13,8 +11,6 @@ from timm.optim import create_optimizer
 from utils import get_logger, get_project_path
 from engine import train_multi_epochs
 from builder import build_model, build_dataloader
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.metrics import accuracy_score
 
 
 def get_args_parser():
@@ -145,55 +141,6 @@ def main(args):
         test_progress=False,
         val_progress=False,
     )
-
-
-def knn_train(model_name, cfg_path, pretrained_ckpt, logger, dataset, device):
-    train_loader, test_loader, _ = build_dataloader(dataset=dataset)
-    model = build_model(model_name=model_name, cfg_path=cfg_path, logger=logger, device=device,
-                        pretrained=True, pretrained_ckpt=pretrained_ckpt)
-
-    def get_fearure(data_loader, save_path=None, save=False):
-        model.eval()
-        features = None
-        labels = None
-        for i, (x, y) in enumerate(data_loader):
-            x, y = x.to(device), y.detach().cpu().numpy()
-            if hasattr(model, "forward_feature"):
-                fea = model.forward_feature(x).flatten(1).detach().cpu().numpy()
-            else:
-                fea = model.forward_features(x).flatten(1).detach().cpu().numpy()
-            if features is None:
-                features, labels = fea, y
-            else:
-                features = np.concatenate((features, fea))
-                labels = np.concatenate((labels, y))
-
-        print(f"feature extracting finished, feature shape:{features.shape}, label:{labels.shape}")
-        data = dict(features=features, labels=labels)
-        if save:
-            assert save_path is not None
-            torch.save(data, save_path)
-        return data
-
-    feature_data = get_fearure(train_loader, device)
-    test_feature_data = get_fearure(test_loader, device)
-
-    features = feature_data["features"]
-    labels = feature_data["labels"]
-
-    features_test = test_feature_data["features"]
-    labels_test = test_feature_data["labels"]
-
-    knn = KNeighborsClassifier()
-    knn.fit(features, labels)
-
-    pred = knn.predict(features_test)
-
-    acc = accuracy_score(labels_test, pred)
-    print(f"test_acc: {acc:.4f}")
-
-    joblib.dump(knn, os.path.join(get_project_path("Defense"), "classifier", "FVRAS_Net",
-                                  "PV600", "knn.plk"))
 
 
 if __name__ == '__main__':
