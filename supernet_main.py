@@ -1,5 +1,4 @@
 
-
 import torch
 import argparse
 from os.path import join
@@ -30,13 +29,13 @@ def get_args_parser():
                         default=model_cfg_path,
                         type=str, help='model configs file')
     parser.add_argument('--model-save-path',
-                        default=model_cfg_path,
+                        default=model_save_path,
                         type=str, help='model_save_path')
 
     # * Mixup params
-    parser.add_argument('--mixup', type=float, default=1.0,
+    parser.add_argument('--mixup', type=float, default=1.5,
                         help='mixup alpha, mixup enabled if > 0. (default: 0.8)')
-    parser.add_argument('--cutmix', type=float, default=1.0,
+    parser.add_argument('--cutmix', type=float, default=0.0,
                         help='cutmix alpha, cutmix enabled if > 0. (default: 1.0)')
     parser.add_argument('--cutmix-minmax', type=float, nargs='+', default=None,
                         help='cutmix min/max ratio, overrides alpha and enables cutmix if set (default: None)')
@@ -103,6 +102,8 @@ def main(args):
     logger.info("\n\n")
     logger.info(args)
     train_loader, test_loader, val_loader = build_dataloader(dataset=args.dataset)
+
+    model_save_path = join(args.model_save_path,  f'{args.model_name}.pth')
     model = build_model(model_name=args.model_name, cfg_path=args.model_cfg,
                         logger=logger, device=device)
 
@@ -130,7 +131,7 @@ def main(args):
 
     train_multi_epochs(
         model=model,
-        model_save_path=args.model_save_path,
+        model_save_path=model_save_path,
         train_loader=train_loader,
         test_loader=test_loader,
         val_loader=val_loader,
@@ -141,7 +142,7 @@ def main(args):
         total_epochs=args.total_epochs,
         device=device,
         logger=logger,
-        train_progress=False,
+        train_progress=True,
         test_progress=False,
         val_progress=False,
     )

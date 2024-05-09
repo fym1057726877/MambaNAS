@@ -1,8 +1,8 @@
 vim:
-  embed_dim: 128
-  depth: 2
-  expand_ratio: 2
-  d_state: 16
+  embed_dim: 256
+  depth: 8
+  expand_ratio: 3
+  d_state: 32
   kernel_size: 4
 
   img_size: 128
@@ -10,14 +10,15 @@ vim:
   in_chans: 1
   num_classes: 600
 
-  directions: [ [ 'h', 'h_flip' ], [ 'v', 'h_flip' ] ]
-  drop_rate: 0.
-  drop_path_rate: 0.1
+#  directions: [ [ 'h', 'h_flip' ], [ 'v', 'v_flip' ], [ 'h', 'h_flip' ], [ 'v', 'v_flip' ], [ 'h', 'h_flip' ], [ 'v', 'v_flip' ], [ 'h', 'h_flip' ], [ 'v', 'v_flip' ]]
+  directions: null
+  drop_rate: 0.1
+  drop_path_rate: 0.2
 
 
 super_vim:
   embed_dim: 256
-  depth: 8
+  depth: 6
   expand_ratio: 3
   d_state: 64
   kernel_size: 4
@@ -39,14 +40,13 @@ search_space:
   depth:
     - 4
     - 6
-    - 8
   expand_ratio:
     - 1
     - 2
     - 3
   d_state:
-    - 16
     - 32
+    - 64
   kernel_size:
     - 2
     - 4

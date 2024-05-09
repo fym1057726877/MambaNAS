@@ -61,7 +61,7 @@ def build_model(model_name, cfg_path, logger=None, pretrained=False,
 def build_dataloader(dataset="PV600"):
     if dataset == "PV600":
         from datasets.tju_pv600 import getTJUDataLoader
-        bacth_size = 60
+        bacth_size = 30
         image_size = 128
         train_imgs_per_class = 10
         test_imgs_per_class = 5
@@ -72,7 +72,7 @@ def build_dataloader(dataset="PV600"):
                                                                  val_imgs_per_class=val_imgs_per_class)
     elif dataset == "PV500":
         from datasets.hkpu_pv500 import getPolyUDataLoader
-        bacth_size = 50
+        bacth_size = 25
         image_size = 128
         train_imgs_per_class = 6
         test_imgs_per_class = 3

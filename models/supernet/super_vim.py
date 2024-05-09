@@ -216,15 +216,15 @@ class Super_VisionMamba(nn.Module):
         self.sample_kernel_size = config['kernel_size']
         self.sample_expand_ratio = config['expand_ratio']
 
-        self.super_patch_embed.set_sample_config(sample_embed_dim=self.sample_embed_dim[0])
-        self.super_norm.set_sample_config(sample_embed_dim=self.sample_embed_dim[0])
-        self.super_head.set_sample_config(sample_in_dim=self.sample_embed_dim[0],
+        self.super_patch_embed.set_sample_config(sample_embed_dim=self.sample_embed_dim)
+        self.super_norm.set_sample_config(sample_embed_dim=self.sample_embed_dim)
+        self.super_head.set_sample_config(sample_in_dim=self.sample_embed_dim,
                                           sample_out_dim=self.num_classes)
         for layer_idx, layer in enumerate(self.layers):
-            if layer_idx < self.sample_depths[0]:
+            if layer_idx < self.sample_depth:
                 layer.set_sample_config(
                     is_identity_layer=False,
-                    sample_embed_dim=self.sample_embed_dim[layer_idx],
+                    sample_embed_dim=self.sample_embed_dim,
                     sample_expand_ratio=self.sample_expand_ratio[layer_idx],
                     sample_d_state=self.sample_d_state[layer_idx],
                     sample_kernel_size=self.sample_kernel_size[layer_idx],
@@ -260,7 +260,8 @@ class Super_VisionMamba(nn.Module):
         total_numels += self.super_head.calc_sampled_param_num()
         total_numels += self.super_norm.calc_sampled_param_num()
         for layer_idx, layer in enumerate(self.layers):
-            total_numels += layer.calc_sampled_param_num()
+            if layer_idx < self.sample_depth:
+                total_numels += layer.calc_sampled_param_num()
         return total_numels
 
     def get_complexity(self, sequence_length):

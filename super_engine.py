@@ -74,6 +74,7 @@ def train_one_epoch(
             images, soft_targets = mixup_fn(images, targets)
 
         output = model(images)
+        print(output.shape)
         if mixup_fn is not None:
             loss = criterion(output, soft_targets)
         else:
@@ -107,36 +108,17 @@ def train_one_epoch(
     return log
 
 
-def evaluate(model, test_loader, val_loader=None, test_progress=False, val_progress=False, device="cuda"):
+def evaluate(model, data_loader, mode='super', device="cuda"):
     model.eval()
-    test_correct_num, test_num = np.array([0., 0.]), 0
-    if test_progress:
-        indice_test = tqdm(enumerate(test_loader), desc="test step", total=len(test_loader))
-    else:
-        indice_test = enumerate(test_loader)
-
-    for index, (x, label) in indice_test:
+    correct_num, total_num = np.array([0., 0.]), 0
+    for index, (x, label) in enumerate(data_loader):
         x, label = x.to(device), label.to(device)
         pred = model(x)
-        test_correct_num += accuracy(pred, label, topk=(1, 5))
-        test_num += label.size(0)
-
-    test_acc = test_correct_num / test_num
-    val_acc = None
-    if val_loader is not None:
-        val_correct_num, val_num = np.array([0., 0.]), 0
-        if val_progress:
-            indice_val = tqdm(enumerate(val_loader), desc="val step", total=len(val_loader))
-        else:
-            indice_val = enumerate(val_loader)
-        for index, (x, label) in indice_val:
-            x, label = x.to(device), label.to(device)
-            pred = model(x)
-            val_correct_num += accuracy(pred, label, topk=(1, 5))
-            val_num += label.size(0)
-        val_acc = val_correct_num / val_num
-
-    return test_acc, val_acc
+        correct_num += accuracy(pred, label, topk=(1, 5))
+        total_num += label.size(0)
+    acc = correct_num / total_num
+    info = dict(acc1=acc[0], acc5=acc[1])
+    return info
 
 
 def train_multi_epochs(
