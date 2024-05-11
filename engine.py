@@ -188,7 +188,7 @@ def train_multi_epochs(
             criterion=criterion,
             optimizer=optimizer,
             lr_scheduler=lr_scheduler,
-            current_epoch=epoch,
+            current_epoch=epoch+1,
             total_epochs=total_epochs,
             progress=train_progress,
             device=device,

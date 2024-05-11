@@ -8,7 +8,7 @@ from thop import profile
 from timm.models.layers import trunc_normal_
 from timm.models.layers import DropPath
 
-from models.supernet.super_mamba import Super_MultiMambaBlock
+from models.supernet.super_mamba import Super_MambaBlock
 from models.supernet.super_ops import *
 
 
@@ -77,8 +77,12 @@ class Super_VisionMamba(nn.Module):
             expand_ratio: float = 2.,
             d_state: int = 16,
             kernel_size: int = 4,
+            mamba_type: str = "origin",
+            mamba_ratio=0.5,
+            c_kernel_size=8,
     ):
         super().__init__()
+        assert mamba_type in ["origin", "mix"]
         self.final_pool_type = final_pool_type
         self.if_abs_pos_embed = if_abs_pos_embed
         self.if_cls_token = if_cls_token
@@ -97,6 +101,10 @@ class Super_VisionMamba(nn.Module):
         self.super_d_state = d_state
         self.super_drop_rate = drop_rate
 
+        self.super_mamba_ratio = mamba_ratio
+        self.super_c_kernel_size = c_kernel_size
+
+        self.mamba_type = mamba_type
         self.num_patches = self.super_patch_embed.num_patches
         self.token_size = self.super_patch_embed.grid_size
 
@@ -117,9 +125,10 @@ class Super_VisionMamba(nn.Module):
         # transformer blocks
         if directions is None:
             directions = [None] * self.super_depth
+
         self.layers = nn.ModuleList(
             [
-                Super_MultiMambaBlock(
+                Super_MambaBlock(
                     embed_dim=self.super_embed_dim,
                     d_state=self.super_d_state,
                     kernel_size=self.super_kernel_size,
@@ -130,6 +139,9 @@ class Super_VisionMamba(nn.Module):
                     drop_path=self.inter_dpr[i],
                     directions=directions[i],
                     token_size=self.token_size,
+                    mamba_type=mamba_type,
+                    mamba_ratio=self.super_mamba_ratio,
+                    c_kernel_size=self.super_c_kernel_size
                 )
                 for i in range(depth)
             ]
@@ -153,6 +165,9 @@ class Super_VisionMamba(nn.Module):
         self.sample_d_state = None,
         self.sample_kernel_size = None
         self.sample_expand_ratio = None
+
+        self.sample_mamba_ratio = None
+        self.sample_c_kernel_size = None
 
     @torch.jit.ignore
     def no_weight_decay(self):
@@ -213,8 +228,9 @@ class Super_VisionMamba(nn.Module):
         self.sample_embed_dim = config['embed_dim']
         self.sample_depth = config['depth']
         self.sample_d_state = config['d_state']
-        self.sample_kernel_size = config['kernel_size']
+        self.sample_c_kernel_size = config['c_kernel_size']
         self.sample_expand_ratio = config['expand_ratio']
+        self.sample_mamba_ratio = config['mamba_ratio']
 
         self.super_patch_embed.set_sample_config(sample_embed_dim=self.sample_embed_dim)
         self.super_norm.set_sample_config(sample_embed_dim=self.sample_embed_dim)
@@ -227,7 +243,8 @@ class Super_VisionMamba(nn.Module):
                     sample_embed_dim=self.sample_embed_dim,
                     sample_expand_ratio=self.sample_expand_ratio[layer_idx],
                     sample_d_state=self.sample_d_state[layer_idx],
-                    sample_kernel_size=self.sample_kernel_size[layer_idx],
+                    sample_c_kernel_size=self.sample_c_kernel_size[layer_idx],
+                    sample_mamba_ratio=self.sample_mamba_ratio[layer_idx]
                 )
             else:
                 layer.set_sample_config(is_identity_layer=True)
@@ -277,3 +294,10 @@ class Super_VisionMamba(nn.Module):
         return total_flops
 
 
+if __name__ == '__main__':
+    device = 'cuda'
+    x = torch.randn((4, 196, 192)).to(device)
+    model = Super_VisionMamba(img_size=128, patch_size=32, depth=2, embed_dim=512, mamba_type="mix", mamba_ratio=0.5, c_kernel_size=24).to(device)
+    model.set_sample_config()
+    y, _ = model(x)
+    print(y.shape)

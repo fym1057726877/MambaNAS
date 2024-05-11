@@ -24,7 +24,7 @@ def get_args_parser():
     parser.add_argument('--dataset', default="PV600", type=str)
 
     # Model parameters
-    parser.add_argument('--model-name', default='super_vim', type=str, help='Name of model to train')
+    parser.add_argument('--model-name', default='vim', type=str, help='Name of model to train')
     parser.add_argument('--model-cfg',
                         default=model_cfg_path,
                         type=str, help='model configs file')
@@ -33,7 +33,7 @@ def get_args_parser():
                         type=str, help='model_save_path')
 
     # * Mixup params
-    parser.add_argument('--mixup', type=float, default=1.5,
+    parser.add_argument('--mixup', type=float, default=0.2,
                         help='mixup alpha, mixup enabled if > 0. (default: 0.8)')
     parser.add_argument('--cutmix', type=float, default=0.0,
                         help='cutmix alpha, cutmix enabled if > 0. (default: 1.0)')

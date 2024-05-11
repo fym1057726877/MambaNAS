@@ -1,7 +1,7 @@
 vim:
   embed_dim: 256
-  depth: 8
-  expand_ratio: 3
+  depth: 2
+  expand_ratio: 2
   d_state: 32
   kernel_size: 4
 

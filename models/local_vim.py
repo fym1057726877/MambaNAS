@@ -6,7 +6,7 @@ from torch import Tensor
 from typing import Optional
 from timm.models.layers import trunc_normal_
 from timm.models.layers import DropPath, PatchEmbed
-from models.mamba_local.mamba.multi_mamba import MultiMamba
+from models.mamba_local.mamba.multi_mamba import MultiMamba, MixMamba
 from models.mamba_local.mamba.rope import *
 from models.mamba_local.ops.triton.layernorm import RMSNorm, layer_norm_fn, rms_norm_fn
 
@@ -180,7 +180,7 @@ class VisionMamba(nn.Module):
             if_rope_residual: bool = False,
             if_cls_token: bool = False,
             directions: list = None,
-            mamba_cls=MultiMamba,
+            mamba_cls=MixMamba,
     ):
         super().__init__()
         self.residual_in_fp32 = residual_in_fp32
