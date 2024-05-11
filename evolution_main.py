@@ -36,7 +36,7 @@ def get_args_parser():
     parser.add_argument('--epochs', type=int, default=30)
     parser.add_argument('--mutation-num', type=int, default=25)
     parser.add_argument('--param-limits', type=float, default=15)
-    parser.add_argument('--min-param-limits', type=float, default=5)
+    parser.add_argument('--min-param-limits', type=float, default=0)
 
     # Model parameters
     parser.add_argument('--model-name', default='super_vim', type=str, help='Name of model to train')

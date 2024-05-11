@@ -8,7 +8,8 @@ import torch.nn.functional as F
 from timm.models.layers import to_2tuple
 from models.mamba_local.mamba.local_scan import local_scan, local_scan_bchw, local_reverse
 
-__all__ = ["Super_Linear", "Super_Norm", "Super_Conv1d", "Super_PatchEmbed", "Super_MultiScan", "Super_BiAttn"]
+__all__ = ["Super_Linear", "Super_Norm", "Super_Conv1d", "Super_PatchEmbed",
+           "Super_MultiScan", "Super_BiAttn", "Super_BatchNorm1d"]
 
 
 def calculate_fan_in_and_fan_out(tensor):
@@ -101,10 +102,13 @@ class Super_Linear(nn.Module):
 
 
 class Super_Conv1d(nn.Module):
-    def __init__(self, channels, kernel_size, bias=True, scale=False):
+    def __init__(self, channels, kernel_size, padding=0, bias=True, scale=False, mode='global'):
         super().__init__()
+        assert mode in ['global', 'local', 'none']
+        self.mode = mode
         self.super_channels = channels
         self.super_kernel_size = kernel_size
+        self.super_padding = padding
 
         self.weight = nn.Parameter(
             torch.empty((self.super_channels, 1, self.super_kernel_size)))
@@ -114,9 +118,9 @@ class Super_Conv1d(nn.Module):
             self.bias = None
         self.reset_parameters()
 
+        self.sample_channels_in = None
         self.sample_channels = None
         self.sample_kernel_size = None
-        self.sample_padding = None
         self.sample_scale = None
         self.scale = scale
         self.samples = {}
@@ -133,18 +137,26 @@ class Super_Conv1d(nn.Module):
                 nn.init.uniform_(self.bias, -bound, bound)
 
     def forward(self, input):
-        return F.conv1d(input=input, weight=self.samples['weight'], bias=self.samples['bias'],
-                        padding=self.sample_padding, groups=self.sample_channels)
+        groups = self.sample_channels_in if self.sample_channels_in is not None else self.sample_channels
+        if self.mode == 'global':
+            return F.conv1d(input=input, weight=self.samples['weight'], bias=self.samples['bias'],
+                            padding=self.sample_kernel_size - 1, groups=groups)
+        elif self.mode == 'local':
+            input = F.pad(input, pad=self.calc_same_padding())
+            return F.conv1d(input=input, weight=self.samples['weight'], bias=self.samples['bias'], groups=groups)
+        else:
+            return F.conv1d(input=input, weight=self.samples['weight'], bias=self.samples['bias'],
+                            padding=self.super_padding, groups=groups)
 
-    def set_sample_config(self, sample_channels=None, sample_kernel_size=None):
+    def set_sample_config(self, sample_channels_in=None, sample_channels=None, sample_kernel_size=None):
         if sample_channels is None:
             sample_channels = self.super_channels
         if sample_kernel_size is None:
             sample_kernel_size = self.super_kernel_size
 
+        self.sample_channels_in = sample_channels_in
         self.sample_channels = sample_channels
         self.sample_kernel_size = sample_kernel_size
-        self.sample_padding = self.sample_kernel_size - 1
         self.samples['weight'] = self.weight[:self.sample_channels, :, :self.sample_kernel_size]
         if self.bias is not None:
             self.samples['bias'] = self.bias[:self.sample_channels]
@@ -166,6 +178,10 @@ class Super_Conv1d(nn.Module):
 
     def get_complexity(self, sequence_length):
         return sequence_length * np.prod(self.samples['weight'].size())
+
+    def calc_same_padding(self):
+        pad = self.sample_kernel_size // 2
+        return pad, pad - (self.sample_kernel_size + 1) % 2
 
 
 class Super_Norm(nn.Module):
@@ -523,3 +539,108 @@ class Super_BiAttn(nn.Module):
         total_flops += self.super_channel_select.get_complexity(sequence_length=sequence_length)
         total_flops += self.super_spatial_select.get_complexity(sequence_length=sequence_length)
         return total_flops
+
+
+class Super_BatchNorm1d(nn.Module):
+    def __init__(self, num_features, eps=1e-5, momentum=0.1, track_running_stats=True, affine=True):
+        super().__init__()
+        self.super_num_features = num_features
+        self.eps = eps
+        self.momentum = momentum
+        self.affine = affine
+        self.track_running_stats = track_running_stats
+        if self.affine:
+            self.weight = nn.Parameter(torch.FloatTensor(self.super_num_features, ))
+            self.bias = nn.Parameter(torch.FloatTensor(self.super_num_features, ))
+        else:
+            self.register_parameter('weight', None)
+            self.register_parameter('bias', None)
+        if self.track_running_stats:
+            self.running_mean = torch.zeros(self.super_num_features)
+            self.running_var = torch.ones(self.super_num_features)
+            self.num_batches_tracked = torch.tensor(0, dtype=torch.long)
+        else:
+            self.register_buffer('running_mean', None)
+            self.register_buffer('running_var', None)
+            self.register_buffer("num_batches_tracked", None)
+        self.reset_parameters()
+
+        self.sample_num_features = None
+        self.samples = {}
+
+    def reset_running_stats(self) -> None:
+        if self.track_running_stats:
+            # running_mean/running_var/num_batches... are registered at runtime depending
+            # if self.track_running_stats is on
+            self.running_mean.zero_()  # type: ignore[union-attr]
+            self.running_var.fill_(1)  # type: ignore[union-attr]
+            self.num_batches_tracked.zero_()  # type: ignore[union-attr,operator]
+
+    def reset_parameters(self) -> None:
+        self.reset_running_stats()
+        if self.affine:
+            nn.init.ones_(self.weight)
+            nn.init.zeros_(self.bias)
+
+    def forward(self, x):
+        if self.momentum is None:
+            exponential_average_factor = 0.0
+        else:
+            exponential_average_factor = self.momentum
+        if self.training and self.track_running_stats:
+            if self.num_batches_tracked is not None:  # type: ignore[has-type]
+                self.num_batches_tracked.add_(1)  # type: ignore[has-type]
+                if self.momentum is None:  # use cumulative moving average
+                    exponential_average_factor = 1.0 / float(self.num_batches_tracked)
+                else:  # use exponential moving average
+                    exponential_average_factor = self.momentum
+        if self.training:
+            bn_training = True
+        else:
+            bn_training = (self.running_mean is None) and (self.running_var is None)
+
+        weight = self.samples['weight']
+        bias = self.samples['bias']
+        device = weight.device
+
+        # If buffers are not to be tracked, ensure that they won't be updated
+        running_mean = self.samples["running_mean"] if not self.training or self.track_running_stats else None
+        running_var = self.samples["running_var"] if not self.training or self.track_running_stats else None
+
+        return F.batch_norm(
+            x,
+            running_mean=running_mean.to(device),
+            running_var=running_var.to(device),
+            weight=weight,
+            bias=bias,
+            training=bn_training,
+            momentum=exponential_average_factor,
+            eps=self.eps,
+        )
+
+    def set_sample_config(self, sample_num_features=None):
+        if sample_num_features is None:
+            sample_num_features = self.super_num_features
+        self.sample_num_features = sample_num_features
+        if self.running_mean is not None:
+            self.samples['running_mean'] = self.running_mean[:self.sample_num_features]
+        if self.running_var is not None:
+            self.samples['running_var'] = self.running_var[:self.sample_num_features]
+        if self.affine:
+            self.samples['weight'] = self.weight[:self.sample_num_features]
+            self.samples['bias'] = self.bias[:self.sample_num_features]
+
+    def calc_sampled_param_num(self):
+        if self.affine:
+            assert 'weight' in self.samples.keys() and 'bias' in self.samples.keys()
+            weight_numel = self.samples['weight'].numel()
+            bias_numel = self.samples['bias'].numel()
+            return weight_numel + bias_numel
+        else:
+            return 0
+
+    def get_complexity(self, sequence_length):
+        if self.affine:
+            return sequence_length * self.sample_num_features
+        else:
+            return 0

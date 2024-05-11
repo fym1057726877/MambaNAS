@@ -1,8 +1,10 @@
 import math
 import torch
+from einops.layers.torch import Rearrange
 from torch import Tensor
 import torch.nn as nn
 import numpy as np
+import torch.nn.functional as F
 from typing import Optional
 from einops import rearrange, repeat
 from timm.models.layers import DropPath
@@ -315,3 +317,157 @@ class Super_MultiMamba(nn.Module):
             total_flops += getattr(self, f'dt_proj_{i}_sample').get_complexity(sequence_length=sequence_length)
         total_flops += self.super_attn.get_complexity(sequence_length=sequence_length)
         return total_flops
+
+
+class Super_MixMamba(nn.Module):
+    def __init__(
+            self,
+            embed_dim,
+            mamba_ratio=0.5,
+            d_state=16,
+            kernel_size=4,
+            c_kernel_size=8,
+            expand_ratio=2,
+            dt_rank="auto",
+            dt_min=0.001,
+            dt_max=0.1,
+            dt_init="random",
+            dt_scale=1.0,
+            dt_init_floor=1e-4,
+            conv_bias=True,
+            bias=False,
+            layer_idx=None,
+            directions=None,
+            token_size=(14, 14),
+    ):
+        super().__init__()
+        self.mamba_dim = int(embed_dim * mamba_ratio)
+        self.local_dim = embed_dim - self.mamba_dim
+        self.super_multi_mamba = Super_MultiMamba(embed_dim=self.mamba_dim, d_state=d_state, kernel_size=kernel_size,
+                                                  expand_ratio=expand_ratio, dt_rank=dt_rank, dt_min=dt_min,
+                                                  dt_max=dt_max, dt_init=dt_init, dt_scale=dt_scale,
+                                                  dt_init_floor=dt_init_floor, conv_bias=conv_bias, bias=bias,
+                                                  layer_idx=layer_idx, directions=directions, token_size=token_size)
+        self.local_block = Super_LocalBlock(embed_dim=self.local_dim, kernel_size=c_kernel_size)
+
+    def forward(self, hidden_states):
+        """
+        hidden_states: (B, L, D)
+        Returns: same shape as hidden_states
+        """
+        mamba_in = hidden_states[:, :, :self.mamba_dim]
+        local_in = hidden_states[:, :, -self.local_dim:]
+        mamba_out = self.mamba(mamba_in)
+        local_out = self.local_block(local_in)
+
+        out = torch.cat([mamba_out, local_out], dim=2)
+
+        return out
+
+    def set_sample_config(self, sample_embed_dim=None, sample_expand_ratio=None, sample_d_state=None,
+                          sample_kernel_size=None, sample_dt_rank=None, sample_c_kernel_size=None):
+        self.super_multi_mamba.set_sample_config(sample_embed_dim=sample_embed_dim,
+                                                 sample_expand_ratio=sample_expand_ratio,
+                                                 sample_d_state=sample_d_state,
+                                                 sample_kernel_size=sample_kernel_size,
+                                                 sample_dt_rank=sample_dt_rank)
+        self.local_block.set_sample_config(sample_embed_dim=sample_embed_dim, sample_kernel_size=sample_c_kernel_size)
+
+    def calc_sampled_param_num(self):
+        total_param_num = 0
+        total_param_num += self.super_multi_mamba.calc_sampled_param_num()
+        total_param_num += self.local_block.calc_sampled_param_num()
+
+        return total_param_num
+
+    def get_complexity(self, sequence_length):
+        total_flops = 0
+        total_flops += self.super_multi_mamba.get_complexity(sequence_length=sequence_length)
+        total_flops += self.local_block.get_complexity(sequence_length=sequence_length)
+        return total_flops
+
+
+class Super_LocalBlock(nn.Module):
+    def __init__(self, embed_dim, expand_ratio=1., kernel_size=8):
+        super().__init__()
+        self.super_embed_dim = embed_dim
+        self.expand_ratio = expand_ratio
+        self.super_inner_dim = int(self.super_embed_dim * self.expand_ratio)
+        self.super_kernel_size = kernel_size
+
+        self.super_conv1 = Super_Conv1d(channels=self.super_inner_dim * 2, kernel_size=1, mode='none')
+        self.super_depthwise_conv = Super_Conv1d(channels=self.super_inner_dim,
+                                                 kernel_size=self.super_kernel_size, mode='local')
+        self.super_conv2 = Super_Conv1d(channels=self.super_embed_dim, kernel_size=1, mode='none')
+        self.super_bn = Super_BatchNorm1d(self.super_inner_dim)
+
+        self.glu = GLU(dim=1)
+        self.swish = Swish()
+
+        self.sample_embed_dim = None
+        self.sample_kernel_size = None
+        self.sample_inner_dim = None
+
+    def forward(self, x):
+        x = x.transpose(1, 2).contiguous()
+        x = self.super_conv1(x)
+        x = self.glu(x)
+        x = self.super_depthwise_conv(x)
+        x = self.super_bn(x)
+        x = self.swish(x)
+        x = self.super_conv2(x)
+        out = x.transpose(1, 2).contiguous()
+        return out
+
+    def set_sample_config(self, sample_embed_dim=None, sample_kernel_size=None):
+        self.sample_embed_dim = sample_embed_dim
+        self.sample_kernel_size = sample_kernel_size
+        self.sample_inner_dim = int(self.sample_embed_dim * self.expand_ratio)
+        self.super_conv1.set_sample_config(sample_channels_in=self.sample_inner_dim,
+                                           sample_channels=self.sample_inner_dim * 2, sample_kernel_size=1)
+        self.super_conv2.set_sample_config(sample_channels_in=self.sample_inner_dim,
+                                           sample_channels=self.sample_embed_dim, sample_kernel_size=1)
+        self.super_depthwise_conv.set_sample_config(sample_channels=self.sample_inner_dim,
+                                                    sample_kernel_size=self.sample_kernel_size)
+        self.super_bn.set_sample_config(sample_num_features=self.sample_inner_dim)
+
+    def calc_sampled_param_num(self):
+        total_param_num = 0
+        total_param_num += self.super_conv1.calc_sampled_param_num()
+        total_param_num += self.super_conv2.calc_sampled_param_num()
+        total_param_num += self.super_depthwise_conv.calc_sampled_param_num()
+        total_param_num += self.super_bn.calc_sampled_param_num()
+        return total_param_num
+
+    def get_complexity(self, sequence_length):
+        total_flops = 0
+        total_flops += self.super_conv1.get_complexity(sequence_length=sequence_length)
+        total_flops += self.super_conv2.get_complexity(sequence_length=sequence_length)
+        total_flops += self.super_depthwise_conv.get_complexity(sequence_length=sequence_length)
+        total_flops += self.super_bn.get_complexity(sequence_length=sequence_length)
+        return total_flops
+
+
+class Swish(nn.Module):
+    def forward(self, x):
+        return x * x.sigmoid()
+
+
+class GLU(nn.Module):
+    def __init__(self, dim):
+        super().__init__()
+        self.dim = dim
+
+    def forward(self, x):
+        out, gate = x.chunk(2, dim=self.dim)
+        return out * gate.sigmoid()
+
+
+if __name__ == '__main__':
+    device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
+    x = torch.randn((4, 16, 48)).to(device)
+    # model = Super_LocalBlock(embed_dim=48, kernel_size=8).to(device)
+    model = Super_MixMamba(embed_dim=48, mamba_ratio=0.5, c_kernel_size=8)
+    model.set_sample_config(sample_embed_dim=16, sample_c_kernel_size=4)
+    y = model(x)
+    print(y.shape)

@@ -50,8 +50,3 @@ search_space:
   kernel_size:
     - 2
     - 4
-  direction:
-    - ['h']
-    - ['h_flip']
-    - ['v']
-    - ['v_flip']

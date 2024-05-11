@@ -111,9 +111,14 @@ class EvolutionSearcher(object):
 
         return True
 
-    def evaluate(self, sample_config, data_loader):
+    def evaluate(self, data_loader, sample_config=None, mode="sub"):
+        assert mode in ['sub', 'super']
         self.model.eval()
-        self.model.set_sample_config(config=sample_config)
+        if mode == "sub":
+            assert sample_config is not None
+            self.model.set_sample_config(config=sample_config)
+        if mode == "super":
+            self.model.set_super_config()
         correct_num, total_num = np.array([0., 0.]), 0
         for index, (x, label) in enumerate(data_loader):
             x, label = x.to(self.device), label.to(self.device)
@@ -261,13 +266,22 @@ class EvolutionSearcher(object):
         return res
 
     def search(self):
+        self.model.eval()
+
+        test_acc = self.evaluate(data_loader=self.test_loader, mode='super')
+        val_acc = self.evaluate(data_loader=self.val_loader, mode='super')
+
         self.logger.info(
             f'population_num = {self.population_num} '
             f'select_num = {self.select_num} '
             f'mutation_num = {self.mutation_num} '
             f'crossover_num = {self.crossover_num} '
             f'random_num = {self.population_num - self.mutation_num - self.crossover_num} '
-            f'max_epochs = {self.max_epochs}'
+            f'max_epochs = {self.max_epochs} '
+            f"super_top1_test_acc = {test_acc['acc1']:.4f} "
+            f"super_top5_test_acc = {test_acc['acc5']:.4f} "
+            f"super_top1_val_acc = {val_acc['acc1']:.4f} "
+            f"super_top5_val_acc = {val_acc['acc5']:.4f} "
         )
 
         # self.load_checkpoint()

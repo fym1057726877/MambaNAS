@@ -148,8 +148,18 @@ from utils import get_logger, project_path
 # print(candidates)
 # print(len(candidates))
 
-a = [1, 2, 3, 3, 2, 1]
-b = [4, 5, 6, 6, 5, 4]
-c = tuple(random.choice([i, j]) for i, j in zip(a, b))
+def calc_same_padding(kernel_size):
+    pad = kernel_size // 2
+    return pad, pad - (kernel_size + 1) % 2
 
-print(c)
+
+a = torch.rand(4, 6, 8)
+
+conv1d = nn.Conv1d(in_channels=6, out_channels=12, kernel_size=1, groups=6)
+b = conv1d(a)
+print(b.shape)
+
+print(conv1d.weight.shape)
+c = F.conv1d(a, weight=conv1d.weight, bias=conv1d.bias, groups=6)
+
+print(c.shape)

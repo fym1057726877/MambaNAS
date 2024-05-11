@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from einops import rearrange, repeat
+from einops.layers.torch import Rearrange
 
 from models.mamba_local.ops.selective_scan_interface import mamba_inner_fn_no_out_proj
 from models.mamba_local.mamba.multi_scan import MultiScan
@@ -143,3 +144,105 @@ class MultiMamba(nn.Module):
 
         return out
 
+
+class DepthWiseConv1d(nn.Module):
+    def __init__(self, chan_in, chan_out, kernel_size, padding):
+        super().__init__()
+        self.padding = padding
+        self.conv = nn.Conv1d(chan_in, chan_out, kernel_size, groups = chan_in)
+
+    def forward(self, x):
+        x = F.pad(x, self.padding)
+        return self.conv(x)
+
+
+class Swish(nn.Module):
+    def forward(self, x):
+        return x * x.sigmoid()
+
+
+class GLU(nn.Module):
+    def __init__(self, dim):
+        super().__init__()
+        self.dim = dim
+
+    def forward(self, x):
+        out, gate = x.chunk(2, dim=self.dim)
+        return out * gate.sigmoid()
+
+
+def calc_same_padding(kernel_size):
+    pad = kernel_size // 2
+    return pad, pad - (kernel_size + 1) % 2
+
+
+class Local_Block(nn.Module):
+    def __init__(self, d_model, expand_c, kernel_size):
+        super().__init__()
+        inner_dim = d_model * expand_c
+        padding = calc_same_padding(kernel_size)
+        self.net = nn.Sequential(
+            Rearrange('b n c -> b c n'),
+            nn.Conv1d(d_model, inner_dim * 2, kernel_size=1),
+            GLU(dim=1),
+            DepthWiseConv1d(inner_dim, inner_dim, kernel_size=kernel_size, padding=padding),
+            nn.BatchNorm1d(inner_dim),
+            Swish(),
+            nn.Conv1d(inner_dim, d_model, 1),
+            Rearrange('b c n -> b n c')
+        )
+
+    def forward(self, x):
+        return self.net(x)
+
+
+class MixMamba(nn.Module):
+    def __init__(
+            self,
+            d_model,
+            d_mamba_ratio=0.5,
+            c_kernel_size=8,
+            d_state=16,
+            d_conv=4,
+            expand_m=2,
+            expand_c=1,
+            dt_rank="auto",
+            dt_min=0.001,
+            dt_max=0.1,
+            dt_init="random",
+            dt_scale=1.0,
+            dt_init_floor=1e-4,
+            conv_bias=True,
+            bias=False,
+            use_fast_path=True,  # Fused kernel options
+            layer_idx=None,
+            directions=None,
+            token_size=(14, 14),
+    ):
+        super().__init__()
+        self.mamba_dim = int(d_model * d_mamba_ratio)
+        self.local_dim = d_model - self.mamba_dim
+        self.mamba = MultiMamba(d_model=self.mamba_dim, d_state=d_state, d_conv=d_conv, expand=expand_m,
+                                dt_rank=dt_rank, dt_min=dt_min, dt_max=dt_max, dt_init=dt_init, dt_scale=dt_scale,
+                                dt_init_floor=dt_init_floor, conv_bias=conv_bias, bias=bias,
+                                use_fast_path=use_fast_path, layer_idx=layer_idx, directions=directions,
+                                token_size=token_size)
+        self.local_block = Local_Block(d_model=self.local_dim, expand_c=expand_c, kernel_size=c_kernel_size)
+
+    def forward(self, x):
+        mamba_in = x[:, :, :self.mamba_dim]
+        local_in = x[:, :, -self.local_dim:]
+        mamba_out = self.mamba(mamba_in)
+        local_out = self.local_block(local_in)
+
+        out = torch.cat([mamba_out, local_out], dim=2)
+        return out
+
+
+if __name__ == '__main__':
+    device = "cuda"
+    x = torch.randn((2, 256, 128)).to(device)
+    # model = MultiMamba(d_model=64, token_size=(16, 16)).to(device)
+    model = MixMamba(d_model=128, token_size=(16, 16)).to(device)
+    out = model(x)
+    print(out.shape)
