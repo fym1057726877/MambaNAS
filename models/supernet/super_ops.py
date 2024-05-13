@@ -355,18 +355,26 @@ class Super_MultiScan(nn.Module):
         super().__init__()
         self.token_size = token_size
         self.super_in_dim = super_in_dim
+        # if choices is None:
+        #     self.choices = Super_MultiScan.ALL_CHOICES
+        #     self.super_norms = nn.ModuleList(
+        #         [Super_Norm(self.super_in_dim, elementwise_affine=False) for _ in self.choices]
+        #     )
+        #     self.weights = nn.Parameter(1e-3 * torch.randn(len(self.choices), 1, 1, 1))
+        #     self.search = True
+        # else:
+        #     self.choices = choices
+        #     self.super_norms = None
+        #     self.weights = None
+        #     self.search = False
+
         if choices is None:
             self.choices = Super_MultiScan.ALL_CHOICES
-            self.super_norms = nn.ModuleList(
-                [Super_Norm(self.super_in_dim, elementwise_affine=False) for _ in self.choices]
-            )
-            self.weights = nn.Parameter(1e-3 * torch.randn(len(self.choices), 1, 1, 1))
-            self.search = True
-        else:
-            self.choices = choices
-            self.super_norms = None
-            self.weights = None
-            self.search = False
+        self.super_norms = nn.ModuleList(
+            [Super_Norm(self.super_in_dim, elementwise_affine=False) for _ in self.choices]
+        )
+        self.weights = nn.Parameter(1e-3 * torch.randn(len(self.choices), 1, 1, 1))
+        # self.search = True
 
         self.sample_in_dim = None
 
@@ -374,13 +382,17 @@ class Super_MultiScan(nn.Module):
         """
         Input @xs: [[B, L, D], ...]
         """
-        if self.search:
-            weights = self.weights.softmax(0)
-            xs = [norm(x) for norm, x in zip(self.super_norms, xs)]
-            xs = torch.stack(xs) * weights
-            x = xs.sum(0)
-        else:
-            x = torch.stack(xs).sum(0)
+        # if self.search:
+        #     weights = self.weights.softmax(0)
+        #     xs = [norm(x) for norm, x in zip(self.super_norms, xs)]
+        #     xs = torch.stack(xs) * weights
+        #     x = xs.sum(0)
+        # else:
+        #     x = torch.stack(xs).sum(0)
+        weights = self.weights.softmax(0)
+        xs = [norm(x) for norm, x in zip(self.super_norms, xs)]
+        xs = torch.stack(xs) * weights
+        x = xs.sum(0)
         return x
 
     def multi_scan(self, x):

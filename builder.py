@@ -37,7 +37,11 @@ def build_model(model_name, cfg_path, logger=None, pretrained=False,
             directions=cfg['directions'],
             expand_ratio=cfg['expand_ratio'],
             d_state=cfg['d_state'],
-            kernel_size=cfg['kernel_size'],
+            c_kernel_size=cfg['c_kernel_size'],
+            num_head=cfg['num_head'],
+            mamba_ratio=cfg['mamba_ratio'],
+            drop_rate=cfg['drop_rate'],
+            drop_path_rate=cfg['drop_path_rate'],
             **kwargs
         ).to(device)
     else:

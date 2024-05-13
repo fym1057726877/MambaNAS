@@ -17,11 +17,13 @@ vim:
 
 
 super_vim:
-  embed_dim: 256
+  embed_dim: 320
   depth: 6
-  expand_ratio: 3
-  d_state: 64
-  kernel_size: 4
+  expand_ratio: 2.5
+  mamba_ratio: 0.75
+  d_state: 32
+  c_kernel_size: 32
+  num_head: 8
 
   img_size: 128
   patch_size: 32
@@ -34,19 +36,27 @@ super_vim:
 
 search_space:
   embed_dim:
-    - 128
     - 192
     - 256
+    - 320
+  mamba_ratio:
+    - 0.25
+    - 0.5
+    - 0.75
   depth:
+    - 2
     - 4
     - 6
-  expand_ratio:
-    - 1
-    - 2
-    - 3
-  d_state:
-    - 32
-    - 64
-  kernel_size:
-    - 2
+  num_head:
     - 4
+    - 8
+  expand_ratio:
+    - 1.5
+    - 2
+    - 2.5
+  d_state:
+    - 16
+    - 32
+  c_kernel_size:
+    - 16
+    - 32

@@ -24,7 +24,7 @@ def get_args_parser():
     parser.add_argument('--dataset', default="PV600", type=str)
 
     # Model parameters
-    parser.add_argument('--model-name', default='vim', type=str, help='Name of model to train')
+    parser.add_argument('--model-name', default='super_vim', type=str, help='Name of model to train')
     parser.add_argument('--model-cfg',
                         default=model_cfg_path,
                         type=str, help='model configs file')
