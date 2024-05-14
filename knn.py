@@ -17,7 +17,7 @@ def get_args_parser():
     # Model parameters
     parser.add_argument('--model-name', default='super_vim', type=str, help='Name of model to train')
     parser.add_argument('--model-cfg',
-                        default='E:/fym/code/Pythonproject/MambaNAS/models/configs/vim/tju600.yaml',
+                        default='E:/fym/code/Pythonproject/MambaNAS/models/configs/vim/tju_pv600.yaml',
                         type=str, help='model configs file')
     parser.add_argument('--model-save-path',
                         default='E:/fym/code/Pythonproject/MambaNAS/ckpts/super_vim.pth',

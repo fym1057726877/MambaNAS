@@ -15,19 +15,6 @@ from timm.scheduler import scheduler
 from matplotlib import pyplot as plt
 
 
-def sample_configs(choices):
-    config = {}
-    dimensions = ['d_state', 'expand_ratio']
-    depth = random.choice(choices['depth'])
-    for dimension in dimensions:
-        config[dimension] = [random.choice(choices[dimension]) for _ in range(depth)]
-
-    config['embed_dim'] = [random.choice(choices['embed_dim'])] * depth
-
-    config['depth'] = depth
-    return config
-
-
 def accuracy(output, target, topk=(1,)):
     """Computes the accuracy over the k top predictions for the specified values of k"""
     maxk = min(max(topk), output.size()[1])
@@ -61,8 +48,8 @@ def train_one_epoch(
     batch_count = len(train_loader)
 
     if progress:
-        indice = tqdm(enumerate(train_loader),
-                      desc=f"train step {current_epoch}/{total_epochs}", total=len(train_loader))
+        indice = tqdm(enumerate(train_loader), colour='#FFFFFF', total=len(train_loader),
+                      desc=f"train step {current_epoch}/{total_epochs}")
     else:
         indice = enumerate(train_loader)
 
@@ -126,7 +113,7 @@ def evaluate(model, test_loader, val_loader=None, test_progress=False, val_progr
     if val_loader is not None:
         val_correct_num, val_num = np.array([0., 0.]), 0
         if val_progress:
-            indice_val = tqdm(enumerate(val_loader), desc="val step", total=len(val_loader))
+            indice_val = tqdm(enumerate(val_loader), desc="test step", total=len(val_loader))
         else:
             indice_val = enumerate(val_loader)
         for index, (x, label) in indice_val:

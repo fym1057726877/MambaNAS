@@ -10,7 +10,7 @@ def build_model(model_name, cfg_path, logger=None, pretrained=False,
                 pretrained_ckpt='', device='cuda', **kwargs):
     cfg = yaml.safe_load(open(cfg_path))
     if logger is None:
-        logger = logging.getLogger()
+        logger = logging.getLogger("./log.json")
     if model_name.lower() == 'vim':
         cfg = cfg['vim']
         logger.info(f"build model_name:{model_name}, config:{cfg}")
@@ -62,8 +62,9 @@ def build_model(model_name, cfg_path, logger=None, pretrained=False,
     return model
 
 
-def build_dataloader(dataset="PV600"):
-    if dataset == "PV600":
+def build_dataloader(dataset_name="tju_pv600"):
+    assert dataset_name in ["tju_pv600", "hkpu_pv500", "vera_pv220"]
+    if dataset_name == "tju_pv600":
         from datasets.tju_pv600 import getTJUDataLoader
         bacth_size = 30
         image_size = 128
@@ -74,7 +75,7 @@ def build_dataloader(dataset="PV600"):
                                                                  train_imgs_per_class=train_imgs_per_class,
                                                                  test_imgs_per_class=test_imgs_per_class,
                                                                  val_imgs_per_class=val_imgs_per_class)
-    elif dataset == "PV500":
+    elif dataset_name == "hkpu_pv500":
         from datasets.hkpu_pv500 import getPolyUDataLoader
         bacth_size = 25
         image_size = 128
@@ -85,8 +86,19 @@ def build_dataloader(dataset="PV600"):
                                                                    train_imgs_per_class=train_imgs_per_class,
                                                                    test_imgs_per_class=test_imgs_per_class,
                                                                    val_imgs_per_class=val_imgs_per_class)
+    elif dataset_name == "vera_pv220":
+        from datasets.vera_pv220 import getVERADataLoader
+        bacth_size = 11
+        image_size = 128
+        train_imgs_per_class = 5
+        test_imgs_per_class = 2
+        val_imgs_per_class = 3
+        train_loader, test_loader, val_loader = getVERADataLoader(image_size=image_size, batch_size=bacth_size,
+                                                                  train_imgs_per_class=train_imgs_per_class,
+                                                                  test_imgs_per_class=test_imgs_per_class,
+                                                                  val_imgs_per_class=val_imgs_per_class)
     else:
-        raise NotImplementedError(f"dataset {dataset} is not support")
+        raise NotImplementedError(f"dataset {dataset_name} is not support")
     return train_loader, test_loader, val_loader
 
 

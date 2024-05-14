@@ -7,33 +7,23 @@ from torch.nn import CrossEntropyLoss
 from timm.loss import LabelSmoothingCrossEntropy, SoftTargetCrossEntropy
 from timm.scheduler import create_scheduler
 from timm.optim import create_optimizer
-from utils import get_logger, project_path
+from utils import *
 from engine import train_multi_epochs
 from builder import build_model, build_dataloader
 
 
-model_cfg_path = join(project_path, 'models', 'configs', 'vim', 'tju600.yaml')
-model_save_path = join(project_path, 'ckpts')
-
-
 def get_args_parser():
     parser = argparse.ArgumentParser("super_net vim training and evaluation script")
-    parser.add_argument('--num-classes', default=600, type=int)
     parser.add_argument('--total-epochs', default=500, type=int)
     parser.add_argument('--device', default="cuda:0", type=str)
-    parser.add_argument('--dataset', default="PV600", type=str)
+    parser.add_argument('--dataset-name', default="tju_pv600", type=str)
+    parser.add_argument('--num-classes', default=600, type=int)
 
     # Model parameters
     parser.add_argument('--model-name', default='super_vim', type=str, help='Name of model to train')
-    parser.add_argument('--model-cfg',
-                        default=model_cfg_path,
-                        type=str, help='model configs file')
-    parser.add_argument('--model-save-path',
-                        default=model_save_path,
-                        type=str, help='model_save_path')
 
     # * Mixup params
-    parser.add_argument('--mixup', type=float, default=0.2,
+    parser.add_argument('--mixup', type=float, default=1.0,
                         help='mixup alpha, mixup enabled if > 0. (default: 0.8)')
     parser.add_argument('--cutmix', type=float, default=0.0,
                         help='cutmix alpha, cutmix enabled if > 0. (default: 1.0)')
@@ -101,11 +91,10 @@ def main(args):
     logger = get_logger(file_name=log_path)
     logger.info("\n\n")
     logger.info(args)
-    train_loader, test_loader, val_loader = build_dataloader(dataset=args.dataset)
-
-    model_save_path = join(args.model_save_path,  f'{args.model_name}.pth')
-    model = build_model(model_name=args.model_name, cfg_path=args.model_cfg,
-                        logger=logger, device=device)
+    train_loader, test_loader, val_loader = build_dataloader(dataset_name=args.dataset_name)
+    model_cfg_path, model_save_path = get_default_path(args.dataset_name)[-2:]
+    model_save_path = join(model_save_path,  f'{args.model_name}.pth')
+    model = build_model(model_name=args.model_name, cfg_path=model_cfg_path, logger=logger, device=device)
 
     mixup_fn = None
     mixup_active = args.mixup > 0 or args.cutmix > 0. or args.cutmix_minmax is not None

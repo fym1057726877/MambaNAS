@@ -1,8 +1,9 @@
 import argparse
 import os
 import random
+import time
 from os.path import join
-
+from tqdm import tqdm
 import numpy as np
 import torch
 import logging
@@ -81,7 +82,7 @@ from utils import get_logger, project_path
 #
 # train_loader, test_loader, val_loader = build_dataloader(dataset='PV600')
 # model = build_model(model_name='vim',
-#                     cfg_path='E:/fym/code/Pythonproject/MambaNAS/models/configs/vim/tju600.yaml',
+#                     cfg_path='E:/fym/code/Pythonproject/MambaNAS/models/configs/vim/tju_pv600.yaml',
 #                     pretrained=True,
 #                     pretrained_ckpt='E:/fym/code/Pythonproject/MambaNAS/ckpts/vim.pth'
 #                     )
@@ -98,7 +99,7 @@ from utils import get_logger, project_path
 # b = [a[j][i] for j in range(len(a)) for i in range(len(a)) if i != l[j]]
 # print(b)
 
-# model_cfg_path = join(project_path, 'models', 'configs', 'vim', 'tju600.yaml')
+# model_cfg_path = join(project_path, 'models', 'configs', 'vim', 'tju_pv600.yaml')
 # cfg = yaml.safe_load(open(model_cfg_path))['search_space']
 #
 # choices = {'embed_dim': cfg['embed_dim'], 'expand_ratio': cfg['expand_ratio'],
@@ -164,8 +165,9 @@ from utils import get_logger, project_path
 #
 # print(c.shape)
 
-a = torch.rand(4, 6, 8)
-b = [a, a, a]
-c = torch.stack(b)
-print(c.shape)
-print(c.sum(0).shape)
+a = range(1, 10)
+bar = tqdm(a, colour='#FFFFFF', total=10, leave=False)
+c = 0
+for e in range(5):
+    for i in bar:
+        time.sleep(1)

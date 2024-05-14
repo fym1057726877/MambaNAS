@@ -8,11 +8,13 @@ from engine import accuracy
 
 def decode_cand_tuple(cand_tuple):
     depth = cand_tuple[0]
-    expand_ratio = list(cand_tuple[1:depth + 1])
+    expand_ratio = list(cand_tuple[1: depth + 1])
     d_state = list(cand_tuple[depth + 1: 2 * depth + 1])
-    kernel_size = list(cand_tuple[2 * depth + 1: 3 * depth + 1])
+    mamba_ratio = list(cand_tuple[2 * depth + 1: 3 * depth + 1])
+    c_kernel_size = list(cand_tuple[3 * depth + 1: 4 * depth + 1])
+    num_head = list(cand_tuple[4 * depth + 1: 5 * depth + 1])
     embed_dim = cand_tuple[-1]
-    return depth, expand_ratio, d_state, kernel_size, embed_dim
+    return depth, expand_ratio, d_state, mamba_ratio, c_kernel_size, num_head, embed_dim
 
 
 class EvolutionSearcher(object):
@@ -50,6 +52,9 @@ class EvolutionSearcher(object):
 
         self.logger = logger
 
+        self.supernet_val_acc1 = 0.
+        self.supernet_val_acc5 = 0.
+
     def save_checkpoint(self):
         info = {
             'top_accuracies': self.top_accuracies,
@@ -83,51 +88,54 @@ class EvolutionSearcher(object):
         info = self.vis_dict[cand]
         if 'visited' in info:
             return False
-        depth, expand_ratio, d_state, kernel_size, embed_dim = decode_cand_tuple(cand)
+        depth, expand_ratio, d_state, mamba_ratio, c_kernel_size, num_head, embed_dim = decode_cand_tuple(cand)
         sampled_config = {
             'depth': depth,
             'expand_ratio': expand_ratio,
             'd_state': d_state,
-            'kernel_size': kernel_size,
+            'mamba_ratio': mamba_ratio,
+            'c_kernel_size': c_kernel_size,
+            'num_head': num_head,
             'embed_dim': embed_dim
         }
-        n_parameters = self.model.get_sampled_params_numel(sampled_config)
-        info['params'] = n_parameters / 10. ** 6
+        n_parameters = self.model.get_sampled_params_numel(sampled_config) / 10. ** 6
 
-        if info['params'] > self.parameters_limits:
-            self.logger.info('parameters limit exceed')
+        if n_parameters > self.parameters_limits:
+            self.logger.info(f'parameters limit exceed: {n_parameters} > {self.parameters_limits}')
             return False
 
-        if info['params'] < self.min_parameters_limits:
-            self.logger.info('under minimum parameters limit')
+        if n_parameters < self.min_parameters_limits:
+            self.logger.info(f'under minimum parameters limit: {n_parameters} < {self.min_parameters_limits}')
             return False
+
+        info['params'] = f"n_parameters: {n_parameters:.2f}M"
 
         val_stats = self.evaluate(data_loader=self.val_loader, sample_config=sampled_config)
-        test_stats = self.evaluate(data_loader=self.test_loader, sample_config=sampled_config)
+        info['val_acc1'] = val_stats[0]
+        info['val_acc5'] = val_stats[1]
+        if info['val_acc1'] < self.supernet_val_acc1:
+            self.logger.info(f"Cand's Val_Acc1 is less than Supernet: {info['val_acc1']} < {self.supernet_val_acc1}")
+            return False
 
-        info['val_acc'] = val_stats['acc1']
-        info['test_acc'] = test_stats['acc1']
+        # test_stats = self.evaluate(data_loader=self.test_loader, sample_config=sampled_config)
+        # info['test_acc1'] = test_stats[0]
+        # info['test_acc5'] = test_stats[1]
         info['visited'] = True
+
+        self.logger.info(f"Cand's {cand} is legal, Info: {info}")
 
         return True
 
-    def evaluate(self, data_loader, sample_config=None, mode="sub"):
-        assert mode in ['sub', 'super']
+    def evaluate(self, data_loader, sample_config=None):
         self.model.eval()
-        if mode == "sub":
-            assert sample_config is not None
-            self.model.set_sample_config(config=sample_config)
-        if mode == "super":
-            self.model.set_super_config()
         correct_num, total_num = np.array([0., 0.]), 0
         for index, (x, label) in enumerate(data_loader):
             x, label = x.to(self.device), label.to(self.device)
-            pred = self.model(x)
+            pred = self.model(x, sample_config=sample_config)
             correct_num += accuracy(pred, label, topk=(1, 5))
             total_num += label.size(0)
         accs = np.around(correct_num / total_num, decimals=4)
-        info = dict(acc1=accs[0], acc5=accs[1])
-        return info
+        return accs
 
     def update_top_k(self, candidates, *, k, key, reverse=True):
         assert k in self.keep_top_k
@@ -149,13 +157,12 @@ class EvolutionSearcher(object):
 
     def get_random_cand(self):
         cand_tuple = list()
-        dimensions = ['expand_ratio', 'd_state', 'kernel_size']
+        dimensions = ['expand_ratio', 'd_state', 'mamba_ratio', 'c_kernel_size', 'num_head']
         depth = random.choice(self.choices['depth'])
         cand_tuple.append(depth)
         for dimension in dimensions:
             for i in range(depth):
                 cand_tuple.append(random.choice(self.choices[dimension]))
-
         cand_tuple.append(random.choice(self.choices['embed_dim']))
         return tuple(cand_tuple)
 
@@ -178,7 +185,7 @@ class EvolutionSearcher(object):
 
         def random_func():
             cand = list(random.choice(self.keep_top_k[k]))
-            depth, expand_ratio, d_state, kernel_size, embed_dim = decode_cand_tuple(cand)
+            depth, expand_ratio, d_state, mamba_ratio, c_kernel_size, num_head, embed_dim = decode_cand_tuple(cand)
 
             random_s = random.random()
             # depth
@@ -189,12 +196,18 @@ class EvolutionSearcher(object):
                     expand_ratio = (expand_ratio +
                                     [random.choice(self.choices['expand_ratio']) for _ in range(new_depth - depth)])
                     d_state = d_state + [random.choice(self.choices['d_state']) for _ in range(new_depth - depth)]
-                    kernel_size = (kernel_size +
-                                   [random.choice(self.choices['kernel_size']) for _ in range(new_depth - depth)])
+                    c_kernel_size = (c_kernel_size +
+                                     [random.choice(self.choices['c_kernel_size']) for _ in range(new_depth - depth)])
+                    mamba_ratio = (mamba_ratio +
+                                     [random.choice(self.choices['mamba_ratio']) for _ in range(new_depth - depth)])
+                    num_head = (num_head +
+                                     [random.choice(self.choices['num_head']) for _ in range(new_depth - depth)])
                 else:
                     expand_ratio = expand_ratio[:new_depth]
                     d_state = d_state[:new_depth]
-                    kernel_size = kernel_size[:new_depth]
+                    c_kernel_size = c_kernel_size[:new_depth]
+                    mamba_ratio = mamba_ratio[:new_depth]
+                    num_head = num_head[:new_depth]
 
                 depth = new_depth
 
@@ -210,18 +223,30 @@ class EvolutionSearcher(object):
                 if random_s < m_prob:
                     d_state[i] = random.choice(self.choices['d_state'])
 
-            # kernel_size
+            # c_kernel_size
             for i in range(depth):
                 random_s = random.random()
                 if random_s < m_prob:
-                    kernel_size[i] = random.choice(self.choices['kernel_size'])
+                    c_kernel_size[i] = random.choice(self.choices['c_kernel_size'])
+
+            # mamba_ratio
+            for i in range(depth):
+                random_s = random.random()
+                if random_s < m_prob:
+                    mamba_ratio[i] = random.choice(self.choices['mamba_ratio'])
+
+            # num_head
+            for i in range(depth):
+                random_s = random.random()
+                if random_s < m_prob:
+                    num_head[i] = random.choice(self.choices['num_head'])
 
             # embed_dim
             random_s = random.random()
             if random_s < s_prob:
                 embed_dim = random.choice(self.choices['embed_dim'])
 
-            result_cand = [depth] + expand_ratio + d_state + kernel_size + [embed_dim]
+            result_cand = [depth] + expand_ratio + d_state + mamba_ratio + c_kernel_size + num_head + [embed_dim]
 
             return tuple(result_cand)
 
@@ -268,8 +293,9 @@ class EvolutionSearcher(object):
     def search(self):
         self.model.eval()
 
-        test_acc = self.evaluate(data_loader=self.test_loader, mode='super')
-        val_acc = self.evaluate(data_loader=self.val_loader, mode='super')
+        # test_acc = self.evaluate(data_loader=self.test_loader, sample_config=None)
+        val_accs = self.evaluate(data_loader=self.val_loader, sample_config=None)
+        self.supernet_val_acc1, self.supernet_val_acc5 = val_accs
 
         self.logger.info(
             f'population_num = {self.population_num} '
@@ -278,10 +304,10 @@ class EvolutionSearcher(object):
             f'crossover_num = {self.crossover_num} '
             f'random_num = {self.population_num - self.mutation_num - self.crossover_num} '
             f'max_epochs = {self.max_epochs} '
-            f"super_top1_test_acc = {test_acc['acc1']:.4f} "
-            f"super_top5_test_acc = {test_acc['acc5']:.4f} "
-            f"super_top1_val_acc = {val_acc['acc1']:.4f} "
-            f"super_top5_val_acc = {val_acc['acc5']:.4f} "
+            # f"super_top1_test_acc = {test_acc['acc1']:.4f} "
+            # f"super_top5_test_acc = {test_acc['acc5']:.4f} "
+            f"super_top1_val_acc = {self.supernet_val_acc1:.4f} "
+            f"super_top5_val_acc = {self.supernet_val_acc5:.4f} "
         )
 
         # self.load_checkpoint()
@@ -296,18 +322,18 @@ class EvolutionSearcher(object):
                 self.memory[-1].append(cand)
 
             self.update_top_k(
-                self.candidates, k=self.select_num, key=lambda x: self.vis_dict[x]['val_acc'])
+                self.candidates, k=self.select_num, key=lambda x: self.vis_dict[x]['val_acc1'])
             self.update_top_k(
-                self.candidates, k=50, key=lambda x: self.vis_dict[x]['val_acc'])
+                self.candidates, k=50, key=lambda x: self.vis_dict[x]['val_acc1'])
 
-            self.logger.info(f'epoch = {self.epoch} : top {len(self.keep_top_k[self.population_num])} result')
+            self.logger.info(f'epoch = {self.epoch + 1} : top {len(self.keep_top_k[self.population_num])} result')
             tmp_accuracy = []
             for i, cand in enumerate(self.keep_top_k[self.population_num]):
                 self.logger.info(f"No.{i + 1} {cand}  "
-                                 f"Top1_val_acc = {self.vis_dict[cand]['acc1']}, "
-                                 f"Top1_test_acc = {self.vis_dict[cand]['test_acc']}, "
+                                 f"Top1_val_acc = {self.vis_dict[cand]['val_acc1']}, "
+                                 f"Top5_val_acc = {self.vis_dict[cand]['val_acc5']}, "
                                  f"params = {self.vis_dict[cand]['params']}")
-                tmp_accuracy.append(self.vis_dict[cand]['val_acc'])
+                tmp_accuracy.append(self.vis_dict[cand]['val_acc1'])
             self.top_accuracies.append(tmp_accuracy)
 
             mutation = self.get_mutation(self.select_num, self.mutation_num, self.m_prob, self.s_prob)
