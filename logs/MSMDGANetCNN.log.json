@@ -1,0 +1,163 @@
+2024-05-08 14:43:01 INFO: 
+
+
+2024-05-08 14:43:01 INFO: Namespace(num_classes=600, total_epochs=500, device='cuda:0', dataset='PV600', model_name='MSMDGANetCNN', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/configs.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/ckpts/', mixup=0.0, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-08 14:44:18 INFO: 
+
+
+2024-05-08 14:44:18 INFO: Namespace(num_classes=600, total_epochs=500, device='cuda:0', dataset='PV600', model_name='MSMDGANetCNN', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/configs.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/ckpts/', mixup=0.0, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-08 14:46:32 INFO: 
+
+
+2024-05-08 14:46:32 INFO: Namespace(num_classes=600, total_epochs=500, device='cuda:0', dataset='PV600', model_name='MSMDGANetCNN', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/configs.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/ckpts/', mixup=0.0, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-08 14:46:48 INFO: build model_name:MSMDGANetCNN 
+config:{'num_classes': 600}
+2024-05-08 14:46:48 INFO: ...............checking the settings...............
+2024-05-08 14:46:48 INFO: ...............checking finished...............
+2024-05-08 14:46:48 INFO: ...............start train and evaluate process...............
+2024-05-08 14:55:40 INFO: 
+
+
+2024-05-08 14:55:40 INFO: Namespace(num_classes=600, total_epochs=500, device='cuda:0', dataset='PV600', model_name='MSMDGANetCNN', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/configs.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/ckpts/', mixup=0.0, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-08 14:55:57 INFO: build model_name:MSMDGANetCNN 
+config:{'num_classes': 600}
+2024-05-08 14:55:57 INFO: ...............checking the settings...............
+2024-05-08 14:55:57 INFO: ...............checking finished...............
+2024-05-08 14:55:57 INFO: ...............start train and evaluate process...............
+2024-05-08 14:58:15 INFO: 
+
+
+2024-05-08 14:58:15 INFO: Namespace(num_classes=600, total_epochs=500, device='cuda:0', dataset='PV600', model_name='MSMDGANetCNN', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/configs.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/ckpts/', mixup=0.0, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-08 14:58:32 INFO: build model_name:MSMDGANetCNN 
+config:{'num_classes': 600}
+2024-05-08 14:58:32 INFO: ...............checking the settings...............
+2024-05-08 14:58:32 INFO: ...............checking finished...............
+2024-05-08 14:58:32 INFO: ...............start train and evaluate process...............
+2024-05-08 14:58:46 INFO: saving the best model
+2024-05-08 14:58:48 INFO: {'epoch': '1/500', 'Time_cost': '11.57s', 'Loss': '6.39675261', 'Train_Acc': '[0.0027 0.0113]', 'Test_Acc': '[0.0027 0.0137]', 'Val_Acc': '[0.0027 0.0167]', 'Best_Val_Acc[epoch:1]': '0.0027'}
+2024-05-08 14:58:59 INFO: {'epoch': '2/500', 'Time_cost': '9.14s', 'Loss': '6.39721196', 'Train_Acc': '[0.0025 0.0087]', 'Test_Acc': '[0.0017 0.0093]', 'Val_Acc': '[0.0017 0.0127]', 'Best_Val_Acc[epoch:1]': '0.0027'}
+2024-05-08 14:59:10 INFO: {'epoch': '3/500', 'Time_cost': '8.99s', 'Loss': '6.39730013', 'Train_Acc': '[0.0025 0.009 ]', 'Test_Acc': '[0.003 0.009]', 'Val_Acc': '[0.0027 0.0123]', 'Best_Val_Acc[epoch:1]': '0.0027'}
+2024-05-08 14:59:21 INFO: {'epoch': '4/500', 'Time_cost': '9.05s', 'Loss': '6.39797151', 'Train_Acc': '[0.0018 0.0088]', 'Test_Acc': '[0.0017 0.0113]', 'Val_Acc': '[0.0017 0.0113]', 'Best_Val_Acc[epoch:1]': '0.0027'}
+2024-05-08 14:59:32 INFO: {'epoch': '5/500', 'Time_cost': '9.11s', 'Loss': '6.39812288', 'Train_Acc': '[0.0017 0.008 ]', 'Test_Acc': '[0.0017 0.0113]', 'Val_Acc': '[0.0017 0.012 ]', 'Best_Val_Acc[epoch:1]': '0.0027'}
+2024-05-08 14:59:43 INFO: {'epoch': '6/500', 'Time_cost': '9.06s', 'Loss': '6.39811861', 'Train_Acc': '[0.0017 0.0092]', 'Test_Acc': '[0.0017 0.0083]', 'Val_Acc': '[0.0017 0.0083]', 'Best_Val_Acc[epoch:1]': '0.0027'}
+2024-05-08 14:59:54 INFO: {'epoch': '7/500', 'Time_cost': '9.02s', 'Loss': '6.39812293', 'Train_Acc': '[0.0017 0.0083]', 'Test_Acc': '[0.0017 0.0083]', 'Val_Acc': '[0.0017 0.0083]', 'Best_Val_Acc[epoch:1]': '0.0027'}
+2024-05-08 15:00:05 INFO: {'epoch': '8/500', 'Time_cost': '9.14s', 'Loss': '6.39812293', 'Train_Acc': '[0.0017 0.0083]', 'Test_Acc': '[0.0017 0.0083]', 'Val_Acc': '[0.0017 0.0083]', 'Best_Val_Acc[epoch:1]': '0.0027'}
+2024-05-08 15:00:15 INFO: {'epoch': '9/500', 'Time_cost': '8.92s', 'Loss': '6.39812293', 'Train_Acc': '[0.0017 0.0083]', 'Test_Acc': '[0.0017 0.0083]', 'Val_Acc': '[0.0017 0.0083]', 'Best_Val_Acc[epoch:1]': '0.0027'}
+2024-05-08 15:02:24 INFO: 
+
+
+2024-05-08 15:02:24 INFO: Namespace(num_classes=600, total_epochs=500, device='cuda:0', dataset='PV600', model_name='MSMDGANetCNN', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/configs.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/ckpts/', mixup=0.0, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-08 15:02:42 INFO: build model_name:MSMDGANetCNN 
+config:{'num_classes': 600}
+2024-05-08 15:02:42 INFO: ...............checking the settings...............
+2024-05-08 15:02:42 INFO: ...............checking finished...............
+2024-05-08 15:02:42 INFO: ...............start train and evaluate process...............
+2024-05-08 15:02:54 INFO: saving the best model
+2024-05-08 15:02:56 INFO: {'epoch': '1/500', 'Time_cost': '9.57s', 'Loss': '6.39685478', 'Train_Acc': '[0.0032 0.0145]', 'Test_Acc': '[0.0047 0.0143]', 'Val_Acc': '[0.002 0.015]', 'Best_Val_Acc[epoch:1]': '0.0020'}
+2024-05-08 15:03:07 INFO: saving the best model
+2024-05-08 15:03:09 INFO: {'epoch': '2/500', 'Time_cost': '9.10s', 'Loss': '6.39703775', 'Train_Acc': '[0.0018 0.0068]', 'Test_Acc': '[0.0033 0.015 ]', 'Val_Acc': '[0.0053 0.0137]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:03:21 INFO: {'epoch': '3/500', 'Time_cost': '9.01s', 'Loss': '6.39677953', 'Train_Acc': '[0.0015 0.0078]', 'Test_Acc': '[0.0027 0.0107]', 'Val_Acc': '[0.002 0.009]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:03:31 INFO: {'epoch': '4/500', 'Time_cost': '9.17s', 'Loss': '6.39652791', 'Train_Acc': '[0.0025 0.01  ]', 'Test_Acc': '[0.002 0.009]', 'Val_Acc': '[0.0023 0.01  ]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:03:42 INFO: {'epoch': '5/500', 'Time_cost': '9.03s', 'Loss': '6.39662690', 'Train_Acc': '[0.0023 0.0113]', 'Test_Acc': '[0.0043 0.0117]', 'Val_Acc': '[0.0043 0.0127]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:03:53 INFO: {'epoch': '6/500', 'Time_cost': '9.03s', 'Loss': '6.39833122', 'Train_Acc': '[0.0012 0.0092]', 'Test_Acc': '[0.0007 0.0093]', 'Val_Acc': '[0.    0.011]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:04:04 INFO: {'epoch': '7/500', 'Time_cost': '9.09s', 'Loss': '6.39832004', 'Train_Acc': '[0.0015 0.0108]', 'Test_Acc': '[0.    0.008]', 'Val_Acc': '[0.     0.0097]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:04:15 INFO: {'epoch': '8/500', 'Time_cost': '9.01s', 'Loss': '6.39753654', 'Train_Acc': '[0.0023 0.0085]', 'Test_Acc': '[0.0003 0.008 ]', 'Val_Acc': '[0.0007 0.0057]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:04:26 INFO: {'epoch': '9/500', 'Time_cost': '9.02s', 'Loss': '6.39767119', 'Train_Acc': '[0.0022 0.009 ]', 'Test_Acc': '[0.0007 0.0063]', 'Val_Acc': '[0.001 0.006]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:04:36 INFO: {'epoch': '10/500', 'Time_cost': '9.02s', 'Loss': '6.39782186', 'Train_Acc': '[0.002  0.0093]', 'Test_Acc': '[0.     0.0067]', 'Val_Acc': '[0.0007 0.0057]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:04:47 INFO: {'epoch': '11/500', 'Time_cost': '9.02s', 'Loss': '6.39812197', 'Train_Acc': '[0.0017 0.0083]', 'Test_Acc': '[0.0007 0.008 ]', 'Val_Acc': '[0.    0.007]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:04:58 INFO: {'epoch': '12/500', 'Time_cost': '9.05s', 'Loss': '6.39782157', 'Train_Acc': '[0.002  0.0088]', 'Test_Acc': '[0.001  0.0063]', 'Val_Acc': '[0.001  0.0063]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:05:09 INFO: {'epoch': '13/500', 'Time_cost': '9.04s', 'Loss': '6.39782170', 'Train_Acc': '[0.002  0.0083]', 'Test_Acc': '[0.0007 0.0067]', 'Val_Acc': '[0.     0.0073]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:05:20 INFO: {'epoch': '14/500', 'Time_cost': '8.99s', 'Loss': '6.39813925', 'Train_Acc': '[0.0017 0.0078]', 'Test_Acc': '[0.0003 0.0073]', 'Val_Acc': '[0.    0.006]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:05:30 INFO: {'epoch': '15/500', 'Time_cost': '9.00s', 'Loss': '6.39812212', 'Train_Acc': '[0.0017 0.0077]', 'Test_Acc': '[0.    0.007]', 'Val_Acc': '[0.    0.006]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:05:41 INFO: {'epoch': '16/500', 'Time_cost': '9.01s', 'Loss': '6.39797194', 'Train_Acc': '[0.0018 0.0077]', 'Test_Acc': '[0.     0.0063]', 'Val_Acc': '[0.    0.006]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:05:52 INFO: {'epoch': '17/500', 'Time_cost': '9.02s', 'Loss': '6.39812347', 'Train_Acc': '[0.0017 0.0085]', 'Test_Acc': '[0.     0.0073]', 'Val_Acc': '[0.     0.0063]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:06:03 INFO: {'epoch': '18/500', 'Time_cost': '9.02s', 'Loss': '6.39842080', 'Train_Acc': '[0.0013 0.0087]', 'Test_Acc': '[0.     0.0073]', 'Val_Acc': '[0.     0.0063]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:06:14 INFO: {'epoch': '19/500', 'Time_cost': '9.05s', 'Loss': '6.39812008', 'Train_Acc': '[0.0017 0.0085]', 'Test_Acc': '[0.     0.0073]', 'Val_Acc': '[0.     0.0063]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:06:24 INFO: {'epoch': '20/500', 'Time_cost': '9.05s', 'Loss': '6.39796933', 'Train_Acc': '[0.0018 0.0087]', 'Test_Acc': '[0.0007 0.0067]', 'Val_Acc': '[0.0003 0.007 ]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:06:35 INFO: {'epoch': '21/500', 'Time_cost': '9.04s', 'Loss': '6.39811733', 'Train_Acc': '[0.0017 0.0085]', 'Test_Acc': '[0.0013 0.008 ]', 'Val_Acc': '[0.0013 0.0073]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:06:46 INFO: {'epoch': '22/500', 'Time_cost': '9.02s', 'Loss': '6.39812051', 'Train_Acc': '[0.0017 0.008 ]', 'Test_Acc': '[0.     0.0067]', 'Val_Acc': '[0.     0.0063]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:06:57 INFO: {'epoch': '23/500', 'Time_cost': '9.01s', 'Loss': '6.39812237', 'Train_Acc': '[0.0017 0.0082]', 'Test_Acc': '[0.0017 0.0083]', 'Val_Acc': '[0.0017 0.0083]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:07:08 INFO: {'epoch': '24/500', 'Time_cost': '9.00s', 'Loss': '6.39782214', 'Train_Acc': '[0.002  0.0083]', 'Test_Acc': '[0.0017 0.009 ]', 'Val_Acc': '[0.0017 0.0087]', 'Best_Val_Acc[epoch:2]': '0.0053'}
+2024-05-08 15:07:28 INFO: 
+
+
+2024-05-08 15:07:28 INFO: Namespace(num_classes=600, total_epochs=500, device='cuda:0', dataset='PV600', model_name='MSMDGANetCNN', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/configs.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/ckpts/', mixup=0.0, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='SGD', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-08 15:07:45 INFO: build model_name:MSMDGANetCNN 
+config:{'num_classes': 600}
+2024-05-08 15:07:45 INFO: ...............checking the settings...............
+2024-05-08 15:07:45 INFO: ...............checking finished...............
+2024-05-08 15:07:45 INFO: ...............start train and evaluate process...............
+2024-05-08 15:07:55 INFO: saving the best model
+2024-05-08 15:07:57 INFO: {'epoch': '1/500', 'Time_cost': '8.44s', 'Loss': '6.39693212', 'Train_Acc': '[0.001  0.0065]', 'Test_Acc': '[0.0013 0.0097]', 'Val_Acc': '[0.003 0.009]', 'Best_Val_Acc[epoch:1]': '0.0030'}
+2024-05-08 15:08:07 INFO: {'epoch': '2/500', 'Time_cost': '8.01s', 'Loss': '6.39693230', 'Train_Acc': '[0.0018 0.009 ]', 'Test_Acc': '[0.0013 0.0107]', 'Val_Acc': '[0.0027 0.0093]', 'Best_Val_Acc[epoch:1]': '0.0030'}
+2024-05-08 15:08:17 INFO: {'epoch': '3/500', 'Time_cost': '8.03s', 'Loss': '6.39692553', 'Train_Acc': '[0.0015 0.0068]', 'Test_Acc': '[0.0017 0.0097]', 'Val_Acc': '[0.0027 0.0093]', 'Best_Val_Acc[epoch:1]': '0.0030'}
+2024-05-08 15:08:26 INFO: {'epoch': '4/500', 'Time_cost': '8.04s', 'Loss': '6.39692478', 'Train_Acc': '[0.0015 0.0075]', 'Test_Acc': '[0.0017 0.0083]', 'Val_Acc': '[0.003  0.0087]', 'Best_Val_Acc[epoch:1]': '0.0030'}
+2024-05-08 15:08:36 INFO: {'epoch': '5/500', 'Time_cost': '8.03s', 'Loss': '6.39691968', 'Train_Acc': '[0.002  0.0073]', 'Test_Acc': '[0.001  0.0107]', 'Val_Acc': '[0.003  0.0093]', 'Best_Val_Acc[epoch:1]': '0.0030'}
+2024-05-08 15:08:46 INFO: saving the best model
+2024-05-08 15:08:48 INFO: {'epoch': '6/500', 'Time_cost': '8.05s', 'Loss': '6.39691588', 'Train_Acc': '[0.0027 0.0097]', 'Test_Acc': '[0.0017 0.0107]', 'Val_Acc': '[0.004  0.0097]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:08:58 INFO: {'epoch': '7/500', 'Time_cost': '8.05s', 'Loss': '6.39691269', 'Train_Acc': '[0.0018 0.0107]', 'Test_Acc': '[0.0013 0.0093]', 'Val_Acc': '[0.004  0.0097]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:09:08 INFO: {'epoch': '8/500', 'Time_cost': '8.05s', 'Loss': '6.39691220', 'Train_Acc': '[0.0025 0.0115]', 'Test_Acc': '[0.0013 0.0087]', 'Val_Acc': '[0.0037 0.0097]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:09:17 INFO: {'epoch': '9/500', 'Time_cost': '8.05s', 'Loss': '6.39691099', 'Train_Acc': '[0.0027 0.0117]', 'Test_Acc': '[0.001  0.0093]', 'Val_Acc': '[0.004  0.0097]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:09:27 INFO: {'epoch': '10/500', 'Time_cost': '8.03s', 'Loss': '6.39691382', 'Train_Acc': '[0.003  0.0143]', 'Test_Acc': '[0.0007 0.0083]', 'Val_Acc': '[0.003 0.01 ]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:09:37 INFO: {'epoch': '11/500', 'Time_cost': '8.06s', 'Loss': '6.39691355', 'Train_Acc': '[0.0035 0.0132]', 'Test_Acc': '[0.0013 0.0087]', 'Val_Acc': '[0.0027 0.0087]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:09:47 INFO: {'epoch': '12/500', 'Time_cost': '8.05s', 'Loss': '6.39691434', 'Train_Acc': '[0.0037 0.0168]', 'Test_Acc': '[0.001  0.0093]', 'Val_Acc': '[0.003  0.0097]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:09:57 INFO: {'epoch': '13/500', 'Time_cost': '8.05s', 'Loss': '6.39691564', 'Train_Acc': '[0.0057 0.018 ]', 'Test_Acc': '[0.0017 0.009 ]', 'Val_Acc': '[0.003  0.0107]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:10:07 INFO: {'epoch': '14/500', 'Time_cost': '8.07s', 'Loss': '6.39691733', 'Train_Acc': '[0.0052 0.0175]', 'Test_Acc': '[0.0007 0.01  ]', 'Val_Acc': '[0.0027 0.013 ]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:10:16 INFO: {'epoch': '15/500', 'Time_cost': '8.05s', 'Loss': '6.39691807', 'Train_Acc': '[0.005  0.0203]', 'Test_Acc': '[0.0013 0.012 ]', 'Val_Acc': '[0.0027 0.014 ]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:10:26 INFO: {'epoch': '16/500', 'Time_cost': '8.06s', 'Loss': '6.39691936', 'Train_Acc': '[0.0062 0.0197]', 'Test_Acc': '[0.0023 0.0123]', 'Val_Acc': '[0.003  0.0153]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:10:36 INFO: {'epoch': '17/500', 'Time_cost': '8.04s', 'Loss': '6.39692064', 'Train_Acc': '[0.0052 0.019 ]', 'Test_Acc': '[0.0023 0.012 ]', 'Val_Acc': '[0.0037 0.015 ]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:10:46 INFO: {'epoch': '18/500', 'Time_cost': '8.05s', 'Loss': '6.39692152', 'Train_Acc': '[0.0052 0.0188]', 'Test_Acc': '[0.0037 0.0143]', 'Val_Acc': '[0.0033 0.0163]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:10:56 INFO: {'epoch': '19/500', 'Time_cost': '8.06s', 'Loss': '6.39692232', 'Train_Acc': '[0.0045 0.0208]', 'Test_Acc': '[0.0027 0.0153]', 'Val_Acc': '[0.0027 0.0153]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:11:06 INFO: {'epoch': '20/500', 'Time_cost': '8.07s', 'Loss': '6.39692328', 'Train_Acc': '[0.0052 0.0202]', 'Test_Acc': '[0.0043 0.0163]', 'Val_Acc': '[0.0023 0.016 ]', 'Best_Val_Acc[epoch:6]': '0.0040'}
+2024-05-08 15:11:16 INFO: saving the best model
+2024-05-08 15:11:17 INFO: {'epoch': '21/500', 'Time_cost': '8.05s', 'Loss': '6.39692394', 'Train_Acc': '[0.0062 0.0227]', 'Test_Acc': '[0.0043 0.018 ]', 'Val_Acc': '[0.0047 0.0157]', 'Best_Val_Acc[epoch:21]': '0.0047'}
+2024-05-08 15:11:27 INFO: {'epoch': '22/500', 'Time_cost': '8.05s', 'Loss': '6.39692469', 'Train_Acc': '[0.0072 0.0208]', 'Test_Acc': '[0.0047 0.0193]', 'Val_Acc': '[0.0043 0.0153]', 'Best_Val_Acc[epoch:21]': '0.0047'}
+2024-05-08 15:11:37 INFO: {'epoch': '23/500', 'Time_cost': '8.10s', 'Loss': '6.39692531', 'Train_Acc': '[0.0063 0.0177]', 'Test_Acc': '[0.0047 0.0183]', 'Val_Acc': '[0.0033 0.0163]', 'Best_Val_Acc[epoch:21]': '0.0047'}
+2024-05-08 15:11:47 INFO: {'epoch': '24/500', 'Time_cost': '8.08s', 'Loss': '6.39692586', 'Train_Acc': '[0.007  0.0228]', 'Test_Acc': '[0.0053 0.017 ]', 'Val_Acc': '[0.0043 0.016 ]', 'Best_Val_Acc[epoch:21]': '0.0047'}
+2024-05-08 15:11:58 INFO: {'epoch': '25/500', 'Time_cost': '9.10s', 'Loss': '6.39692630', 'Train_Acc': '[0.0057 0.019 ]', 'Test_Acc': '[0.006  0.0177]', 'Val_Acc': '[0.0043 0.016 ]', 'Best_Val_Acc[epoch:21]': '0.0047'}
+2024-05-08 15:12:18 INFO: {'epoch': '26/500', 'Time_cost': '17.91s', 'Loss': '6.39692667', 'Train_Acc': '[0.0057 0.018 ]', 'Test_Acc': '[0.006  0.0173]', 'Val_Acc': '[0.004  0.0167]', 'Best_Val_Acc[epoch:21]': '0.0047'}
+2024-05-08 15:12:38 INFO: {'epoch': '27/500', 'Time_cost': '18.24s', 'Loss': '6.39692715', 'Train_Acc': '[0.005 0.019]', 'Test_Acc': '[0.006  0.0163]', 'Val_Acc': '[0.0047 0.015 ]', 'Best_Val_Acc[epoch:21]': '0.0047'}
+2024-05-08 15:12:57 INFO: {'epoch': '28/500', 'Time_cost': '17.57s', 'Loss': '6.39692736', 'Train_Acc': '[0.0063 0.0197]', 'Test_Acc': '[0.0063 0.016 ]', 'Val_Acc': '[0.0043 0.0147]', 'Best_Val_Acc[epoch:21]': '0.0047'}
+2024-05-08 15:13:09 INFO: saving the best model
+2024-05-08 15:13:11 INFO: {'epoch': '29/500', 'Time_cost': '9.71s', 'Loss': '6.39692768', 'Train_Acc': '[0.0065 0.0182]', 'Test_Acc': '[0.0063 0.0153]', 'Val_Acc': '[0.005  0.0157]', 'Best_Val_Acc[epoch:29]': '0.0050'}
+2024-05-08 15:13:21 INFO: {'epoch': '30/500', 'Time_cost': '8.05s', 'Loss': '6.39692794', 'Train_Acc': '[0.0072 0.0175]', 'Test_Acc': '[0.0067 0.0143]', 'Val_Acc': '[0.0047 0.0137]', 'Best_Val_Acc[epoch:29]': '0.0050'}
+2024-05-08 15:13:31 INFO: saving the best model
+2024-05-08 15:13:33 INFO: {'epoch': '31/500', 'Time_cost': '8.13s', 'Loss': '6.39692810', 'Train_Acc': '[0.0052 0.018 ]', 'Test_Acc': '[0.0063 0.0137]', 'Val_Acc': '[0.0057 0.013 ]', 'Best_Val_Acc[epoch:31]': '0.0057'}
+2024-05-08 15:13:43 INFO: {'epoch': '32/500', 'Time_cost': '8.08s', 'Loss': '6.39692834', 'Train_Acc': '[0.0053 0.0185]', 'Test_Acc': '[0.006 0.014]', 'Val_Acc': '[0.0057 0.0127]', 'Best_Val_Acc[epoch:31]': '0.0057'}
+2024-05-08 15:13:53 INFO: saving the best model
+2024-05-08 15:13:55 INFO: {'epoch': '33/500', 'Time_cost': '8.05s', 'Loss': '6.39692845', 'Train_Acc': '[0.0047 0.016 ]', 'Test_Acc': '[0.006  0.0133]', 'Val_Acc': '[0.0067 0.012 ]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:14:05 INFO: {'epoch': '34/500', 'Time_cost': '8.06s', 'Loss': '6.39692868', 'Train_Acc': '[0.0048 0.0145]', 'Test_Acc': '[0.006 0.013]', 'Val_Acc': '[0.0057 0.0123]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:14:15 INFO: {'epoch': '35/500', 'Time_cost': '8.08s', 'Loss': '6.39692874', 'Train_Acc': '[0.005  0.0155]', 'Test_Acc': '[0.0053 0.013 ]', 'Val_Acc': '[0.0053 0.0123]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:14:25 INFO: {'epoch': '36/500', 'Time_cost': '8.06s', 'Loss': '6.39692884', 'Train_Acc': '[0.0045 0.014 ]', 'Test_Acc': '[0.006  0.0107]', 'Val_Acc': '[0.005  0.0113]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:14:35 INFO: {'epoch': '37/500', 'Time_cost': '8.07s', 'Loss': '6.39692896', 'Train_Acc': '[0.0047 0.014 ]', 'Test_Acc': '[0.0057 0.0107]', 'Val_Acc': '[0.005 0.011]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:14:44 INFO: {'epoch': '38/500', 'Time_cost': '8.08s', 'Loss': '6.39692899', 'Train_Acc': '[0.0043 0.0132]', 'Test_Acc': '[0.0053 0.0103]', 'Val_Acc': '[0.004  0.0103]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:14:54 INFO: {'epoch': '39/500', 'Time_cost': '8.07s', 'Loss': '6.39692913', 'Train_Acc': '[0.0047 0.0135]', 'Test_Acc': '[0.004  0.0113]', 'Val_Acc': '[0.0033 0.011 ]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:15:04 INFO: {'epoch': '40/500', 'Time_cost': '8.06s', 'Loss': '6.39692916', 'Train_Acc': '[0.0043 0.0123]', 'Test_Acc': '[0.004  0.0113]', 'Val_Acc': '[0.003  0.0117]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:15:14 INFO: {'epoch': '41/500', 'Time_cost': '8.05s', 'Loss': '6.39692924', 'Train_Acc': '[0.0048 0.0127]', 'Test_Acc': '[0.0033 0.011 ]', 'Val_Acc': '[0.0023 0.0113]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:15:24 INFO: {'epoch': '42/500', 'Time_cost': '8.07s', 'Loss': '6.39692930', 'Train_Acc': '[0.004  0.0127]', 'Test_Acc': '[0.003  0.0113]', 'Val_Acc': '[0.0017 0.0113]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:15:34 INFO: {'epoch': '43/500', 'Time_cost': '8.07s', 'Loss': '6.39692934', 'Train_Acc': '[0.0035 0.0115]', 'Test_Acc': '[0.002  0.0113]', 'Val_Acc': '[0.0013 0.0113]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:15:54 INFO: {'epoch': '44/500', 'Time_cost': '18.60s', 'Loss': '6.39692935', 'Train_Acc': '[0.0033 0.0123]', 'Test_Acc': '[0.002  0.0103]', 'Val_Acc': '[0.0017 0.0113]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:16:14 INFO: {'epoch': '45/500', 'Time_cost': '18.49s', 'Loss': '6.39692939', 'Train_Acc': '[0.0035 0.0117]', 'Test_Acc': '[0.002  0.0107]', 'Val_Acc': '[0.0013 0.0113]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:16:35 INFO: {'epoch': '46/500', 'Time_cost': '18.50s', 'Loss': '6.39692946', 'Train_Acc': '[0.004  0.0118]', 'Test_Acc': '[0.002  0.0107]', 'Val_Acc': '[0.0013 0.0113]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:16:49 INFO: {'epoch': '47/500', 'Time_cost': '11.97s', 'Loss': '6.39692945', 'Train_Acc': '[0.0028 0.0113]', 'Test_Acc': '[0.002 0.01 ]', 'Val_Acc': '[0.001  0.0113]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:17:02 INFO: {'epoch': '48/500', 'Time_cost': '11.68s', 'Loss': '6.39692947', 'Train_Acc': '[0.003  0.0115]', 'Test_Acc': '[0.002 0.01 ]', 'Val_Acc': '[0.001  0.0113]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:17:23 INFO: {'epoch': '49/500', 'Time_cost': '18.84s', 'Loss': '6.39692950', 'Train_Acc': '[0.0023 0.011 ]', 'Test_Acc': '[0.002 0.01 ]', 'Val_Acc': '[0.001 0.011]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:17:33 INFO: {'epoch': '50/500', 'Time_cost': '8.16s', 'Loss': '6.39692950', 'Train_Acc': '[0.0025 0.0108]', 'Test_Acc': '[0.002 0.01 ]', 'Val_Acc': '[0.001 0.011]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:17:42 INFO: {'epoch': '51/500', 'Time_cost': '8.05s', 'Loss': '6.39692950', 'Train_Acc': '[0.0027 0.0108]', 'Test_Acc': '[0.002 0.01 ]', 'Val_Acc': '[0.001  0.0103]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:17:52 INFO: {'epoch': '52/500', 'Time_cost': '8.04s', 'Loss': '6.39692953', 'Train_Acc': '[0.0025 0.0107]', 'Test_Acc': '[0.002  0.0097]', 'Val_Acc': '[0.001  0.0097]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:18:02 INFO: {'epoch': '53/500', 'Time_cost': '8.05s', 'Loss': '6.39692955', 'Train_Acc': '[0.002  0.0107]', 'Test_Acc': '[0.002  0.0097]', 'Val_Acc': '[0.0007 0.009 ]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:18:12 INFO: {'epoch': '54/500', 'Time_cost': '8.07s', 'Loss': '6.39692956', 'Train_Acc': '[0.0022 0.0108]', 'Test_Acc': '[0.0023 0.0097]', 'Val_Acc': '[0.001 0.009]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:18:22 INFO: {'epoch': '55/500', 'Time_cost': '8.05s', 'Loss': '6.39692955', 'Train_Acc': '[0.0022 0.0102]', 'Test_Acc': '[0.002 0.009]', 'Val_Acc': '[0.001  0.0087]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:18:32 INFO: {'epoch': '56/500', 'Time_cost': '8.05s', 'Loss': '6.39692957', 'Train_Acc': '[0.0023 0.0105]', 'Test_Acc': '[0.0023 0.009 ]', 'Val_Acc': '[0.001  0.0087]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:18:42 INFO: {'epoch': '57/500', 'Time_cost': '8.05s', 'Loss': '6.39692954', 'Train_Acc': '[0.0025 0.0103]', 'Test_Acc': '[0.0027 0.009 ]', 'Val_Acc': '[0.0007 0.0087]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:18:51 INFO: {'epoch': '58/500', 'Time_cost': '8.06s', 'Loss': '6.39692957', 'Train_Acc': '[0.0027 0.0102]', 'Test_Acc': '[0.0023 0.009 ]', 'Val_Acc': '[0.001  0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:19:01 INFO: {'epoch': '59/500', 'Time_cost': '8.06s', 'Loss': '6.39692954', 'Train_Acc': '[0.0032 0.0102]', 'Test_Acc': '[0.0017 0.0087]', 'Val_Acc': '[0.001  0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:19:11 INFO: {'epoch': '60/500', 'Time_cost': '8.08s', 'Loss': '6.39692956', 'Train_Acc': '[0.0025 0.0102]', 'Test_Acc': '[0.0023 0.0083]', 'Val_Acc': '[0.001  0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:19:21 INFO: {'epoch': '61/500', 'Time_cost': '8.08s', 'Loss': '6.39692956', 'Train_Acc': '[0.0028 0.0098]', 'Test_Acc': '[0.0027 0.0087]', 'Val_Acc': '[0.001  0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:19:31 INFO: {'epoch': '62/500', 'Time_cost': '8.07s', 'Loss': '6.39692955', 'Train_Acc': '[0.0025 0.01  ]', 'Test_Acc': '[0.0023 0.0083]', 'Val_Acc': '[0.001  0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:19:41 INFO: {'epoch': '63/500', 'Time_cost': '8.07s', 'Loss': '6.39692960', 'Train_Acc': '[0.0028 0.0093]', 'Test_Acc': '[0.002  0.0083]', 'Val_Acc': '[0.0013 0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:19:51 INFO: {'epoch': '64/500', 'Time_cost': '8.09s', 'Loss': '6.39692958', 'Train_Acc': '[0.0028 0.0095]', 'Test_Acc': '[0.002  0.0083]', 'Val_Acc': '[0.0017 0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:20:00 INFO: {'epoch': '65/500', 'Time_cost': '8.05s', 'Loss': '6.39692958', 'Train_Acc': '[0.0028 0.0092]', 'Test_Acc': '[0.002  0.0083]', 'Val_Acc': '[0.0017 0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:20:10 INFO: {'epoch': '66/500', 'Time_cost': '8.05s', 'Loss': '6.39692956', 'Train_Acc': '[0.0027 0.0097]', 'Test_Acc': '[0.002  0.0083]', 'Val_Acc': '[0.0017 0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:20:20 INFO: {'epoch': '67/500', 'Time_cost': '8.08s', 'Loss': '6.39692956', 'Train_Acc': '[0.003  0.0088]', 'Test_Acc': '[0.0017 0.0083]', 'Val_Acc': '[0.0017 0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}
+2024-05-08 15:20:30 INFO: {'epoch': '68/500', 'Time_cost': '8.07s', 'Loss': '6.39692955', 'Train_Acc': '[0.0032 0.0087]', 'Test_Acc': '[0.0017 0.0083]', 'Val_Acc': '[0.0017 0.0083]', 'Best_Val_Acc[epoch:33]': '0.0067'}

@@ -1,0 +1,17 @@
+2024-05-08 13:50:51 INFO: 
+
+
+2024-05-08 13:50:51 INFO: Namespace(device='cuda:0', dataset='PV600', model_name='LightweightCNN', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/configs.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/ckpts/')
+2024-05-08 13:51:31 INFO: build model_name:LightweightCNN 
+config:{'num_classes': 600}
+2024-05-08 13:51:31 INFO: Loading pretrained checkpoint from E:\fym\code\Pythonproject\MambaNAS/contrast/tju_pv600/ckpts/
+2024-05-08 13:52:40 INFO: 
+
+
+2024-05-08 13:52:40 INFO: Namespace(device='cuda:0', dataset='PV600', model_name='LightweightCNN', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/configs.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS/contrast/tju_pv600/ckpts/')
+2024-05-08 13:52:57 INFO: build model_name:LightweightCNN 
+config:{'num_classes': 600}
+2024-05-08 13:52:57 INFO: Loading pretrained checkpoint from E:\fym\code\Pythonproject\MambaNAS/contrast/tju_pv600/ckpts/LightweightCNN.pth
+2024-05-08 13:53:09 INFO: feature extracting finished, feature shape:(6000, 8192), label:(6000,)
+2024-05-08 13:53:12 INFO: feature extracting finished, feature shape:(3000, 8192), label:(3000,)
+2024-05-08 13:53:16 INFO: knn train finished, test_acc: 0.8647

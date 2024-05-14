@@ -1,0 +1,610 @@
+2024-04-19 10:20:07 INFO: 
+
+
+2024-04-19 10:20:22 INFO: 
+
+
+2024-04-19 10:21:46 INFO: 
+
+
+2024-04-19 10:21:51 INFO: build model_name:super_vim, config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 10:22:26 INFO: 
+
+
+2024-04-19 10:22:30 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 10:23:48 INFO: 
+
+
+2024-04-19 10:23:53 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 10:24:21 INFO: 
+
+
+2024-04-19 10:24:26 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 10:24:26 INFO: ...............checking the settings...............
+2024-04-19 10:24:26 INFO: ...............checking finished...............
+2024-04-19 10:24:26 INFO: ...............start train and evaluate process...............
+2024-04-19 10:24:54 INFO: 
+
+
+2024-04-19 10:24:59 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 10:24:59 INFO: ...............checking the settings...............
+2024-04-19 10:24:59 INFO: ...............checking finished...............
+2024-04-19 10:24:59 INFO: ...............start train and evaluate process...............
+2024-04-19 10:47:10 INFO: 
+
+
+2024-04-19 10:47:15 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 10:47:15 INFO: ...............checking the settings...............
+2024-04-19 10:47:15 INFO: ...............checking finished...............
+2024-04-19 10:47:15 INFO: ...............start train and evaluate process...............
+2024-04-19 11:04:54 INFO: 
+
+
+2024-04-19 11:04:59 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 11:04:59 INFO: ...............checking the settings...............
+2024-04-19 11:04:59 INFO: ...............checking finished...............
+2024-04-19 11:04:59 INFO: ...............start train and evaluate process...............
+2024-04-19 11:10:09 INFO: 
+
+
+2024-04-19 11:10:14 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 11:10:14 INFO: ...............checking the settings...............
+2024-04-19 11:10:14 INFO: ...............checking finished...............
+2024-04-19 11:10:14 INFO: ...............start train and evaluate process...............
+2024-04-19 11:14:29 INFO: 
+
+
+2024-04-19 11:14:34 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 11:14:34 INFO: ...............checking the settings...............
+2024-04-19 11:14:34 INFO: ...............checking finished...............
+2024-04-19 11:14:34 INFO: ...............start train and evaluate process...............
+2024-04-19 11:19:46 INFO: 
+
+
+2024-04-19 11:19:51 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 11:19:51 INFO: ...............checking the settings...............
+2024-04-19 11:19:51 INFO: ...............checking finished...............
+2024-04-19 11:19:51 INFO: ...............start train and evaluate process...............
+2024-04-19 11:20:39 INFO: 
+
+
+2024-04-19 11:20:44 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 11:20:44 INFO: ...............checking the settings...............
+2024-04-19 11:20:44 INFO: ...............checking finished...............
+2024-04-19 11:20:44 INFO: ...............start train and evaluate process...............
+2024-04-19 11:26:25 INFO: 
+
+
+2024-04-19 11:26:30 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 11:26:30 INFO: ...............checking the settings...............
+2024-04-19 11:26:30 INFO: ...............checking finished...............
+2024-04-19 11:26:30 INFO: ...............start train and evaluate process...............
+2024-04-19 13:35:51 INFO: 
+
+
+2024-04-19 13:35:56 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 13:35:56 INFO: ...............checking the settings...............
+2024-04-19 13:35:56 INFO: ...............checking finished...............
+2024-04-19 13:35:56 INFO: ...............start train and evaluate process...............
+2024-04-19 13:40:58 INFO: 
+
+
+2024-04-19 13:41:03 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 13:41:03 INFO: ...............checking the settings...............
+2024-04-19 13:41:03 INFO: ...............checking finished...............
+2024-04-19 13:41:03 INFO: ...............start train and evaluate process...............
+2024-04-19 13:42:58 INFO: 
+
+
+2024-04-19 13:43:03 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 13:43:03 INFO: ...............checking the settings...............
+2024-04-19 13:43:03 INFO: ...............checking finished...............
+2024-04-19 13:43:03 INFO: ...............start train and evaluate process...............
+2024-04-19 13:48:44 INFO: 
+
+
+2024-04-19 13:48:48 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 13:48:49 INFO: ...............checking the settings...............
+2024-04-19 13:48:49 INFO: ...............checking finished...............
+2024-04-19 13:48:49 INFO: ...............start train and evaluate process...............
+2024-04-19 13:51:35 INFO: 
+
+
+2024-04-19 13:51:40 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-19 13:51:40 INFO: ...............checking the settings...............
+2024-04-19 13:51:40 INFO: ...............checking finished...............
+2024-04-19 13:51:40 INFO: ...............start train and evaluate process...............
+2024-04-19 14:01:43 INFO: 
+
+
+2024-04-19 14:01:47 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 8, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 16, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-24 17:11:48 INFO: 
+
+
+2024-04-24 17:11:48 INFO: Namespace(num_classes=600, total_epochs=500, device='cuda:0', dataset='PV600', model_name='super_vim', model_cfg='E:/fym/code/Pythonproject/MambaNAS/models/configs/vim/tju600.yaml', model_save_path='E:/fym/code/Pythonproject/MambaNAS/ckpts/super_vim.pth', mixup=1.0, cutmix=1.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-04-24 17:12:28 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 6, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-04-24 17:12:29 INFO: ...............checking the settings...............
+2024-04-24 17:12:29 INFO: ...............checking finished...............
+2024-04-24 17:12:29 INFO: ...............start train and evaluate process...............
+2024-05-09 18:34:26 INFO: 
+
+
+2024-05-09 18:34:26 INFO: Namespace(num_classes=600, total_epochs=500, device='cuda:0', dataset='PV600', model_name='super_vim', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS\\models\\configs\\vim\\tju600.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS\\ckpts', mixup=1.5, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-09 18:34:42 INFO: build model_name:super_vim 
+config:{'embed_dim': 256, 'depth': 8, 'expand_ratio': 2.5, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-05-09 18:34:42 INFO: ...............checking the settings...............
+2024-05-09 18:34:42 INFO: ...............checking finished...............
+2024-05-09 18:34:42 INFO: ...............start train and evaluate process...............
+2024-05-09 21:50:36 INFO: 
+
+
+2024-05-09 21:50:36 INFO: Namespace(device='cuda:0', dataset='PV600', seed=42, checkpoint_path=None, output_dir=None, max_epochs=20, select_num=10, population_num=50, m_prob=0.2, s_prob=0.4, crossover_num=25, epochs=30, mutation_num=25, param_limits=15, min_param_limits=5, model_name='super_vim', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS\\models\\configs\\vim\\tju600.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS\\ckpts\\models')
+2024-05-09 21:50:54 INFO: build model_name:super_vim 
+config:{'embed_dim': 256, 'depth': 8, 'expand_ratio': 2.5, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-05-09 21:50:54 INFO: Loading pretrained checkpoint from E:\fym\code\Pythonproject\MambaNAS\ckpts\modelssuper_vim.pth
+2024-05-09 21:52:25 INFO: 
+
+
+2024-05-09 21:52:25 INFO: Namespace(device='cuda:0', dataset='PV600', seed=42, checkpoint_path=None, output_dir=None, max_epochs=20, select_num=10, population_num=50, m_prob=0.2, s_prob=0.4, crossover_num=25, epochs=30, mutation_num=25, param_limits=15, min_param_limits=5, model_name='super_vim', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS\\models\\configs\\vim\\tju600.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS\\ckpts\\models')
+2024-05-09 21:53:00 INFO: 
+
+
+2024-05-09 21:53:00 INFO: Namespace(device='cuda:0', dataset='PV600', seed=42, checkpoint_path=None, output_dir=None, max_epochs=20, select_num=10, population_num=50, m_prob=0.2, s_prob=0.4, crossover_num=25, epochs=30, mutation_num=25, param_limits=15, min_param_limits=5, model_name='super_vim', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS\\models\\configs\\vim\\tju600.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS\\ckpts\\models')
+2024-05-09 21:53:17 INFO: build model_name:super_vim 
+config:{'embed_dim': 256, 'depth': 8, 'expand_ratio': 2.5, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-05-09 21:53:17 INFO: Loading pretrained checkpoint from E:\fym\code\Pythonproject\MambaNAS\ckpts\models\super_vim.pth
+2024-05-09 21:54:36 INFO: 
+
+
+2024-05-09 21:54:36 INFO: Namespace(device='cuda:0', dataset='PV600', seed=42, checkpoint_path=None, output_dir=None, max_epochs=20, select_num=10, population_num=50, m_prob=0.2, s_prob=0.4, crossover_num=25, epochs=30, mutation_num=25, param_limits=15, min_param_limits=5, model_name='super_vim', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS\\models\\configs\\vim\\tju600.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS\\ckpts\\models')
+2024-05-09 21:54:53 INFO: build model_name:super_vim 
+config:{'embed_dim': 256, 'depth': 6, 'expand_ratio': 3, 'd_state': 64, 'kernel_size': 4, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-05-09 21:54:53 INFO: Loading pretrained checkpoint from E:\fym\code\Pythonproject\MambaNAS\ckpts\models\super_vim.pth
+2024-05-09 21:54:53 WARNING: Warning:Unexpected keys in source state dict: ['layers.0.super_mamba.conv1d_0_sample.weight', 'layers.0.super_mamba.conv1d_0_sample.bias', 'layers.0.super_mamba.x_proj_0_sample.weight', 'layers.0.super_mamba.dt_proj_0_sample.weight', 'layers.0.super_mamba.dt_proj_0_sample.bias', 'layers.0.super_mamba.conv1d_1_sample.weight', 'layers.0.super_mamba.conv1d_1_sample.bias', 'layers.0.super_mamba.x_proj_1_sample.weight', 'layers.0.super_mamba.dt_proj_1_sample.weight', 'layers.0.super_mamba.dt_proj_1_sample.bias', 'layers.0.super_mamba.conv1d_2_sample.weight', 'layers.0.super_mamba.conv1d_2_sample.bias', 'layers.0.super_mamba.x_proj_2_sample.weight', 'layers.0.super_mamba.dt_proj_2_sample.weight', 'layers.0.super_mamba.dt_proj_2_sample.bias', 'layers.0.super_mamba.conv1d_3_sample.weight', 'layers.0.super_mamba.conv1d_3_sample.bias', 'layers.0.super_mamba.x_proj_3_sample.weight', 'layers.0.super_mamba.dt_proj_3_sample.weight', 'layers.0.super_mamba.dt_proj_3_sample.bias', 'layers.1.super_mamba.conv1d_0_sample.weight', 'layers.1.super_mamba.conv1d_0_sample.bias', 'layers.1.super_mamba.x_proj_0_sample.weight', 'layers.1.super_mamba.dt_proj_0_sample.weight', 'layers.1.super_mamba.dt_proj_0_sample.bias', 'layers.1.super_mamba.conv1d_1_sample.weight', 'layers.1.super_mamba.conv1d_1_sample.bias', 'layers.1.super_mamba.x_proj_1_sample.weight', 'layers.1.super_mamba.dt_proj_1_sample.weight', 'layers.1.super_mamba.dt_proj_1_sample.bias', 'layers.1.super_mamba.conv1d_2_sample.weight', 'layers.1.super_mamba.conv1d_2_sample.bias', 'layers.1.super_mamba.x_proj_2_sample.weight', 'layers.1.super_mamba.dt_proj_2_sample.weight', 'layers.1.super_mamba.dt_proj_2_sample.bias', 'layers.1.super_mamba.conv1d_3_sample.weight', 'layers.1.super_mamba.conv1d_3_sample.bias', 'layers.1.super_mamba.x_proj_3_sample.weight', 'layers.1.super_mamba.dt_proj_3_sample.weight', 'layers.1.super_mamba.dt_proj_3_sample.bias', 'layers.2.super_mamba.conv1d_0_sample.weight', 'layers.2.super_mamba.conv1d_0_sample.bias', 'layers.2.super_mamba.x_proj_0_sample.weight', 'layers.2.super_mamba.dt_proj_0_sample.weight', 'layers.2.super_mamba.dt_proj_0_sample.bias', 'layers.2.super_mamba.conv1d_1_sample.weight', 'layers.2.super_mamba.conv1d_1_sample.bias', 'layers.2.super_mamba.x_proj_1_sample.weight', 'layers.2.super_mamba.dt_proj_1_sample.weight', 'layers.2.super_mamba.dt_proj_1_sample.bias', 'layers.2.super_mamba.conv1d_2_sample.weight', 'layers.2.super_mamba.conv1d_2_sample.bias', 'layers.2.super_mamba.x_proj_2_sample.weight', 'layers.2.super_mamba.dt_proj_2_sample.weight', 'layers.2.super_mamba.dt_proj_2_sample.bias', 'layers.2.super_mamba.conv1d_3_sample.weight', 'layers.2.super_mamba.conv1d_3_sample.bias', 'layers.2.super_mamba.x_proj_3_sample.weight', 'layers.2.super_mamba.dt_proj_3_sample.weight', 'layers.2.super_mamba.dt_proj_3_sample.bias', 'layers.3.super_mamba.conv1d_0_sample.weight', 'layers.3.super_mamba.conv1d_0_sample.bias', 'layers.3.super_mamba.x_proj_0_sample.weight', 'layers.3.super_mamba.dt_proj_0_sample.weight', 'layers.3.super_mamba.dt_proj_0_sample.bias', 'layers.3.super_mamba.conv1d_1_sample.weight', 'layers.3.super_mamba.conv1d_1_sample.bias', 'layers.3.super_mamba.x_proj_1_sample.weight', 'layers.3.super_mamba.dt_proj_1_sample.weight', 'layers.3.super_mamba.dt_proj_1_sample.bias', 'layers.3.super_mamba.conv1d_2_sample.weight', 'layers.3.super_mamba.conv1d_2_sample.bias', 'layers.3.super_mamba.x_proj_2_sample.weight', 'layers.3.super_mamba.dt_proj_2_sample.weight', 'layers.3.super_mamba.dt_proj_2_sample.bias', 'layers.3.super_mamba.conv1d_3_sample.weight', 'layers.3.super_mamba.conv1d_3_sample.bias', 'layers.3.super_mamba.x_proj_3_sample.weight', 'layers.3.super_mamba.dt_proj_3_sample.weight', 'layers.3.super_mamba.dt_proj_3_sample.bias', 'layers.4.super_mamba.conv1d_0_sample.weight', 'layers.4.super_mamba.conv1d_0_sample.bias', 'layers.4.super_mamba.x_proj_0_sample.weight', 'layers.4.super_mamba.dt_proj_0_sample.weight', 'layers.4.super_mamba.dt_proj_0_sample.bias', 'layers.4.super_mamba.conv1d_1_sample.weight', 'layers.4.super_mamba.conv1d_1_sample.bias', 'layers.4.super_mamba.x_proj_1_sample.weight', 'layers.4.super_mamba.dt_proj_1_sample.weight', 'layers.4.super_mamba.dt_proj_1_sample.bias', 'layers.4.super_mamba.conv1d_2_sample.weight', 'layers.4.super_mamba.conv1d_2_sample.bias', 'layers.4.super_mamba.x_proj_2_sample.weight', 'layers.4.super_mamba.dt_proj_2_sample.weight', 'layers.4.super_mamba.dt_proj_2_sample.bias', 'layers.4.super_mamba.conv1d_3_sample.weight', 'layers.4.super_mamba.conv1d_3_sample.bias', 'layers.4.super_mamba.x_proj_3_sample.weight', 'layers.4.super_mamba.dt_proj_3_sample.weight', 'layers.4.super_mamba.dt_proj_3_sample.bias', 'layers.5.super_mamba.conv1d_0_sample.weight', 'layers.5.super_mamba.conv1d_0_sample.bias', 'layers.5.super_mamba.x_proj_0_sample.weight', 'layers.5.super_mamba.dt_proj_0_sample.weight', 'layers.5.super_mamba.dt_proj_0_sample.bias', 'layers.5.super_mamba.conv1d_1_sample.weight', 'layers.5.super_mamba.conv1d_1_sample.bias', 'layers.5.super_mamba.x_proj_1_sample.weight', 'layers.5.super_mamba.dt_proj_1_sample.weight', 'layers.5.super_mamba.dt_proj_1_sample.bias', 'layers.5.super_mamba.conv1d_2_sample.weight', 'layers.5.super_mamba.conv1d_2_sample.bias', 'layers.5.super_mamba.x_proj_2_sample.weight', 'layers.5.super_mamba.dt_proj_2_sample.weight', 'layers.5.super_mamba.dt_proj_2_sample.bias', 'layers.5.super_mamba.conv1d_3_sample.weight', 'layers.5.super_mamba.conv1d_3_sample.bias', 'layers.5.super_mamba.x_proj_3_sample.weight', 'layers.5.super_mamba.dt_proj_3_sample.weight', 'layers.5.super_mamba.dt_proj_3_sample.bias']
+2024-05-09 21:54:53 INFO: {'embed_dim': [128, 192, 256], 'depth': [4, 6, 8], 'expand_ratio': [1, 2, 3], 'd_state': [16, 32], 'kernel_size': [2, 4], 'direction': [['h'], ['h_flip'], ['v'], ['v_flip']]}
+2024-05-09 21:54:53 INFO: population_num = 50 select_num = 10 mutation_num = 25 crossover_num = 25 random_num = 0 max_epochs = 20
+2024-05-09 21:54:53 INFO: random select ........
+2024-05-13 16:47:04 INFO: 
+
+
+2024-05-13 16:47:04 INFO: Namespace(num_classes=600, total_epochs=500, device='cuda:0', dataset='PV600', model_name='super_vim', model_cfg='E:\\fym\\code\\Pythonproject\\MambaNAS\\models\\configs\\vim\\tju600.yaml', model_save_path='E:\\fym\\code\\Pythonproject\\MambaNAS\\ckpts', mixup=0.2, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-13 16:47:43 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 6, 'expand_ratio': 2.5, 'mamba_ratio': 0.75, 'd_state': 32, 'c_kernel_size': 32, 'num_head': 8, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-05-13 16:47:43 INFO: ...............checking the settings...............
+2024-05-13 16:47:43 INFO: ...............checking finished...............
+2024-05-13 16:47:43 INFO: ...............start train and evaluate process...............
+2024-05-13 16:52:33 INFO: saving the best model
+2024-05-13 16:52:33 INFO: {'epoch': '1/500', 'Time_cost': '269.29s', 'Loss': '6.48678816', 'Train_Acc': '[0.0023 0.0087]', 'Test_Acc': '[0.002  0.0117]', 'Val_Acc': '[0.0047 0.0163]', 'Best_Val_Acc[epoch:1]': '0.0047'}
+2024-05-13 16:57:22 INFO: saving the best model
+2024-05-13 16:57:22 INFO: {'epoch': '2/500', 'Time_cost': '268.70s', 'Loss': '6.32946153', 'Train_Acc': '[0.005  0.0155]', 'Test_Acc': '[0.005  0.0233]', 'Val_Acc': '[0.0077 0.0317]', 'Best_Val_Acc[epoch:2]': '0.0077'}
+2024-05-13 17:02:10 INFO: saving the best model
+2024-05-13 17:02:10 INFO: {'epoch': '3/500', 'Time_cost': '268.16s', 'Loss': '5.88934003', 'Train_Acc': '[0.0115 0.0468]', 'Test_Acc': '[0.037  0.1137]', 'Val_Acc': '[0.038  0.1137]', 'Best_Val_Acc[epoch:3]': '0.0380'}
+2024-05-13 17:06:59 INFO: saving the best model
+2024-05-13 17:06:59 INFO: {'epoch': '4/500', 'Time_cost': '268.28s', 'Loss': '4.71829560', 'Train_Acc': '[0.072  0.1823]', 'Test_Acc': '[0.121  0.2927]', 'Val_Acc': '[0.1167 0.3007]', 'Best_Val_Acc[epoch:4]': '0.1167'}
+2024-05-13 17:11:46 INFO: saving the best model
+2024-05-13 17:11:46 INFO: {'epoch': '5/500', 'Time_cost': '267.58s', 'Loss': '3.59387242', 'Train_Acc': '[0.2342 0.3802]', 'Test_Acc': '[0.276  0.5013]', 'Val_Acc': '[0.2773 0.5107]', 'Best_Val_Acc[epoch:5]': '0.2773'}
+2024-05-13 17:16:33 INFO: saving the best model
+2024-05-13 17:16:33 INFO: {'epoch': '6/500', 'Time_cost': '267.31s', 'Loss': '2.60969218', 'Train_Acc': '[0.3508 0.4512]', 'Test_Acc': '[0.4    0.6193]', 'Val_Acc': '[0.4037 0.633 ]', 'Best_Val_Acc[epoch:6]': '0.4037'}
+2024-05-13 17:21:21 INFO: saving the best model
+2024-05-13 17:21:21 INFO: {'epoch': '7/500', 'Time_cost': '267.68s', 'Loss': '2.38099918', 'Train_Acc': '[0.3968 0.468 ]', 'Test_Acc': '[0.4197 0.6387]', 'Val_Acc': '[0.431  0.6603]', 'Best_Val_Acc[epoch:7]': '0.4310'}
+2024-05-13 17:26:08 INFO: saving the best model
+2024-05-13 17:26:08 INFO: {'epoch': '8/500', 'Time_cost': '267.36s', 'Loss': '2.17920326', 'Train_Acc': '[0.3855 0.4378]', 'Test_Acc': '[0.4597 0.6727]', 'Val_Acc': '[0.4697 0.689 ]', 'Best_Val_Acc[epoch:8]': '0.4697'}
+2024-05-13 17:30:55 INFO: saving the best model
+2024-05-13 17:30:55 INFO: {'epoch': '9/500', 'Time_cost': '267.41s', 'Loss': '2.00914506', 'Train_Acc': '[0.4448 0.4847]', 'Test_Acc': '[0.5217 0.725 ]', 'Val_Acc': '[0.5393 0.7437]', 'Best_Val_Acc[epoch:9]': '0.5393'}
+2024-05-13 17:35:42 INFO: saving the best model
+2024-05-13 17:35:42 INFO: {'epoch': '10/500', 'Time_cost': '267.27s', 'Loss': '1.93175948', 'Train_Acc': '[0.465  0.5032]', 'Test_Acc': '[0.5387 0.722 ]', 'Val_Acc': '[0.5457 0.747 ]', 'Best_Val_Acc[epoch:10]': '0.5457'}
+2024-05-13 17:40:29 INFO: saving the best model
+2024-05-13 17:40:29 INFO: {'epoch': '11/500', 'Time_cost': '267.26s', 'Loss': '2.08870170', 'Train_Acc': '[0.4737 0.5225]', 'Test_Acc': '[0.537  0.7343]', 'Val_Acc': '[0.558  0.7553]', 'Best_Val_Acc[epoch:11]': '0.5580'}
+2024-05-13 17:45:18 INFO: saving the best model
+2024-05-13 17:45:18 INFO: {'epoch': '12/500', 'Time_cost': '267.42s', 'Loss': '1.99006119', 'Train_Acc': '[0.533  0.5773]', 'Test_Acc': '[0.5627 0.748 ]', 'Val_Acc': '[0.5623 0.774 ]', 'Best_Val_Acc[epoch:12]': '0.5623'}
+2024-05-13 17:50:05 INFO: saving the best model
+2024-05-13 17:50:05 INFO: {'epoch': '13/500', 'Time_cost': '267.20s', 'Loss': '1.97737376', 'Train_Acc': '[0.4342 0.4803]', 'Test_Acc': '[0.5757 0.7583]', 'Val_Acc': '[0.576  0.7657]', 'Best_Val_Acc[epoch:13]': '0.5760'}
+2024-05-13 17:54:51 INFO: saving the best model
+2024-05-13 17:54:51 INFO: {'epoch': '14/500', 'Time_cost': '267.20s', 'Loss': '1.99225827', 'Train_Acc': '[0.5223 0.5683]', 'Test_Acc': '[0.5827 0.7593]', 'Val_Acc': '[0.599  0.7683]', 'Best_Val_Acc[epoch:14]': '0.5990'}
+2024-05-13 17:59:38 INFO: saving the best model
+2024-05-13 17:59:38 INFO: {'epoch': '15/500', 'Time_cost': '267.10s', 'Loss': '1.93458262', 'Train_Acc': '[0.472  0.5175]', 'Test_Acc': '[0.588  0.7687]', 'Val_Acc': '[0.606  0.7787]', 'Best_Val_Acc[epoch:15]': '0.6060'}
+2024-05-13 18:04:25 INFO: saving the best model
+2024-05-13 18:04:25 INFO: {'epoch': '16/500', 'Time_cost': '267.15s', 'Loss': '1.94377078', 'Train_Acc': '[0.4993 0.5432]', 'Test_Acc': '[0.6123 0.7907]', 'Val_Acc': '[0.628  0.7947]', 'Best_Val_Acc[epoch:16]': '0.6280'}
+2024-05-13 18:09:12 INFO: saving the best model
+2024-05-13 18:09:12 INFO: {'epoch': '17/500', 'Time_cost': '267.25s', 'Loss': '1.79144002', 'Train_Acc': '[0.452  0.4957]', 'Test_Acc': '[0.6463 0.792 ]', 'Val_Acc': '[0.6483 0.7973]', 'Best_Val_Acc[epoch:17]': '0.6483'}
+2024-05-13 18:13:59 INFO: saving the best model
+2024-05-13 18:13:59 INFO: {'epoch': '18/500', 'Time_cost': '267.11s', 'Loss': '1.79473218', 'Train_Acc': '[0.5032 0.5435]', 'Test_Acc': '[0.6403 0.807 ]', 'Val_Acc': '[0.654  0.8043]', 'Best_Val_Acc[epoch:18]': '0.6540'}
+2024-05-13 18:18:45 INFO: saving the best model
+2024-05-13 18:18:45 INFO: {'epoch': '19/500', 'Time_cost': '267.24s', 'Loss': '1.80713766', 'Train_Acc': '[0.5293 0.568 ]', 'Test_Acc': '[0.654  0.8083]', 'Val_Acc': '[0.6613 0.819 ]', 'Best_Val_Acc[epoch:19]': '0.6613'}
+2024-05-13 18:23:32 INFO: saving the best model
+2024-05-13 18:23:32 INFO: {'epoch': '20/500', 'Time_cost': '267.20s', 'Loss': '1.74007261', 'Train_Acc': '[0.4905 0.528 ]', 'Test_Acc': '[0.672  0.8133]', 'Val_Acc': '[0.6813 0.8157]', 'Best_Val_Acc[epoch:20]': '0.6813'}
+2024-05-13 18:28:19 INFO: {'epoch': '21/500', 'Time_cost': '267.19s', 'Loss': '1.84639155', 'Train_Acc': '[0.4405 0.494 ]', 'Test_Acc': '[0.66  0.813]', 'Val_Acc': '[0.6667 0.8247]', 'Best_Val_Acc[epoch:20]': '0.6813'}
+2024-05-13 18:33:06 INFO: saving the best model
+2024-05-13 18:33:06 INFO: {'epoch': '22/500', 'Time_cost': '267.23s', 'Loss': '1.74633931', 'Train_Acc': '[0.4912 0.5417]', 'Test_Acc': '[0.6967 0.8403]', 'Val_Acc': '[0.702  0.8487]', 'Best_Val_Acc[epoch:22]': '0.7020'}
+2024-05-13 18:37:53 INFO: {'epoch': '23/500', 'Time_cost': '267.57s', 'Loss': '1.82474748', 'Train_Acc': '[0.4543 0.4977]', 'Test_Acc': '[0.679  0.8333]', 'Val_Acc': '[0.6863 0.8337]', 'Best_Val_Acc[epoch:22]': '0.7020'}
+2024-05-13 18:42:40 INFO: saving the best model
+2024-05-13 18:42:40 INFO: {'epoch': '24/500', 'Time_cost': '267.44s', 'Loss': '1.84192016', 'Train_Acc': '[0.6163 0.6665]', 'Test_Acc': '[0.6997 0.842 ]', 'Val_Acc': '[0.7057 0.8513]', 'Best_Val_Acc[epoch:24]': '0.7057'}
+2024-05-13 18:47:27 INFO: {'epoch': '25/500', 'Time_cost': '267.35s', 'Loss': '1.65550722', 'Train_Acc': '[0.5068 0.5452]', 'Test_Acc': '[0.6867 0.8373]', 'Val_Acc': '[0.6977 0.85  ]', 'Best_Val_Acc[epoch:24]': '0.7057'}
+2024-05-13 18:52:15 INFO: saving the best model
+2024-05-13 18:52:15 INFO: {'epoch': '26/500', 'Time_cost': '267.43s', 'Loss': '1.63504604', 'Train_Acc': '[0.4815 0.5227]', 'Test_Acc': '[0.7147 0.8513]', 'Val_Acc': '[0.7183 0.8577]', 'Best_Val_Acc[epoch:26]': '0.7183'}
+2024-05-13 18:57:02 INFO: saving the best model
+2024-05-13 18:57:02 INFO: {'epoch': '27/500', 'Time_cost': '267.68s', 'Loss': '1.69743908', 'Train_Acc': '[0.4762 0.5138]', 'Test_Acc': '[0.7327 0.8627]', 'Val_Acc': '[0.723  0.8697]', 'Best_Val_Acc[epoch:27]': '0.7230'}
+2024-05-13 19:01:49 INFO: saving the best model
+2024-05-13 19:01:49 INFO: {'epoch': '28/500', 'Time_cost': '267.43s', 'Loss': '1.67249280', 'Train_Acc': '[0.5425 0.5782]', 'Test_Acc': '[0.7293 0.86  ]', 'Val_Acc': '[0.7337 0.8673]', 'Best_Val_Acc[epoch:28]': '0.7337'}
+2024-05-13 19:06:37 INFO: {'epoch': '29/500', 'Time_cost': '267.71s', 'Loss': '1.74815468', 'Train_Acc': '[0.536  0.5732]', 'Test_Acc': '[0.7237 0.8617]', 'Val_Acc': '[0.7277 0.8687]', 'Best_Val_Acc[epoch:28]': '0.7337'}
+2024-05-13 19:11:24 INFO: saving the best model
+2024-05-13 19:11:24 INFO: {'epoch': '30/500', 'Time_cost': '267.40s', 'Loss': '1.70754896', 'Train_Acc': '[0.4413 0.4825]', 'Test_Acc': '[0.7397 0.87  ]', 'Val_Acc': '[0.7457 0.87  ]', 'Best_Val_Acc[epoch:30]': '0.7457'}
+2024-05-13 19:16:11 INFO: {'epoch': '31/500', 'Time_cost': '267.34s', 'Loss': '1.68580244', 'Train_Acc': '[0.4563 0.4982]', 'Test_Acc': '[0.7367 0.8603]', 'Val_Acc': '[0.731 0.868]', 'Best_Val_Acc[epoch:30]': '0.7457'}
+2024-05-13 19:20:58 INFO: {'epoch': '32/500', 'Time_cost': '267.32s', 'Loss': '1.70161131', 'Train_Acc': '[0.4325 0.487 ]', 'Test_Acc': '[0.7273 0.861 ]', 'Val_Acc': '[0.733  0.8577]', 'Best_Val_Acc[epoch:30]': '0.7457'}
+2024-05-13 19:25:45 INFO: saving the best model
+2024-05-13 19:25:45 INFO: {'epoch': '33/500', 'Time_cost': '267.22s', 'Loss': '1.69800808', 'Train_Acc': '[0.4415 0.4858]', 'Test_Acc': '[0.7467 0.8707]', 'Val_Acc': '[0.7593 0.876 ]', 'Best_Val_Acc[epoch:33]': '0.7593'}
+2024-05-13 19:30:32 INFO: saving the best model
+2024-05-13 19:30:32 INFO: {'epoch': '34/500', 'Time_cost': '267.31s', 'Loss': '1.69825191', 'Train_Acc': '[0.4727 0.5218]', 'Test_Acc': '[0.7563 0.878 ]', 'Val_Acc': '[0.765 0.88 ]', 'Best_Val_Acc[epoch:34]': '0.7650'}
+2024-05-13 19:35:19 INFO: {'epoch': '35/500', 'Time_cost': '267.39s', 'Loss': '1.72634264', 'Train_Acc': '[0.494  0.5365]', 'Test_Acc': '[0.7563 0.879 ]', 'Val_Acc': '[0.7623 0.885 ]', 'Best_Val_Acc[epoch:34]': '0.7650'}
+2024-05-13 19:40:06 INFO: {'epoch': '36/500', 'Time_cost': '267.34s', 'Loss': '1.78208879', 'Train_Acc': '[0.4827 0.5365]', 'Test_Acc': '[0.7497 0.8847]', 'Val_Acc': '[0.756  0.8863]', 'Best_Val_Acc[epoch:34]': '0.7650'}
+2024-05-13 19:44:53 INFO: saving the best model
+2024-05-13 19:44:53 INFO: {'epoch': '37/500', 'Time_cost': '267.38s', 'Loss': '1.70010445', 'Train_Acc': '[0.471 0.513]', 'Test_Acc': '[0.775  0.8957]', 'Val_Acc': '[0.7813 0.9027]', 'Best_Val_Acc[epoch:37]': '0.7813'}
+2024-05-13 19:49:39 INFO: {'epoch': '38/500', 'Time_cost': '267.28s', 'Loss': '1.69039449', 'Train_Acc': '[0.5427 0.5917]', 'Test_Acc': '[0.7767 0.888 ]', 'Val_Acc': '[0.7797 0.895 ]', 'Best_Val_Acc[epoch:37]': '0.7813'}
+2024-05-13 19:54:26 INFO: saving the best model
+2024-05-13 19:54:26 INFO: {'epoch': '39/500', 'Time_cost': '267.38s', 'Loss': '1.66047357', 'Train_Acc': '[0.5417 0.5833]', 'Test_Acc': '[0.7773 0.8953]', 'Val_Acc': '[0.79   0.8977]', 'Best_Val_Acc[epoch:39]': '0.7900'}
+2024-05-13 19:59:14 INFO: {'epoch': '40/500', 'Time_cost': '267.78s', 'Loss': '1.67431531', 'Train_Acc': '[0.4397 0.4982]', 'Test_Acc': '[0.773 0.885]', 'Val_Acc': '[0.78  0.896]', 'Best_Val_Acc[epoch:39]': '0.7900'}
+2024-05-13 20:04:01 INFO: {'epoch': '41/500', 'Time_cost': '267.41s', 'Loss': '1.64233150', 'Train_Acc': '[0.5132 0.5653]', 'Test_Acc': '[0.78  0.891]', 'Val_Acc': '[0.7827 0.89  ]', 'Best_Val_Acc[epoch:39]': '0.7900'}
+2024-05-13 20:08:48 INFO: saving the best model
+2024-05-13 20:08:48 INFO: {'epoch': '42/500', 'Time_cost': '267.36s', 'Loss': '1.66577950', 'Train_Acc': '[0.5785 0.626 ]', 'Test_Acc': '[0.7917 0.9007]', 'Val_Acc': '[0.7927 0.904 ]', 'Best_Val_Acc[epoch:42]': '0.7927'}
+2024-05-13 20:13:35 INFO: saving the best model
+2024-05-13 20:13:35 INFO: {'epoch': '43/500', 'Time_cost': '267.36s', 'Loss': '1.65913987', 'Train_Acc': '[0.4643 0.5145]', 'Test_Acc': '[0.8007 0.8993]', 'Val_Acc': '[0.808 0.909]', 'Best_Val_Acc[epoch:43]': '0.8080'}
+2024-05-13 20:18:22 INFO: {'epoch': '44/500', 'Time_cost': '267.41s', 'Loss': '1.79422808', 'Train_Acc': '[0.4618 0.5373]', 'Test_Acc': '[0.7843 0.8933]', 'Val_Acc': '[0.7877 0.9043]', 'Best_Val_Acc[epoch:43]': '0.8080'}
+2024-05-13 20:23:09 INFO: {'epoch': '45/500', 'Time_cost': '267.54s', 'Loss': '1.63463327', 'Train_Acc': '[0.4842 0.526 ]', 'Test_Acc': '[0.7817 0.8957]', 'Val_Acc': '[0.7913 0.909 ]', 'Best_Val_Acc[epoch:43]': '0.8080'}
+2024-05-13 20:27:56 INFO: saving the best model
+2024-05-13 20:27:56 INFO: {'epoch': '46/500', 'Time_cost': '267.40s', 'Loss': '1.66811335', 'Train_Acc': '[0.5112 0.5713]', 'Test_Acc': '[0.804 0.908]', 'Val_Acc': '[0.816 0.914]', 'Best_Val_Acc[epoch:46]': '0.8160'}
+2024-05-13 20:32:43 INFO: {'epoch': '47/500', 'Time_cost': '267.59s', 'Loss': '1.67682794', 'Train_Acc': '[0.4752 0.5332]', 'Test_Acc': '[0.8047 0.9013]', 'Val_Acc': '[0.8067 0.9063]', 'Best_Val_Acc[epoch:46]': '0.8160'}
+2024-05-13 20:37:30 INFO: {'epoch': '48/500', 'Time_cost': '267.27s', 'Loss': '1.66382697', 'Train_Acc': '[0.4732 0.5335]', 'Test_Acc': '[0.8093 0.9   ]', 'Val_Acc': '[0.8133 0.903 ]', 'Best_Val_Acc[epoch:46]': '0.8160'}
+2024-05-13 20:42:17 INFO: {'epoch': '49/500', 'Time_cost': '267.31s', 'Loss': '1.62452342', 'Train_Acc': '[0.4583 0.5103]', 'Test_Acc': '[0.8077 0.9063]', 'Val_Acc': '[0.8077 0.9107]', 'Best_Val_Acc[epoch:46]': '0.8160'}
+2024-05-13 20:47:05 INFO: {'epoch': '50/500', 'Time_cost': '267.31s', 'Loss': '1.64301306', 'Train_Acc': '[0.5   0.558]', 'Test_Acc': '[0.8113 0.903 ]', 'Val_Acc': '[0.815  0.9143]', 'Best_Val_Acc[epoch:46]': '0.8160'}
+2024-05-13 20:51:52 INFO: saving the best model
+2024-05-13 20:51:52 INFO: {'epoch': '51/500', 'Time_cost': '267.50s', 'Loss': '1.62221603', 'Train_Acc': '[0.4755 0.5248]', 'Test_Acc': '[0.8167 0.9073]', 'Val_Acc': '[0.8243 0.9147]', 'Best_Val_Acc[epoch:51]': '0.8243'}
+2024-05-13 20:56:39 INFO: {'epoch': '52/500', 'Time_cost': '267.36s', 'Loss': '1.62590920', 'Train_Acc': '[0.543  0.6005]', 'Test_Acc': '[0.8187 0.9063]', 'Val_Acc': '[0.8193 0.9157]', 'Best_Val_Acc[epoch:51]': '0.8243'}
+2024-05-13 21:01:26 INFO: saving the best model
+2024-05-13 21:01:26 INFO: {'epoch': '53/500', 'Time_cost': '267.33s', 'Loss': '1.56698513', 'Train_Acc': '[0.5435 0.5805]', 'Test_Acc': '[0.8243 0.9117]', 'Val_Acc': '[0.8257 0.921 ]', 'Best_Val_Acc[epoch:53]': '0.8257'}
+2024-05-13 21:06:12 INFO: saving the best model
+2024-05-13 21:06:13 INFO: {'epoch': '54/500', 'Time_cost': '267.36s', 'Loss': '1.71934651', 'Train_Acc': '[0.4878 0.5602]', 'Test_Acc': '[0.8177 0.9047]', 'Val_Acc': '[0.827  0.9153]', 'Best_Val_Acc[epoch:54]': '0.8270'}
+2024-05-13 21:10:59 INFO: saving the best model
+2024-05-13 21:10:59 INFO: {'epoch': '55/500', 'Time_cost': '267.45s', 'Loss': '1.69415556', 'Train_Acc': '[0.4685 0.5295]', 'Test_Acc': '[0.8287 0.9113]', 'Val_Acc': '[0.8303 0.926 ]', 'Best_Val_Acc[epoch:55]': '0.8303'}
+2024-05-13 21:15:46 INFO: saving the best model
+2024-05-13 21:15:46 INFO: {'epoch': '56/500', 'Time_cost': '267.43s', 'Loss': '1.59213432', 'Train_Acc': '[0.5212 0.5855]', 'Test_Acc': '[0.8343 0.9143]', 'Val_Acc': '[0.8347 0.927 ]', 'Best_Val_Acc[epoch:56]': '0.8347'}
+2024-05-13 21:20:33 INFO: saving the best model
+2024-05-13 21:20:33 INFO: {'epoch': '57/500', 'Time_cost': '267.32s', 'Loss': '1.63119959', 'Train_Acc': '[0.5408 0.5982]', 'Test_Acc': '[0.8357 0.9167]', 'Val_Acc': '[0.8413 0.9277]', 'Best_Val_Acc[epoch:57]': '0.8413'}
+2024-05-13 21:25:20 INFO: {'epoch': '58/500', 'Time_cost': '267.43s', 'Loss': '1.60869746', 'Train_Acc': '[0.5197 0.5722]', 'Test_Acc': '[0.832 0.913]', 'Val_Acc': '[0.838  0.9243]', 'Best_Val_Acc[epoch:57]': '0.8413'}
+2024-05-13 21:30:07 INFO: {'epoch': '59/500', 'Time_cost': '267.31s', 'Loss': '1.73583939', 'Train_Acc': '[0.4912 0.5633]', 'Test_Acc': '[0.8367 0.9177]', 'Val_Acc': '[0.834  0.9253]', 'Best_Val_Acc[epoch:57]': '0.8413'}
+2024-05-13 21:34:54 INFO: {'epoch': '60/500', 'Time_cost': '267.26s', 'Loss': '1.69475366', 'Train_Acc': '[0.53   0.5942]', 'Test_Acc': '[0.8303 0.9153]', 'Val_Acc': '[0.829  0.9233]', 'Best_Val_Acc[epoch:57]': '0.8413'}
+2024-05-13 21:39:41 INFO: {'epoch': '61/500', 'Time_cost': '267.50s', 'Loss': '1.64412418', 'Train_Acc': '[0.4497 0.519 ]', 'Test_Acc': '[0.8413 0.9227]', 'Val_Acc': '[0.8413 0.9283]', 'Best_Val_Acc[epoch:57]': '0.8413'}
+2024-05-13 21:44:28 INFO: saving the best model
+2024-05-13 21:44:28 INFO: {'epoch': '62/500', 'Time_cost': '267.20s', 'Loss': '1.62075321', 'Train_Acc': '[0.5147 0.5848]', 'Test_Acc': '[0.8503 0.9203]', 'Val_Acc': '[0.849 0.927]', 'Best_Val_Acc[epoch:62]': '0.8490'}
+2024-05-13 21:49:16 INFO: {'epoch': '63/500', 'Time_cost': '267.29s', 'Loss': '1.61026720', 'Train_Acc': '[0.5122 0.5803]', 'Test_Acc': '[0.8453 0.9163]', 'Val_Acc': '[0.845  0.9283]', 'Best_Val_Acc[epoch:62]': '0.8490'}
+2024-05-13 21:54:03 INFO: {'epoch': '64/500', 'Time_cost': '267.31s', 'Loss': '1.69700886', 'Train_Acc': '[0.5225 0.6   ]', 'Test_Acc': '[0.8437 0.9183]', 'Val_Acc': '[0.84   0.9267]', 'Best_Val_Acc[epoch:62]': '0.8490'}
+2024-05-13 21:58:50 INFO: {'epoch': '65/500', 'Time_cost': '267.35s', 'Loss': '1.56083416', 'Train_Acc': '[0.5005 0.5405]', 'Test_Acc': '[0.8423 0.9237]', 'Val_Acc': '[0.8453 0.9297]', 'Best_Val_Acc[epoch:62]': '0.8490'}
+2024-05-13 22:03:37 INFO: {'epoch': '66/500', 'Time_cost': '267.41s', 'Loss': '1.62505853', 'Train_Acc': '[0.5323 0.591 ]', 'Test_Acc': '[0.8467 0.9243]', 'Val_Acc': '[0.842 0.934]', 'Best_Val_Acc[epoch:62]': '0.8490'}
+2024-05-13 22:08:24 INFO: saving the best model
+2024-05-13 22:08:24 INFO: {'epoch': '67/500', 'Time_cost': '267.37s', 'Loss': '1.51153136', 'Train_Acc': '[0.537  0.5917]', 'Test_Acc': '[0.8493 0.9197]', 'Val_Acc': '[0.854  0.9287]', 'Best_Val_Acc[epoch:67]': '0.8540'}
+2024-05-13 22:13:11 INFO: {'epoch': '68/500', 'Time_cost': '267.49s', 'Loss': '1.66501962', 'Train_Acc': '[0.5327 0.6075]', 'Test_Acc': '[0.849 0.926]', 'Val_Acc': '[0.852  0.9303]', 'Best_Val_Acc[epoch:67]': '0.8540'}
+2024-05-13 22:17:57 INFO: {'epoch': '69/500', 'Time_cost': '267.36s', 'Loss': '1.67351311', 'Train_Acc': '[0.5007 0.5848]', 'Test_Acc': '[0.8407 0.9213]', 'Val_Acc': '[0.847 0.932]', 'Best_Val_Acc[epoch:67]': '0.8540'}
+2024-05-13 22:22:44 INFO: saving the best model
+2024-05-13 22:22:44 INFO: {'epoch': '70/500', 'Time_cost': '267.25s', 'Loss': '1.59148092', 'Train_Acc': '[0.4827 0.5523]', 'Test_Acc': '[0.848  0.9283]', 'Val_Acc': '[0.858  0.9353]', 'Best_Val_Acc[epoch:70]': '0.8580'}
+2024-05-13 22:27:31 INFO: saving the best model
+2024-05-13 22:27:31 INFO: {'epoch': '71/500', 'Time_cost': '267.31s', 'Loss': '1.61367789', 'Train_Acc': '[0.4707 0.5372]', 'Test_Acc': '[0.8517 0.9293]', 'Val_Acc': '[0.86   0.9337]', 'Best_Val_Acc[epoch:71]': '0.8600'}
+2024-05-13 22:32:18 INFO: saving the best model
+2024-05-13 22:32:18 INFO: {'epoch': '72/500', 'Time_cost': '267.30s', 'Loss': '1.55338061', 'Train_Acc': '[0.4407 0.512 ]', 'Test_Acc': '[0.8543 0.9297]', 'Val_Acc': '[0.861  0.9353]', 'Best_Val_Acc[epoch:72]': '0.8610'}
+2024-05-13 22:37:05 INFO: {'epoch': '73/500', 'Time_cost': '267.23s', 'Loss': '1.51002365', 'Train_Acc': '[0.467 0.526]', 'Test_Acc': '[0.8573 0.93  ]', 'Val_Acc': '[0.8607 0.935 ]', 'Best_Val_Acc[epoch:72]': '0.8610'}
+2024-05-13 22:41:53 INFO: saving the best model
+2024-05-13 22:41:54 INFO: {'epoch': '74/500', 'Time_cost': '267.39s', 'Loss': '1.65104055', 'Train_Acc': '[0.4773 0.5595]', 'Test_Acc': '[0.8557 0.9247]', 'Val_Acc': '[0.8647 0.9323]', 'Best_Val_Acc[epoch:74]': '0.8647'}
+2024-05-13 22:46:40 INFO: saving the best model
+2024-05-13 22:46:40 INFO: {'epoch': '75/500', 'Time_cost': '267.28s', 'Loss': '1.58865382', 'Train_Acc': '[0.5508 0.6132]', 'Test_Acc': '[0.8533 0.9283]', 'Val_Acc': '[0.8653 0.9343]', 'Best_Val_Acc[epoch:75]': '0.8653'}
+2024-05-13 22:51:27 INFO: saving the best model
+2024-05-13 22:51:28 INFO: {'epoch': '76/500', 'Time_cost': '267.40s', 'Loss': '1.52010288', 'Train_Acc': '[0.5063 0.5675]', 'Test_Acc': '[0.857  0.9297]', 'Val_Acc': '[0.8683 0.9347]', 'Best_Val_Acc[epoch:76]': '0.8683'}
+2024-05-13 22:56:14 INFO: {'epoch': '77/500', 'Time_cost': '267.37s', 'Loss': '1.51580330', 'Train_Acc': '[0.5803 0.6375]', 'Test_Acc': '[0.8557 0.932 ]', 'Val_Acc': '[0.864  0.9357]', 'Best_Val_Acc[epoch:76]': '0.8683'}
+2024-05-13 23:01:01 INFO: saving the best model
+2024-05-13 23:01:01 INFO: {'epoch': '78/500', 'Time_cost': '267.32s', 'Loss': '1.51567131', 'Train_Acc': '[0.495 0.569]', 'Test_Acc': '[0.8587 0.933 ]', 'Val_Acc': '[0.8713 0.941 ]', 'Best_Val_Acc[epoch:78]': '0.8713'}
+2024-05-13 23:05:49 INFO: saving the best model
+2024-05-13 23:05:49 INFO: {'epoch': '79/500', 'Time_cost': '267.42s', 'Loss': '1.61010835', 'Train_Acc': '[0.512  0.5872]', 'Test_Acc': '[0.8607 0.9337]', 'Val_Acc': '[0.872 0.939]', 'Best_Val_Acc[epoch:79]': '0.8720'}
+2024-05-13 23:10:36 INFO: {'epoch': '80/500', 'Time_cost': '267.40s', 'Loss': '1.51230619', 'Train_Acc': '[0.4945 0.5563]', 'Test_Acc': '[0.8607 0.9317]', 'Val_Acc': '[0.8717 0.94  ]', 'Best_Val_Acc[epoch:79]': '0.8720'}
+2024-05-13 23:15:23 INFO: {'epoch': '81/500', 'Time_cost': '267.33s', 'Loss': '1.54598149', 'Train_Acc': '[0.4722 0.5477]', 'Test_Acc': '[0.8597 0.9337]', 'Val_Acc': '[0.8717 0.9397]', 'Best_Val_Acc[epoch:79]': '0.8720'}
+2024-05-13 23:20:10 INFO: {'epoch': '82/500', 'Time_cost': '267.34s', 'Loss': '1.55294933', 'Train_Acc': '[0.5158 0.5815]', 'Test_Acc': '[0.8603 0.933 ]', 'Val_Acc': '[0.871  0.9397]', 'Best_Val_Acc[epoch:79]': '0.8720'}
+2024-05-13 23:24:57 INFO: saving the best model
+2024-05-13 23:24:57 INFO: {'epoch': '83/500', 'Time_cost': '267.33s', 'Loss': '1.56205787', 'Train_Acc': '[0.5343 0.6027]', 'Test_Acc': '[0.8633 0.9373]', 'Val_Acc': '[0.8753 0.9417]', 'Best_Val_Acc[epoch:83]': '0.8753'}
+2024-05-13 23:29:44 INFO: {'epoch': '84/500', 'Time_cost': '267.41s', 'Loss': '1.55143580', 'Train_Acc': '[0.4663 0.5355]', 'Test_Acc': '[0.8627 0.936 ]', 'Val_Acc': '[0.8723 0.9407]', 'Best_Val_Acc[epoch:83]': '0.8753'}
+2024-05-13 23:34:31 INFO: saving the best model
+2024-05-13 23:34:31 INFO: {'epoch': '85/500', 'Time_cost': '267.43s', 'Loss': '1.60049950', 'Train_Acc': '[0.5085 0.593 ]', 'Test_Acc': '[0.865 0.935]', 'Val_Acc': '[0.876  0.9387]', 'Best_Val_Acc[epoch:85]': '0.8760'}
+2024-05-13 23:39:18 INFO: {'epoch': '86/500', 'Time_cost': '267.40s', 'Loss': '1.61547423', 'Train_Acc': '[0.4998 0.5902]', 'Test_Acc': '[0.8623 0.936 ]', 'Val_Acc': '[0.8713 0.94  ]', 'Best_Val_Acc[epoch:85]': '0.8760'}
+2024-05-13 23:44:05 INFO: {'epoch': '87/500', 'Time_cost': '267.48s', 'Loss': '1.52815566', 'Train_Acc': '[0.4902 0.5597]', 'Test_Acc': '[0.8627 0.9347]', 'Val_Acc': '[0.8733 0.9407]', 'Best_Val_Acc[epoch:85]': '0.8760'}
+2024-05-13 23:48:52 INFO: {'epoch': '88/500', 'Time_cost': '267.41s', 'Loss': '1.58614591', 'Train_Acc': '[0.5097 0.576 ]', 'Test_Acc': '[0.863  0.9363]', 'Val_Acc': '[0.875  0.9417]', 'Best_Val_Acc[epoch:85]': '0.8760'}
+2024-05-13 23:53:40 INFO: saving the best model
+2024-05-13 23:53:40 INFO: {'epoch': '89/500', 'Time_cost': '267.57s', 'Loss': '1.51135334', 'Train_Acc': '[0.4522 0.5115]', 'Test_Acc': '[0.8637 0.937 ]', 'Val_Acc': '[0.8773 0.9407]', 'Best_Val_Acc[epoch:89]': '0.8773'}
+2024-05-13 23:58:27 INFO: saving the best model
+2024-05-13 23:58:27 INFO: {'epoch': '90/500', 'Time_cost': '267.49s', 'Loss': '1.51071206', 'Train_Acc': '[0.517  0.5773]', 'Test_Acc': '[0.8647 0.939 ]', 'Val_Acc': '[0.8777 0.9413]', 'Best_Val_Acc[epoch:90]': '0.8777'}
+2024-05-14 00:03:14 INFO: {'epoch': '91/500', 'Time_cost': '267.43s', 'Loss': '1.54287405', 'Train_Acc': '[0.5593 0.621 ]', 'Test_Acc': '[0.8633 0.939 ]', 'Val_Acc': '[0.8767 0.9417]', 'Best_Val_Acc[epoch:90]': '0.8777'}
+2024-05-14 00:08:01 INFO: {'epoch': '92/500', 'Time_cost': '267.47s', 'Loss': '1.45943876', 'Train_Acc': '[0.4957 0.5643]', 'Test_Acc': '[0.8627 0.937 ]', 'Val_Acc': '[0.8777 0.9413]', 'Best_Val_Acc[epoch:90]': '0.8777'}
+2024-05-14 00:12:48 INFO: {'epoch': '93/500', 'Time_cost': '267.33s', 'Loss': '1.54921784', 'Train_Acc': '[0.4862 0.5545]', 'Test_Acc': '[0.862  0.9413]', 'Val_Acc': '[0.8763 0.9433]', 'Best_Val_Acc[epoch:90]': '0.8777'}
+2024-05-14 00:17:35 INFO: {'epoch': '94/500', 'Time_cost': '267.27s', 'Loss': '1.59302460', 'Train_Acc': '[0.4838 0.556 ]', 'Test_Acc': '[0.8623 0.9387]', 'Val_Acc': '[0.8777 0.9423]', 'Best_Val_Acc[epoch:90]': '0.8777'}
+2024-05-14 00:22:22 INFO: {'epoch': '95/500', 'Time_cost': '267.45s', 'Loss': '1.61514057', 'Train_Acc': '[0.5017 0.593 ]', 'Test_Acc': '[0.8653 0.9407]', 'Val_Acc': '[0.8757 0.9423]', 'Best_Val_Acc[epoch:90]': '0.8777'}
+2024-05-14 00:27:09 INFO: saving the best model
+2024-05-14 00:27:09 INFO: {'epoch': '96/500', 'Time_cost': '267.43s', 'Loss': '1.60992223', 'Train_Acc': '[0.4958 0.5853]', 'Test_Acc': '[0.8647 0.9403]', 'Val_Acc': '[0.8783 0.944 ]', 'Best_Val_Acc[epoch:96]': '0.8783'}
+2024-05-14 00:31:56 INFO: {'epoch': '97/500', 'Time_cost': '267.34s', 'Loss': '1.51929779', 'Train_Acc': '[0.5088 0.5783]', 'Test_Acc': '[0.8657 0.9407]', 'Val_Acc': '[0.8777 0.943 ]', 'Best_Val_Acc[epoch:96]': '0.8783'}
+2024-05-14 00:36:43 INFO: saving the best model
+2024-05-14 00:36:43 INFO: {'epoch': '98/500', 'Time_cost': '267.29s', 'Loss': '1.49103965', 'Train_Acc': '[0.5192 0.5805]', 'Test_Acc': '[0.8653 0.94  ]', 'Val_Acc': '[0.8787 0.9437]', 'Best_Val_Acc[epoch:98]': '0.8787'}
+2024-05-14 00:41:30 INFO: {'epoch': '99/500', 'Time_cost': '267.32s', 'Loss': '1.60909888', 'Train_Acc': '[0.52   0.6078]', 'Test_Acc': '[0.8663 0.9397]', 'Val_Acc': '[0.8783 0.943 ]', 'Best_Val_Acc[epoch:98]': '0.8787'}
+2024-05-14 00:46:17 INFO: {'epoch': '100/500', 'Time_cost': '267.30s', 'Loss': '1.51333251', 'Train_Acc': '[0.4597 0.5462]', 'Test_Acc': '[0.864  0.9403]', 'Val_Acc': '[0.8783 0.9437]', 'Best_Val_Acc[epoch:98]': '0.8787'}
+2024-05-14 00:51:04 INFO: saving the best model
+2024-05-14 00:51:04 INFO: {'epoch': '101/500', 'Time_cost': '267.32s', 'Loss': '1.55867390', 'Train_Acc': '[0.5188 0.5912]', 'Test_Acc': '[0.8677 0.94  ]', 'Val_Acc': '[0.8793 0.9427]', 'Best_Val_Acc[epoch:101]': '0.8793'}
+2024-05-14 00:55:42 INFO: {'epoch': '102/500', 'Time_cost': '259.02s', 'Loss': '1.56568372', 'Train_Acc': '[0.4983 0.5843]', 'Test_Acc': '[0.8677 0.94  ]', 'Val_Acc': '[0.8783 0.9437]', 'Best_Val_Acc[epoch:101]': '0.8793'}
+2024-05-14 01:00:12 INFO: saving the best model
+2024-05-14 01:00:12 INFO: {'epoch': '103/500', 'Time_cost': '249.87s', 'Loss': '1.58677445', 'Train_Acc': '[0.4878 0.5587]', 'Test_Acc': '[0.867 0.94 ]', 'Val_Acc': '[0.8807 0.944 ]', 'Best_Val_Acc[epoch:103]': '0.8807'}
+2024-05-14 01:04:41 INFO: {'epoch': '104/500', 'Time_cost': '249.89s', 'Loss': '1.64994905', 'Train_Acc': '[0.4778 0.5702]', 'Test_Acc': '[0.8667 0.9407]', 'Val_Acc': '[0.8803 0.9443]', 'Best_Val_Acc[epoch:103]': '0.8807'}
+2024-05-14 01:09:10 INFO: {'epoch': '105/500', 'Time_cost': '249.90s', 'Loss': '1.58547410', 'Train_Acc': '[0.473  0.5592]', 'Test_Acc': '[0.8667 0.941 ]', 'Val_Acc': '[0.8803 0.944 ]', 'Best_Val_Acc[epoch:103]': '0.8807'}
+2024-05-14 01:13:40 INFO: {'epoch': '106/500', 'Time_cost': '249.98s', 'Loss': '1.50273668', 'Train_Acc': '[0.5018 0.5737]', 'Test_Acc': '[0.8677 0.9403]', 'Val_Acc': '[0.8773 0.944 ]', 'Best_Val_Acc[epoch:103]': '0.8807'}
+2024-05-14 01:18:09 INFO: {'epoch': '107/500', 'Time_cost': '249.99s', 'Loss': '1.47959725', 'Train_Acc': '[0.5172 0.5893]', 'Test_Acc': '[0.867 0.941]', 'Val_Acc': '[0.8793 0.9437]', 'Best_Val_Acc[epoch:103]': '0.8807'}
+2024-05-14 01:22:38 INFO: saving the best model
+2024-05-14 01:22:38 INFO: {'epoch': '108/500', 'Time_cost': '249.99s', 'Loss': '1.56541512', 'Train_Acc': '[0.5288 0.6165]', 'Test_Acc': '[0.867  0.9413]', 'Val_Acc': '[0.881  0.9433]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 01:27:08 INFO: {'epoch': '109/500', 'Time_cost': '250.28s', 'Loss': '1.66242117', 'Train_Acc': '[0.562  0.6485]', 'Test_Acc': '[0.8683 0.941 ]', 'Val_Acc': '[0.881  0.9427]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 01:31:38 INFO: {'epoch': '110/500', 'Time_cost': '250.33s', 'Loss': '1.56870012', 'Train_Acc': '[0.5007 0.589 ]', 'Test_Acc': '[0.869  0.9393]', 'Val_Acc': '[0.8797 0.9433]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 01:36:07 INFO: {'epoch': '111/500', 'Time_cost': '250.36s', 'Loss': '1.53243791', 'Train_Acc': '[0.439  0.5208]', 'Test_Acc': '[0.8683 0.9397]', 'Val_Acc': '[0.8803 0.9433]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 01:40:37 INFO: {'epoch': '112/500', 'Time_cost': '250.17s', 'Loss': '1.50928389', 'Train_Acc': '[0.5125 0.5842]', 'Test_Acc': '[0.8667 0.941 ]', 'Val_Acc': '[0.88   0.9443]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 01:45:06 INFO: {'epoch': '113/500', 'Time_cost': '250.18s', 'Loss': '1.53890568', 'Train_Acc': '[0.4783 0.5543]', 'Test_Acc': '[0.8657 0.9397]', 'Val_Acc': '[0.8773 0.942 ]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 01:49:36 INFO: {'epoch': '114/500', 'Time_cost': '250.16s', 'Loss': '1.56029022', 'Train_Acc': '[0.493  0.5802]', 'Test_Acc': '[0.8657 0.9397]', 'Val_Acc': '[0.8787 0.942 ]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 01:54:05 INFO: {'epoch': '115/500', 'Time_cost': '250.23s', 'Loss': '1.58278199', 'Train_Acc': '[0.5447 0.6292]', 'Test_Acc': '[0.8677 0.9403]', 'Val_Acc': '[0.878  0.9437]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 01:58:35 INFO: {'epoch': '116/500', 'Time_cost': '250.35s', 'Loss': '1.53342389', 'Train_Acc': '[0.484  0.5575]', 'Test_Acc': '[0.8667 0.942 ]', 'Val_Acc': '[0.8777 0.943 ]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:03:05 INFO: {'epoch': '117/500', 'Time_cost': '250.23s', 'Loss': '1.60690757', 'Train_Acc': '[0.4968 0.5888]', 'Test_Acc': '[0.8673 0.941 ]', 'Val_Acc': '[0.8797 0.944 ]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:07:34 INFO: {'epoch': '118/500', 'Time_cost': '250.11s', 'Loss': '1.54729352', 'Train_Acc': '[0.4995 0.5672]', 'Test_Acc': '[0.8657 0.9417]', 'Val_Acc': '[0.88   0.9437]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:12:04 INFO: {'epoch': '119/500', 'Time_cost': '250.24s', 'Loss': '1.55762764', 'Train_Acc': '[0.445 0.533]', 'Test_Acc': '[0.8663 0.9407]', 'Val_Acc': '[0.8803 0.944 ]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:16:34 INFO: {'epoch': '120/500', 'Time_cost': '250.10s', 'Loss': '1.59597841', 'Train_Acc': '[0.4745 0.5648]', 'Test_Acc': '[0.8653 0.9417]', 'Val_Acc': '[0.8797 0.945 ]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:21:03 INFO: {'epoch': '121/500', 'Time_cost': '250.20s', 'Loss': '1.46337463', 'Train_Acc': '[0.5022 0.5652]', 'Test_Acc': '[0.8673 0.9403]', 'Val_Acc': '[0.8807 0.9447]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:25:33 INFO: {'epoch': '122/500', 'Time_cost': '250.39s', 'Loss': '1.48665332', 'Train_Acc': '[0.5103 0.57  ]', 'Test_Acc': '[0.8667 0.9413]', 'Val_Acc': '[0.8797 0.944 ]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:30:03 INFO: {'epoch': '123/500', 'Time_cost': '250.19s', 'Loss': '1.57192981', 'Train_Acc': '[0.5282 0.6083]', 'Test_Acc': '[0.8663 0.941 ]', 'Val_Acc': '[0.881  0.9443]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:34:33 INFO: {'epoch': '124/500', 'Time_cost': '250.33s', 'Loss': '1.50781264', 'Train_Acc': '[0.5088 0.589 ]', 'Test_Acc': '[0.8663 0.942 ]', 'Val_Acc': '[0.8797 0.9447]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:39:03 INFO: {'epoch': '125/500', 'Time_cost': '250.71s', 'Loss': '1.54469982', 'Train_Acc': '[0.4905 0.5703]', 'Test_Acc': '[0.864  0.9413]', 'Val_Acc': '[0.8797 0.9437]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:43:33 INFO: {'epoch': '126/500', 'Time_cost': '250.36s', 'Loss': '1.54710945', 'Train_Acc': '[0.5163 0.5993]', 'Test_Acc': '[0.8643 0.9413]', 'Val_Acc': '[0.879  0.9437]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:48:02 INFO: {'epoch': '127/500', 'Time_cost': '250.32s', 'Loss': '1.49809638', 'Train_Acc': '[0.5125 0.5893]', 'Test_Acc': '[0.864 0.942]', 'Val_Acc': '[0.8807 0.9437]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:52:32 INFO: {'epoch': '128/500', 'Time_cost': '250.22s', 'Loss': '1.55503497', 'Train_Acc': '[0.5015 0.5847]', 'Test_Acc': '[0.863  0.9417]', 'Val_Acc': '[0.8803 0.9433]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 02:57:01 INFO: {'epoch': '129/500', 'Time_cost': '250.00s', 'Loss': '1.55999692', 'Train_Acc': '[0.5127 0.5982]', 'Test_Acc': '[0.864  0.9407]', 'Val_Acc': '[0.879  0.9447]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 03:01:31 INFO: {'epoch': '130/500', 'Time_cost': '250.04s', 'Loss': '1.54157586', 'Train_Acc': '[0.4882 0.5648]', 'Test_Acc': '[0.865  0.9417]', 'Val_Acc': '[0.8807 0.944 ]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 03:06:00 INFO: {'epoch': '131/500', 'Time_cost': '249.91s', 'Loss': '1.66050299', 'Train_Acc': '[0.507  0.6108]', 'Test_Acc': '[0.8647 0.943 ]', 'Val_Acc': '[0.8803 0.944 ]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 03:10:29 INFO: {'epoch': '132/500', 'Time_cost': '249.91s', 'Loss': '1.52725094', 'Train_Acc': '[0.4858 0.5565]', 'Test_Acc': '[0.8657 0.9427]', 'Val_Acc': '[0.8803 0.9443]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 03:14:59 INFO: {'epoch': '133/500', 'Time_cost': '249.99s', 'Loss': '1.55028222', 'Train_Acc': '[0.4395 0.5322]', 'Test_Acc': '[0.867  0.9423]', 'Val_Acc': '[0.88   0.9443]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 03:19:28 INFO: {'epoch': '134/500', 'Time_cost': '249.96s', 'Loss': '1.48515403', 'Train_Acc': '[0.4753 0.5432]', 'Test_Acc': '[0.8667 0.9427]', 'Val_Acc': '[0.8807 0.9447]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 03:23:58 INFO: {'epoch': '135/500', 'Time_cost': '250.25s', 'Loss': '1.64401892', 'Train_Acc': '[0.5202 0.6115]', 'Test_Acc': '[0.8677 0.9433]', 'Val_Acc': '[0.881 0.945]', 'Best_Val_Acc[epoch:108]': '0.8810'}
+2024-05-14 03:28:27 INFO: saving the best model
+2024-05-14 03:28:27 INFO: {'epoch': '136/500', 'Time_cost': '250.19s', 'Loss': '1.52105730', 'Train_Acc': '[0.476  0.5537]', 'Test_Acc': '[0.867  0.9447]', 'Val_Acc': '[0.8813 0.9447]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 03:32:57 INFO: {'epoch': '137/500', 'Time_cost': '250.29s', 'Loss': '1.57484529', 'Train_Acc': '[0.5122 0.5932]', 'Test_Acc': '[0.865  0.9447]', 'Val_Acc': '[0.88   0.9433]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 03:37:27 INFO: {'epoch': '138/500', 'Time_cost': '250.38s', 'Loss': '1.53159040', 'Train_Acc': '[0.4478 0.5318]', 'Test_Acc': '[0.867  0.9417]', 'Val_Acc': '[0.88   0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 03:41:57 INFO: {'epoch': '139/500', 'Time_cost': '250.31s', 'Loss': '1.51822929', 'Train_Acc': '[0.5422 0.6137]', 'Test_Acc': '[0.8667 0.9427]', 'Val_Acc': '[0.8797 0.944 ]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 03:46:27 INFO: {'epoch': '140/500', 'Time_cost': '250.33s', 'Loss': '1.58875777', 'Train_Acc': '[0.527 0.619]', 'Test_Acc': '[0.868  0.9427]', 'Val_Acc': '[0.8793 0.944 ]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 03:50:57 INFO: {'epoch': '141/500', 'Time_cost': '250.17s', 'Loss': '1.55029907', 'Train_Acc': '[0.5147 0.5963]', 'Test_Acc': '[0.8677 0.944 ]', 'Val_Acc': '[0.8793 0.9447]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 03:55:26 INFO: {'epoch': '142/500', 'Time_cost': '250.16s', 'Loss': '1.59186075', 'Train_Acc': '[0.4522 0.5415]', 'Test_Acc': '[0.866  0.9437]', 'Val_Acc': '[0.879  0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 03:59:56 INFO: {'epoch': '143/500', 'Time_cost': '250.13s', 'Loss': '1.63116024', 'Train_Acc': '[0.5157 0.6083]', 'Test_Acc': '[0.8673 0.9433]', 'Val_Acc': '[0.8797 0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:04:26 INFO: {'epoch': '144/500', 'Time_cost': '250.25s', 'Loss': '1.41107897', 'Train_Acc': '[0.5057 0.5602]', 'Test_Acc': '[0.8667 0.943 ]', 'Val_Acc': '[0.8793 0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:08:55 INFO: {'epoch': '145/500', 'Time_cost': '249.99s', 'Loss': '1.59418374', 'Train_Acc': '[0.4993 0.5873]', 'Test_Acc': '[0.8697 0.9433]', 'Val_Acc': '[0.88  0.944]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:13:25 INFO: {'epoch': '146/500', 'Time_cost': '250.22s', 'Loss': '1.48156513', 'Train_Acc': '[0.4725 0.5465]', 'Test_Acc': '[0.869  0.9447]', 'Val_Acc': '[0.8797 0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:17:55 INFO: {'epoch': '147/500', 'Time_cost': '250.23s', 'Loss': '1.56045351', 'Train_Acc': '[0.5533 0.6363]', 'Test_Acc': '[0.8673 0.9447]', 'Val_Acc': '[0.8803 0.945 ]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:22:24 INFO: {'epoch': '148/500', 'Time_cost': '250.09s', 'Loss': '1.59240766', 'Train_Acc': '[0.5157 0.6022]', 'Test_Acc': '[0.868 0.944]', 'Val_Acc': '[0.8787 0.9447]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:26:54 INFO: {'epoch': '149/500', 'Time_cost': '250.23s', 'Loss': '1.50936402', 'Train_Acc': '[0.528  0.5977]', 'Test_Acc': '[0.8683 0.9427]', 'Val_Acc': '[0.88   0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:31:23 INFO: {'epoch': '150/500', 'Time_cost': '250.21s', 'Loss': '1.54708812', 'Train_Acc': '[0.4577 0.5317]', 'Test_Acc': '[0.8683 0.943 ]', 'Val_Acc': '[0.88   0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:35:53 INFO: {'epoch': '151/500', 'Time_cost': '250.33s', 'Loss': '1.53208663', 'Train_Acc': '[0.4955 0.5735]', 'Test_Acc': '[0.8683 0.944 ]', 'Val_Acc': '[0.8793 0.944 ]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:40:23 INFO: {'epoch': '152/500', 'Time_cost': '250.34s', 'Loss': '1.60301784', 'Train_Acc': '[0.4715 0.5707]', 'Test_Acc': '[0.868  0.9447]', 'Val_Acc': '[0.8793 0.944 ]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:44:53 INFO: {'epoch': '153/500', 'Time_cost': '250.36s', 'Loss': '1.56068810', 'Train_Acc': '[0.6198 0.6757]', 'Test_Acc': '[0.8693 0.9447]', 'Val_Acc': '[0.8797 0.9447]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:49:23 INFO: {'epoch': '154/500', 'Time_cost': '250.31s', 'Loss': '1.52082621', 'Train_Acc': '[0.5163 0.5998]', 'Test_Acc': '[0.8693 0.942 ]', 'Val_Acc': '[0.8797 0.945 ]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:53:52 INFO: {'epoch': '155/500', 'Time_cost': '250.27s', 'Loss': '1.52476545', 'Train_Acc': '[0.5285 0.5983]', 'Test_Acc': '[0.87  0.944]', 'Val_Acc': '[0.88  0.944]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 04:58:22 INFO: {'epoch': '156/500', 'Time_cost': '250.13s', 'Loss': '1.56969086', 'Train_Acc': '[0.5107 0.5928]', 'Test_Acc': '[0.8697 0.9437]', 'Val_Acc': '[0.8793 0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:02:52 INFO: {'epoch': '157/500', 'Time_cost': '250.18s', 'Loss': '1.52711473', 'Train_Acc': '[0.512  0.5848]', 'Test_Acc': '[0.8697 0.9427]', 'Val_Acc': '[0.8807 0.944 ]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:07:21 INFO: {'epoch': '158/500', 'Time_cost': '250.13s', 'Loss': '1.53682724', 'Train_Acc': '[0.4705 0.5283]', 'Test_Acc': '[0.8703 0.9433]', 'Val_Acc': '[0.8787 0.945 ]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:11:51 INFO: {'epoch': '159/500', 'Time_cost': '250.10s', 'Loss': '1.52812260', 'Train_Acc': '[0.536 0.606]', 'Test_Acc': '[0.8703 0.9423]', 'Val_Acc': '[0.88   0.9447]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:16:21 INFO: {'epoch': '160/500', 'Time_cost': '250.14s', 'Loss': '1.53726744', 'Train_Acc': '[0.5    0.5817]', 'Test_Acc': '[0.8687 0.943 ]', 'Val_Acc': '[0.8797 0.9447]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:20:51 INFO: {'epoch': '161/500', 'Time_cost': '250.13s', 'Loss': '1.56632129', 'Train_Acc': '[0.5142 0.5937]', 'Test_Acc': '[0.8707 0.9427]', 'Val_Acc': '[0.88   0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:25:20 INFO: {'epoch': '162/500', 'Time_cost': '250.07s', 'Loss': '1.46350335', 'Train_Acc': '[0.4952 0.5497]', 'Test_Acc': '[0.8703 0.9423]', 'Val_Acc': '[0.88   0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:29:50 INFO: {'epoch': '163/500', 'Time_cost': '250.26s', 'Loss': '1.53147468', 'Train_Acc': '[0.4648 0.5593]', 'Test_Acc': '[0.869  0.9433]', 'Val_Acc': '[0.879  0.9447]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:34:19 INFO: {'epoch': '164/500', 'Time_cost': '250.36s', 'Loss': '1.53693676', 'Train_Acc': '[0.4977 0.5658]', 'Test_Acc': '[0.8697 0.943 ]', 'Val_Acc': '[0.8783 0.944 ]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:38:49 INFO: {'epoch': '165/500', 'Time_cost': '250.16s', 'Loss': '1.58802745', 'Train_Acc': '[0.5648 0.6437]', 'Test_Acc': '[0.868  0.9437]', 'Val_Acc': '[0.879  0.9437]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:43:19 INFO: {'epoch': '166/500', 'Time_cost': '250.14s', 'Loss': '1.55371955', 'Train_Acc': '[0.4728 0.5565]', 'Test_Acc': '[0.8713 0.9423]', 'Val_Acc': '[0.8807 0.9447]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:47:48 INFO: {'epoch': '167/500', 'Time_cost': '250.18s', 'Loss': '1.55233451', 'Train_Acc': '[0.4767 0.5627]', 'Test_Acc': '[0.8713 0.9437]', 'Val_Acc': '[0.88   0.9447]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:52:18 INFO: {'epoch': '168/500', 'Time_cost': '250.27s', 'Loss': '1.49261413', 'Train_Acc': '[0.4677 0.536 ]', 'Test_Acc': '[0.8713 0.9443]', 'Val_Acc': '[0.8797 0.9443]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 05:56:47 INFO: {'epoch': '169/500', 'Time_cost': '250.16s', 'Loss': '1.66092732', 'Train_Acc': '[0.528  0.6267]', 'Test_Acc': '[0.8713 0.9443]', 'Val_Acc': '[0.881  0.9447]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 06:01:17 INFO: {'epoch': '170/500', 'Time_cost': '250.28s', 'Loss': '1.47065893', 'Train_Acc': '[0.498  0.5658]', 'Test_Acc': '[0.87  0.944]', 'Val_Acc': '[0.881 0.945]', 'Best_Val_Acc[epoch:136]': '0.8813'}
+2024-05-14 06:05:47 INFO: saving the best model
+2024-05-14 06:05:47 INFO: {'epoch': '171/500', 'Time_cost': '250.20s', 'Loss': '1.60402640', 'Train_Acc': '[0.4653 0.5643]', 'Test_Acc': '[0.8703 0.944 ]', 'Val_Acc': '[0.8823 0.945 ]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:10:17 INFO: {'epoch': '172/500', 'Time_cost': '250.18s', 'Loss': '1.51778507', 'Train_Acc': '[0.4918 0.5752]', 'Test_Acc': '[0.8727 0.9433]', 'Val_Acc': '[0.88   0.9447]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:14:46 INFO: {'epoch': '173/500', 'Time_cost': '250.31s', 'Loss': '1.48199572', 'Train_Acc': '[0.4802 0.5467]', 'Test_Acc': '[0.873  0.9443]', 'Val_Acc': '[0.8803 0.9447]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:19:16 INFO: {'epoch': '174/500', 'Time_cost': '250.11s', 'Loss': '1.54833216', 'Train_Acc': '[0.4992 0.5805]', 'Test_Acc': '[0.8717 0.944 ]', 'Val_Acc': '[0.882  0.9447]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:23:46 INFO: {'epoch': '175/500', 'Time_cost': '250.34s', 'Loss': '1.56339251', 'Train_Acc': '[0.4657 0.5517]', 'Test_Acc': '[0.871  0.9447]', 'Val_Acc': '[0.8817 0.945 ]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:28:15 INFO: {'epoch': '176/500', 'Time_cost': '250.22s', 'Loss': '1.54887704', 'Train_Acc': '[0.4882 0.5733]', 'Test_Acc': '[0.8707 0.9423]', 'Val_Acc': '[0.8797 0.9447]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:32:45 INFO: {'epoch': '177/500', 'Time_cost': '250.19s', 'Loss': '1.56083408', 'Train_Acc': '[0.4928 0.5965]', 'Test_Acc': '[0.8703 0.9437]', 'Val_Acc': '[0.881 0.945]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:37:14 INFO: {'epoch': '178/500', 'Time_cost': '250.24s', 'Loss': '1.47640244', 'Train_Acc': '[0.4998 0.5553]', 'Test_Acc': '[0.8697 0.9437]', 'Val_Acc': '[0.879 0.945]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:41:44 INFO: {'epoch': '179/500', 'Time_cost': '250.21s', 'Loss': '1.54003753', 'Train_Acc': '[0.5027 0.5865]', 'Test_Acc': '[0.8707 0.9437]', 'Val_Acc': '[0.881  0.9453]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:46:14 INFO: {'epoch': '180/500', 'Time_cost': '250.31s', 'Loss': '1.58137863', 'Train_Acc': '[0.4062 0.5098]', 'Test_Acc': '[0.8693 0.944 ]', 'Val_Acc': '[0.8797 0.945 ]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:50:43 INFO: {'epoch': '181/500', 'Time_cost': '250.35s', 'Loss': '1.52773193', 'Train_Acc': '[0.4948 0.5772]', 'Test_Acc': '[0.8683 0.944 ]', 'Val_Acc': '[0.88   0.9443]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:55:13 INFO: {'epoch': '182/500', 'Time_cost': '250.20s', 'Loss': '1.46294029', 'Train_Acc': '[0.4965 0.5722]', 'Test_Acc': '[0.8693 0.9437]', 'Val_Acc': '[0.88   0.9453]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 06:59:43 INFO: {'epoch': '183/500', 'Time_cost': '250.16s', 'Loss': '1.59204545', 'Train_Acc': '[0.489  0.5698]', 'Test_Acc': '[0.867 0.944]', 'Val_Acc': '[0.882 0.945]', 'Best_Val_Acc[epoch:171]': '0.8823'}
+2024-05-14 07:04:13 INFO: saving the best model
+2024-05-14 07:04:13 INFO: {'epoch': '184/500', 'Time_cost': '250.24s', 'Loss': '1.48586202', 'Train_Acc': '[0.4977 0.5538]', 'Test_Acc': '[0.8673 0.9427]', 'Val_Acc': '[0.883  0.9447]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:08:43 INFO: {'epoch': '185/500', 'Time_cost': '250.21s', 'Loss': '1.55322283', 'Train_Acc': '[0.5285 0.6027]', 'Test_Acc': '[0.868 0.944]', 'Val_Acc': '[0.8817 0.945 ]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:13:12 INFO: {'epoch': '186/500', 'Time_cost': '250.21s', 'Loss': '1.56656538', 'Train_Acc': '[0.5163 0.6193]', 'Test_Acc': '[0.8683 0.944 ]', 'Val_Acc': '[0.881 0.945]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:17:42 INFO: {'epoch': '187/500', 'Time_cost': '250.17s', 'Loss': '1.55950193', 'Train_Acc': '[0.4848 0.5665]', 'Test_Acc': '[0.869  0.9443]', 'Val_Acc': '[0.881  0.9443]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:22:12 INFO: {'epoch': '188/500', 'Time_cost': '250.10s', 'Loss': '1.44612892', 'Train_Acc': '[0.4915 0.5552]', 'Test_Acc': '[0.8697 0.9433]', 'Val_Acc': '[0.881 0.945]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:26:41 INFO: {'epoch': '189/500', 'Time_cost': '250.01s', 'Loss': '1.62287458', 'Train_Acc': '[0.5332 0.6275]', 'Test_Acc': '[0.869  0.9437]', 'Val_Acc': '[0.8807 0.9447]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:31:10 INFO: {'epoch': '190/500', 'Time_cost': '250.06s', 'Loss': '1.57020329', 'Train_Acc': '[0.5293 0.6093]', 'Test_Acc': '[0.868  0.9427]', 'Val_Acc': '[0.8817 0.9453]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:35:40 INFO: {'epoch': '191/500', 'Time_cost': '250.27s', 'Loss': '1.52007456', 'Train_Acc': '[0.5538 0.6275]', 'Test_Acc': '[0.867  0.9443]', 'Val_Acc': '[0.88   0.9447]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:40:10 INFO: {'epoch': '192/500', 'Time_cost': '250.09s', 'Loss': '1.48749132', 'Train_Acc': '[0.5125 0.575 ]', 'Test_Acc': '[0.8673 0.944 ]', 'Val_Acc': '[0.8817 0.9453]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:44:39 INFO: {'epoch': '193/500', 'Time_cost': '250.10s', 'Loss': '1.47312393', 'Train_Acc': '[0.4752 0.5477]', 'Test_Acc': '[0.87  0.944]', 'Val_Acc': '[0.8817 0.945 ]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:49:09 INFO: {'epoch': '194/500', 'Time_cost': '250.07s', 'Loss': '1.56982390', 'Train_Acc': '[0.504  0.5945]', 'Test_Acc': '[0.8697 0.9443]', 'Val_Acc': '[0.882  0.9457]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:53:38 INFO: {'epoch': '195/500', 'Time_cost': '250.24s', 'Loss': '1.51226602', 'Train_Acc': '[0.5195 0.6022]', 'Test_Acc': '[0.871  0.9443]', 'Val_Acc': '[0.883 0.945]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 07:58:07 INFO: {'epoch': '196/500', 'Time_cost': '250.22s', 'Loss': '1.60701038', 'Train_Acc': '[0.481  0.5968]', 'Test_Acc': '[0.867 0.944]', 'Val_Acc': '[0.8813 0.9453]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:02:37 INFO: {'epoch': '197/500', 'Time_cost': '250.36s', 'Loss': '1.59772668', 'Train_Acc': '[0.4472 0.5495]', 'Test_Acc': '[0.8673 0.9447]', 'Val_Acc': '[0.8813 0.945 ]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:07:07 INFO: {'epoch': '198/500', 'Time_cost': '250.15s', 'Loss': '1.55066818', 'Train_Acc': '[0.505  0.5932]', 'Test_Acc': '[0.8683 0.9447]', 'Val_Acc': '[0.8813 0.945 ]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:11:36 INFO: {'epoch': '199/500', 'Time_cost': '250.31s', 'Loss': '1.59220753', 'Train_Acc': '[0.4817 0.5713]', 'Test_Acc': '[0.869 0.945]', 'Val_Acc': '[0.882  0.9443]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:16:06 INFO: {'epoch': '200/500', 'Time_cost': '250.33s', 'Loss': '1.60016038', 'Train_Acc': '[0.5383 0.6347]', 'Test_Acc': '[0.8687 0.945 ]', 'Val_Acc': '[0.88   0.9453]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:20:36 INFO: {'epoch': '201/500', 'Time_cost': '250.06s', 'Loss': '1.55379465', 'Train_Acc': '[0.5127 0.585 ]', 'Test_Acc': '[0.869 0.945]', 'Val_Acc': '[0.8813 0.9453]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:25:05 INFO: {'epoch': '202/500', 'Time_cost': '250.10s', 'Loss': '1.58142271', 'Train_Acc': '[0.4758 0.5507]', 'Test_Acc': '[0.872  0.9447]', 'Val_Acc': '[0.883  0.9453]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:29:35 INFO: {'epoch': '203/500', 'Time_cost': '250.35s', 'Loss': '1.54942904', 'Train_Acc': '[0.4662 0.561 ]', 'Test_Acc': '[0.8697 0.945 ]', 'Val_Acc': '[0.8813 0.945 ]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:34:04 INFO: {'epoch': '204/500', 'Time_cost': '250.22s', 'Loss': '1.63587466', 'Train_Acc': '[0.4587 0.5685]', 'Test_Acc': '[0.8683 0.9433]', 'Val_Acc': '[0.881  0.9447]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:38:34 INFO: {'epoch': '205/500', 'Time_cost': '250.20s', 'Loss': '1.53973765', 'Train_Acc': '[0.5087 0.5772]', 'Test_Acc': '[0.8673 0.944 ]', 'Val_Acc': '[0.8817 0.945 ]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:43:04 INFO: {'epoch': '206/500', 'Time_cost': '250.16s', 'Loss': '1.56265760', 'Train_Acc': '[0.4683 0.5342]', 'Test_Acc': '[0.869 0.945]', 'Val_Acc': '[0.8813 0.9453]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:47:33 INFO: {'epoch': '207/500', 'Time_cost': '250.09s', 'Loss': '1.55664306', 'Train_Acc': '[0.5055 0.5857]', 'Test_Acc': '[0.867  0.9453]', 'Val_Acc': '[0.8827 0.9463]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:52:03 INFO: {'epoch': '208/500', 'Time_cost': '250.15s', 'Loss': '1.47202226', 'Train_Acc': '[0.3942 0.4712]', 'Test_Acc': '[0.867  0.9447]', 'Val_Acc': '[0.8807 0.9457]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 08:56:32 INFO: {'epoch': '209/500', 'Time_cost': '250.02s', 'Loss': '1.55995026', 'Train_Acc': '[0.5898 0.6787]', 'Test_Acc': '[0.868 0.944]', 'Val_Acc': '[0.8817 0.9457]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:01:01 INFO: {'epoch': '210/500', 'Time_cost': '249.98s', 'Loss': '1.47492124', 'Train_Acc': '[0.5022 0.567 ]', 'Test_Acc': '[0.8687 0.944 ]', 'Val_Acc': '[0.8817 0.9457]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:05:31 INFO: {'epoch': '211/500', 'Time_cost': '250.00s', 'Loss': '1.58233140', 'Train_Acc': '[0.4633 0.5748]', 'Test_Acc': '[0.8673 0.9443]', 'Val_Acc': '[0.8807 0.9453]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:10:00 INFO: {'epoch': '212/500', 'Time_cost': '249.98s', 'Loss': '1.55000107', 'Train_Acc': '[0.5513 0.6328]', 'Test_Acc': '[0.869 0.944]', 'Val_Acc': '[0.8817 0.945 ]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:14:30 INFO: {'epoch': '213/500', 'Time_cost': '250.03s', 'Loss': '1.57236937', 'Train_Acc': '[0.5318 0.619 ]', 'Test_Acc': '[0.869  0.9443]', 'Val_Acc': '[0.882 0.946]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:18:59 INFO: {'epoch': '214/500', 'Time_cost': '249.95s', 'Loss': '1.59367516', 'Train_Acc': '[0.5122 0.606 ]', 'Test_Acc': '[0.8683 0.9437]', 'Val_Acc': '[0.8823 0.9457]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:23:28 INFO: {'epoch': '215/500', 'Time_cost': '250.12s', 'Loss': '1.54757700', 'Train_Acc': '[0.5203 0.5868]', 'Test_Acc': '[0.869  0.9437]', 'Val_Acc': '[0.882  0.9453]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:27:58 INFO: {'epoch': '216/500', 'Time_cost': '250.16s', 'Loss': '1.54510258', 'Train_Acc': '[0.4815 0.5533]', 'Test_Acc': '[0.8683 0.9453]', 'Val_Acc': '[0.8817 0.9457]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:32:27 INFO: {'epoch': '217/500', 'Time_cost': '250.23s', 'Loss': '1.60987740', 'Train_Acc': '[0.499  0.5908]', 'Test_Acc': '[0.8683 0.9443]', 'Val_Acc': '[0.8817 0.946 ]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:36:57 INFO: {'epoch': '218/500', 'Time_cost': '250.27s', 'Loss': '1.56219657', 'Train_Acc': '[0.4732 0.5663]', 'Test_Acc': '[0.8697 0.944 ]', 'Val_Acc': '[0.8813 0.9467]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:41:26 INFO: {'epoch': '219/500', 'Time_cost': '250.36s', 'Loss': '1.44867612', 'Train_Acc': '[0.5198 0.5783]', 'Test_Acc': '[0.8677 0.9443]', 'Val_Acc': '[0.8817 0.9467]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:45:56 INFO: {'epoch': '220/500', 'Time_cost': '250.28s', 'Loss': '1.52901651', 'Train_Acc': '[0.5002 0.5745]', 'Test_Acc': '[0.869  0.9433]', 'Val_Acc': '[0.8813 0.9457]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:50:26 INFO: {'epoch': '221/500', 'Time_cost': '250.13s', 'Loss': '1.50536623', 'Train_Acc': '[0.4477 0.5355]', 'Test_Acc': '[0.8687 0.944 ]', 'Val_Acc': '[0.8813 0.9467]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:54:55 INFO: {'epoch': '222/500', 'Time_cost': '250.15s', 'Loss': '1.49720374', 'Train_Acc': '[0.4845 0.5618]', 'Test_Acc': '[0.867 0.943]', 'Val_Acc': '[0.8803 0.946 ]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 09:59:25 INFO: {'epoch': '223/500', 'Time_cost': '250.15s', 'Loss': '1.53345751', 'Train_Acc': '[0.4597 0.5337]', 'Test_Acc': '[0.8697 0.943 ]', 'Val_Acc': '[0.882 0.946]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 10:03:54 INFO: {'epoch': '224/500', 'Time_cost': '250.13s', 'Loss': '1.54390984', 'Train_Acc': '[0.521  0.6092]', 'Test_Acc': '[0.8697 0.943 ]', 'Val_Acc': '[0.8817 0.945 ]', 'Best_Val_Acc[epoch:184]': '0.8830'}
+2024-05-14 10:08:24 INFO: saving the best model
+2024-05-14 10:08:24 INFO: {'epoch': '225/500', 'Time_cost': '250.20s', 'Loss': '1.55872260', 'Train_Acc': '[0.5932 0.6755]', 'Test_Acc': '[0.87  0.943]', 'Val_Acc': '[0.8833 0.945 ]', 'Best_Val_Acc[epoch:225]': '0.8833'}
+2024-05-14 10:12:54 INFO: {'epoch': '226/500', 'Time_cost': '250.36s', 'Loss': '1.54667546', 'Train_Acc': '[0.5045 0.5832]', 'Test_Acc': '[0.8717 0.9437]', 'Val_Acc': '[0.8833 0.946 ]', 'Best_Val_Acc[epoch:225]': '0.8833'}
+2024-05-14 10:17:23 INFO: {'epoch': '227/500', 'Time_cost': '250.25s', 'Loss': '1.54286986', 'Train_Acc': '[0.487  0.5848]', 'Test_Acc': '[0.87   0.9443]', 'Val_Acc': '[0.883  0.9447]', 'Best_Val_Acc[epoch:225]': '0.8833'}
+2024-05-14 10:21:53 INFO: {'epoch': '228/500', 'Time_cost': '250.23s', 'Loss': '1.47004244', 'Train_Acc': '[0.4795 0.546 ]', 'Test_Acc': '[0.87   0.9437]', 'Val_Acc': '[0.882  0.9463]', 'Best_Val_Acc[epoch:225]': '0.8833'}
+2024-05-14 10:26:23 INFO: {'epoch': '229/500', 'Time_cost': '250.14s', 'Loss': '1.47846968', 'Train_Acc': '[0.476  0.5458]', 'Test_Acc': '[0.8703 0.9433]', 'Val_Acc': '[0.882 0.946]', 'Best_Val_Acc[epoch:225]': '0.8833'}
+2024-05-14 10:30:52 INFO: {'epoch': '230/500', 'Time_cost': '250.16s', 'Loss': '1.58794983', 'Train_Acc': '[0.5413 0.6203]', 'Test_Acc': '[0.8697 0.945 ]', 'Val_Acc': '[0.8827 0.9453]', 'Best_Val_Acc[epoch:225]': '0.8833'}
+2024-05-14 10:35:22 INFO: saving the best model
+2024-05-14 10:35:22 INFO: {'epoch': '231/500', 'Time_cost': '250.23s', 'Loss': '1.54866555', 'Train_Acc': '[0.4993 0.5825]', 'Test_Acc': '[0.8693 0.9433]', 'Val_Acc': '[0.8837 0.946 ]', 'Best_Val_Acc[epoch:231]': '0.8837'}
+2024-05-14 10:39:51 INFO: saving the best model
+2024-05-14 10:39:51 INFO: {'epoch': '232/500', 'Time_cost': '250.10s', 'Loss': '1.54043885', 'Train_Acc': '[0.476  0.5527]', 'Test_Acc': '[0.87  0.942]', 'Val_Acc': '[0.8847 0.9453]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 10:44:23 INFO: {'epoch': '233/500', 'Time_cost': '251.02s', 'Loss': '1.58021137', 'Train_Acc': '[0.5477 0.6247]', 'Test_Acc': '[0.8703 0.9423]', 'Val_Acc': '[0.8837 0.9457]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 10:48:54 INFO: {'epoch': '234/500', 'Time_cost': '251.04s', 'Loss': '1.56785047', 'Train_Acc': '[0.4305 0.5185]', 'Test_Acc': '[0.871  0.9433]', 'Val_Acc': '[0.8833 0.9457]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 10:53:23 INFO: {'epoch': '235/500', 'Time_cost': '250.26s', 'Loss': '1.48901649', 'Train_Acc': '[0.4695 0.5338]', 'Test_Acc': '[0.871 0.944]', 'Val_Acc': '[0.8833 0.946 ]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 10:57:52 INFO: {'epoch': '236/500', 'Time_cost': '250.05s', 'Loss': '1.53027187', 'Train_Acc': '[0.5885 0.6667]', 'Test_Acc': '[0.8713 0.944 ]', 'Val_Acc': '[0.883  0.9463]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:02:23 INFO: {'epoch': '237/500', 'Time_cost': '250.31s', 'Loss': '1.54071055', 'Train_Acc': '[0.5308 0.6048]', 'Test_Acc': '[0.8687 0.943 ]', 'Val_Acc': '[0.8847 0.947 ]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:06:56 INFO: {'epoch': '238/500', 'Time_cost': '251.73s', 'Loss': '1.59660147', 'Train_Acc': '[0.4708 0.578 ]', 'Test_Acc': '[0.872 0.944]', 'Val_Acc': '[0.884 0.946]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:11:26 INFO: {'epoch': '239/500', 'Time_cost': '250.81s', 'Loss': '1.52543253', 'Train_Acc': '[0.4573 0.5525]', 'Test_Acc': '[0.872  0.9433]', 'Val_Acc': '[0.8833 0.9457]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:15:57 INFO: {'epoch': '240/500', 'Time_cost': '250.79s', 'Loss': '1.48375562', 'Train_Acc': '[0.4408 0.5302]', 'Test_Acc': '[0.8717 0.9427]', 'Val_Acc': '[0.8837 0.9457]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:20:27 INFO: {'epoch': '241/500', 'Time_cost': '250.58s', 'Loss': '1.63777345', 'Train_Acc': '[0.466  0.5635]', 'Test_Acc': '[0.8733 0.9437]', 'Val_Acc': '[0.8823 0.9463]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:24:57 INFO: {'epoch': '242/500', 'Time_cost': '250.62s', 'Loss': '1.57699687', 'Train_Acc': '[0.5105 0.6032]', 'Test_Acc': '[0.871  0.9453]', 'Val_Acc': '[0.8823 0.9463]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:29:27 INFO: {'epoch': '243/500', 'Time_cost': '250.27s', 'Loss': '1.53796994', 'Train_Acc': '[0.5515 0.629 ]', 'Test_Acc': '[0.871  0.9457]', 'Val_Acc': '[0.882  0.9453]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:33:57 INFO: {'epoch': '244/500', 'Time_cost': '250.32s', 'Loss': '1.49356314', 'Train_Acc': '[0.4995 0.575 ]', 'Test_Acc': '[0.871  0.9447]', 'Val_Acc': '[0.882  0.9457]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:38:27 INFO: {'epoch': '245/500', 'Time_cost': '250.51s', 'Loss': '1.50918728', 'Train_Acc': '[0.5563 0.6302]', 'Test_Acc': '[0.8707 0.9433]', 'Val_Acc': '[0.881 0.945]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:42:58 INFO: {'epoch': '246/500', 'Time_cost': '250.61s', 'Loss': '1.56070959', 'Train_Acc': '[0.474  0.5692]', 'Test_Acc': '[0.8697 0.944 ]', 'Val_Acc': '[0.8823 0.9457]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:47:28 INFO: {'epoch': '247/500', 'Time_cost': '250.61s', 'Loss': '1.53854331', 'Train_Acc': '[0.498  0.5732]', 'Test_Acc': '[0.869  0.9433]', 'Val_Acc': '[0.8817 0.9453]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:51:58 INFO: {'epoch': '248/500', 'Time_cost': '250.18s', 'Loss': '1.48878721', 'Train_Acc': '[0.5017 0.569 ]', 'Test_Acc': '[0.8713 0.9433]', 'Val_Acc': '[0.8817 0.9453]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 11:56:28 INFO: {'epoch': '249/500', 'Time_cost': '250.42s', 'Loss': '1.52556821', 'Train_Acc': '[0.4965 0.5753]', 'Test_Acc': '[0.87   0.9437]', 'Val_Acc': '[0.8837 0.946 ]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:00:58 INFO: {'epoch': '250/500', 'Time_cost': '250.29s', 'Loss': '1.62680584', 'Train_Acc': '[0.545 0.63 ]', 'Test_Acc': '[0.8697 0.9433]', 'Val_Acc': '[0.8827 0.9463]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:05:28 INFO: {'epoch': '251/500', 'Time_cost': '250.32s', 'Loss': '1.49012444', 'Train_Acc': '[0.5002 0.5742]', 'Test_Acc': '[0.8687 0.9433]', 'Val_Acc': '[0.8817 0.9463]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:09:58 INFO: {'epoch': '252/500', 'Time_cost': '250.16s', 'Loss': '1.59125121', 'Train_Acc': '[0.5365 0.6385]', 'Test_Acc': '[0.871  0.9427]', 'Val_Acc': '[0.8833 0.9457]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:14:27 INFO: {'epoch': '253/500', 'Time_cost': '250.28s', 'Loss': '1.51303236', 'Train_Acc': '[0.4603 0.5567]', 'Test_Acc': '[0.8703 0.9423]', 'Val_Acc': '[0.883 0.946]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:18:57 INFO: {'epoch': '254/500', 'Time_cost': '250.14s', 'Loss': '1.58225470', 'Train_Acc': '[0.4827 0.5833]', 'Test_Acc': '[0.8697 0.9417]', 'Val_Acc': '[0.8837 0.9463]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:23:27 INFO: {'epoch': '255/500', 'Time_cost': '251.00s', 'Loss': '1.51324334', 'Train_Acc': '[0.4385 0.5348]', 'Test_Acc': '[0.8697 0.943 ]', 'Val_Acc': '[0.8827 0.9473]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:27:59 INFO: {'epoch': '256/500', 'Time_cost': '250.57s', 'Loss': '1.52475297', 'Train_Acc': '[0.5072 0.5812]', 'Test_Acc': '[0.867  0.9423]', 'Val_Acc': '[0.8827 0.9467]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:32:32 INFO: {'epoch': '257/500', 'Time_cost': '252.44s', 'Loss': '1.50489081', 'Train_Acc': '[0.5265 0.5998]', 'Test_Acc': '[0.869  0.9433]', 'Val_Acc': '[0.8837 0.947 ]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:37:06 INFO: {'epoch': '258/500', 'Time_cost': '251.88s', 'Loss': '1.50122150', 'Train_Acc': '[0.477  0.5632]', 'Test_Acc': '[0.8683 0.943 ]', 'Val_Acc': '[0.8827 0.9463]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:41:37 INFO: {'epoch': '259/500', 'Time_cost': '251.88s', 'Loss': '1.52951178', 'Train_Acc': '[0.477 0.561]', 'Test_Acc': '[0.8677 0.9423]', 'Val_Acc': '[0.8833 0.9463]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:46:11 INFO: {'epoch': '260/500', 'Time_cost': '252.04s', 'Loss': '1.58814562', 'Train_Acc': '[0.5367 0.6262]', 'Test_Acc': '[0.8697 0.9427]', 'Val_Acc': '[0.8837 0.9463]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:50:46 INFO: {'epoch': '261/500', 'Time_cost': '252.63s', 'Loss': '1.55547354', 'Train_Acc': '[0.5123 0.595 ]', 'Test_Acc': '[0.8677 0.9423]', 'Val_Acc': '[0.884 0.945]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:55:18 INFO: {'epoch': '262/500', 'Time_cost': '252.71s', 'Loss': '1.52060376', 'Train_Acc': '[0.4918 0.5613]', 'Test_Acc': '[0.8667 0.9427]', 'Val_Acc': '[0.883 0.946]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 12:59:53 INFO: {'epoch': '263/500', 'Time_cost': '252.33s', 'Loss': '1.62131829', 'Train_Acc': '[0.4815 0.6115]', 'Test_Acc': '[0.8673 0.9433]', 'Val_Acc': '[0.8837 0.9467]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:04:30 INFO: {'epoch': '264/500', 'Time_cost': '253.00s', 'Loss': '1.51694941', 'Train_Acc': '[0.447  0.5225]', 'Test_Acc': '[0.8683 0.943 ]', 'Val_Acc': '[0.8827 0.9463]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:09:02 INFO: {'epoch': '265/500', 'Time_cost': '251.44s', 'Loss': '1.49399257', 'Train_Acc': '[0.5023 0.5695]', 'Test_Acc': '[0.868 0.943]', 'Val_Acc': '[0.8837 0.945 ]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:13:32 INFO: {'epoch': '266/500', 'Time_cost': '251.12s', 'Loss': '1.55901270', 'Train_Acc': '[0.4602 0.5528]', 'Test_Acc': '[0.8687 0.943 ]', 'Val_Acc': '[0.8827 0.946 ]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:18:02 INFO: {'epoch': '267/500', 'Time_cost': '250.46s', 'Loss': '1.54811550', 'Train_Acc': '[0.4775 0.5672]', 'Test_Acc': '[0.868 0.944]', 'Val_Acc': '[0.8823 0.945 ]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:22:32 INFO: {'epoch': '268/500', 'Time_cost': '250.38s', 'Loss': '1.49235541', 'Train_Acc': '[0.5177 0.599 ]', 'Test_Acc': '[0.8697 0.9427]', 'Val_Acc': '[0.8827 0.946 ]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:27:02 INFO: {'epoch': '269/500', 'Time_cost': '250.26s', 'Loss': '1.62686884', 'Train_Acc': '[0.5283 0.6402]', 'Test_Acc': '[0.8717 0.9433]', 'Val_Acc': '[0.8813 0.9457]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:31:32 INFO: {'epoch': '270/500', 'Time_cost': '250.42s', 'Loss': '1.51199208', 'Train_Acc': '[0.5328 0.605 ]', 'Test_Acc': '[0.8713 0.9437]', 'Val_Acc': '[0.883 0.946]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:36:02 INFO: {'epoch': '271/500', 'Time_cost': '250.36s', 'Loss': '1.56899899', 'Train_Acc': '[0.478  0.5797]', 'Test_Acc': '[0.8713 0.9447]', 'Val_Acc': '[0.882  0.9447]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:40:32 INFO: {'epoch': '272/500', 'Time_cost': '250.55s', 'Loss': '1.61677479', 'Train_Acc': '[0.4827 0.5843]', 'Test_Acc': '[0.872  0.9437]', 'Val_Acc': '[0.8817 0.9443]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:45:02 INFO: {'epoch': '273/500', 'Time_cost': '250.29s', 'Loss': '1.58238185', 'Train_Acc': '[0.5028 0.601 ]', 'Test_Acc': '[0.869  0.9443]', 'Val_Acc': '[0.8847 0.9453]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:49:33 INFO: {'epoch': '274/500', 'Time_cost': '250.34s', 'Loss': '1.48148738', 'Train_Acc': '[0.4603 0.5465]', 'Test_Acc': '[0.8687 0.9437]', 'Val_Acc': '[0.8833 0.9453]', 'Best_Val_Acc[epoch:232]': '0.8847'}
+2024-05-14 13:54:03 INFO: saving the best model
+2024-05-14 13:54:03 INFO: {'epoch': '275/500', 'Time_cost': '250.59s', 'Loss': '1.55141403', 'Train_Acc': '[0.4927 0.5838]', 'Test_Acc': '[0.8707 0.9427]', 'Val_Acc': '[0.8853 0.9457]', 'Best_Val_Acc[epoch:275]': '0.8853'}
+2024-05-14 13:58:33 INFO: {'epoch': '276/500', 'Time_cost': '250.46s', 'Loss': '1.48302757', 'Train_Acc': '[0.496 0.564]', 'Test_Acc': '[0.8707 0.9423]', 'Val_Acc': '[0.8853 0.9457]', 'Best_Val_Acc[epoch:275]': '0.8853'}
+2024-05-14 14:03:04 INFO: {'epoch': '277/500', 'Time_cost': '250.58s', 'Loss': '1.56748715', 'Train_Acc': '[0.4965 0.587 ]', 'Test_Acc': '[0.8723 0.943 ]', 'Val_Acc': '[0.8853 0.9457]', 'Best_Val_Acc[epoch:275]': '0.8853'}
+2024-05-14 14:07:35 INFO: saving the best model
+2024-05-14 14:07:35 INFO: {'epoch': '278/500', 'Time_cost': '251.35s', 'Loss': '1.56413426', 'Train_Acc': '[0.5213 0.6102]', 'Test_Acc': '[0.871  0.9433]', 'Val_Acc': '[0.8857 0.945 ]', 'Best_Val_Acc[epoch:278]': '0.8857'}
+2024-05-14 14:12:08 INFO: {'epoch': '279/500', 'Time_cost': '252.65s', 'Loss': '1.52919887', 'Train_Acc': '[0.5098 0.5848]', 'Test_Acc': '[0.87   0.9437]', 'Val_Acc': '[0.8843 0.946 ]', 'Best_Val_Acc[epoch:278]': '0.8857'}
+2024-05-14 14:16:41 INFO: {'epoch': '280/500', 'Time_cost': '252.26s', 'Loss': '1.52947167', 'Train_Acc': '[0.5427 0.6165]', 'Test_Acc': '[0.871  0.9433]', 'Val_Acc': '[0.8837 0.9447]', 'Best_Val_Acc[epoch:278]': '0.8857'}
+2024-05-14 14:21:15 INFO: {'epoch': '281/500', 'Time_cost': '251.65s', 'Loss': '1.52267416', 'Train_Acc': '[0.523  0.5998]', 'Test_Acc': '[0.8687 0.9427]', 'Val_Acc': '[0.8837 0.945 ]', 'Best_Val_Acc[epoch:278]': '0.8857'}
+2024-05-14 14:25:48 INFO: {'epoch': '282/500', 'Time_cost': '252.22s', 'Loss': '1.45088266', 'Train_Acc': '[0.4528 0.5182]', 'Test_Acc': '[0.871  0.9437]', 'Val_Acc': '[0.8843 0.9457]', 'Best_Val_Acc[epoch:278]': '0.8857'}
+2024-05-14 14:30:23 INFO: {'epoch': '283/500', 'Time_cost': '252.76s', 'Loss': '1.54077793', 'Train_Acc': '[0.4997 0.576 ]', 'Test_Acc': '[0.8697 0.9433]', 'Val_Acc': '[0.8837 0.9463]', 'Best_Val_Acc[epoch:278]': '0.8857'}
+2024-05-14 14:34:57 INFO: {'epoch': '284/500', 'Time_cost': '252.13s', 'Loss': '1.58699601', 'Train_Acc': '[0.4852 0.5767]', 'Test_Acc': '[0.8707 0.944 ]', 'Val_Acc': '[0.884  0.9453]', 'Best_Val_Acc[epoch:278]': '0.8857'}
+2024-05-14 14:39:30 INFO: {'epoch': '285/500', 'Time_cost': '251.90s', 'Loss': '1.57749649', 'Train_Acc': '[0.507  0.5892]', 'Test_Acc': '[0.8707 0.9437]', 'Val_Acc': '[0.884  0.9453]', 'Best_Val_Acc[epoch:278]': '0.8857'}
+2024-05-14 14:44:02 INFO: {'epoch': '286/500', 'Time_cost': '252.01s', 'Loss': '1.58799054', 'Train_Acc': '[0.5272 0.6233]', 'Test_Acc': '[0.87  0.944]', 'Val_Acc': '[0.8857 0.9457]', 'Best_Val_Acc[epoch:278]': '0.8857'}
+2024-05-14 14:48:35 INFO: saving the best model
+2024-05-14 14:48:35 INFO: {'epoch': '287/500', 'Time_cost': '251.76s', 'Loss': '1.49649929', 'Train_Acc': '[0.4915 0.5677]', 'Test_Acc': '[0.872  0.9447]', 'Val_Acc': '[0.8867 0.946 ]', 'Best_Val_Acc[epoch:287]': '0.8867'}
+2024-05-14 14:53:07 INFO: {'epoch': '288/500', 'Time_cost': '251.48s', 'Loss': '1.56752300', 'Train_Acc': '[0.4635 0.5648]', 'Test_Acc': '[0.871  0.9443]', 'Val_Acc': '[0.8863 0.9457]', 'Best_Val_Acc[epoch:287]': '0.8867'}
+2024-05-14 14:57:39 INFO: {'epoch': '289/500', 'Time_cost': '252.04s', 'Loss': '1.55122598', 'Train_Acc': '[0.5222 0.5952]', 'Test_Acc': '[0.8707 0.944 ]', 'Val_Acc': '[0.8833 0.946 ]', 'Best_Val_Acc[epoch:287]': '0.8867'}
+2024-05-14 15:02:12 INFO: {'epoch': '290/500', 'Time_cost': '252.08s', 'Loss': '1.56199429', 'Train_Acc': '[0.4945 0.5877]', 'Test_Acc': '[0.8717 0.9443]', 'Val_Acc': '[0.8843 0.9453]', 'Best_Val_Acc[epoch:287]': '0.8867'}
+2024-05-14 15:06:45 INFO: {'epoch': '291/500', 'Time_cost': '251.93s', 'Loss': '1.54311714', 'Train_Acc': '[0.5322 0.612 ]', 'Test_Acc': '[0.872 0.944]', 'Val_Acc': '[0.8853 0.9453]', 'Best_Val_Acc[epoch:287]': '0.8867'}
+2024-05-14 15:11:19 INFO: {'epoch': '292/500', 'Time_cost': '251.23s', 'Loss': '1.52333148', 'Train_Acc': '[0.501  0.5853]', 'Test_Acc': '[0.8717 0.9453]', 'Val_Acc': '[0.8843 0.9453]', 'Best_Val_Acc[epoch:287]': '0.8867'}
+2024-05-14 15:15:50 INFO: {'epoch': '293/500', 'Time_cost': '251.58s', 'Loss': '1.47587212', 'Train_Acc': '[0.4987 0.5678]', 'Test_Acc': '[0.8703 0.9443]', 'Val_Acc': '[0.884  0.9457]', 'Best_Val_Acc[epoch:287]': '0.8867'}
+2024-05-14 15:20:20 INFO: {'epoch': '294/500', 'Time_cost': '250.75s', 'Loss': '1.58077455', 'Train_Acc': '[0.56   0.6517]', 'Test_Acc': '[0.87  0.945]', 'Val_Acc': '[0.883  0.9447]', 'Best_Val_Acc[epoch:287]': '0.8867'}
+2024-05-14 15:24:54 INFO: {'epoch': '295/500', 'Time_cost': '252.52s', 'Loss': '1.45611024', 'Train_Acc': '[0.4908 0.5607]', 'Test_Acc': '[0.8697 0.9443]', 'Val_Acc': '[0.8847 0.9447]', 'Best_Val_Acc[epoch:287]': '0.8867'}
+2024-05-14 15:29:30 INFO: {'epoch': '296/500', 'Time_cost': '253.54s', 'Loss': '1.51174080', 'Train_Acc': '[0.514 0.583]', 'Test_Acc': '[0.8697 0.9433]', 'Val_Acc': '[0.8837 0.9453]', 'Best_Val_Acc[epoch:287]': '0.8867'}
+2024-05-14 15:34:09 INFO: 
+
+
+2024-05-14 15:34:09 INFO: Namespace(total_epochs=500, device='cuda:0', dataset_name='tju_pv600', model_name='super_vim', mixup=0.2, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-14 15:35:39 INFO: 
+
+
+2024-05-14 15:35:39 INFO: Namespace(total_epochs=500, device='cuda:0', dataset_name='tju_pv600', model_name='super_vim', mixup=0.2, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-14 15:35:56 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 6, 'expand_ratio': 2.5, 'mamba_ratio': 0.75, 'd_state': 32, 'c_kernel_size': 32, 'num_head': 8, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-05-14 15:37:35 INFO: 
+
+
+2024-05-14 15:37:35 INFO: Namespace(total_epochs=500, device='cuda:0', dataset_name='tju_pv600', num_classes=600, model_name='super_vim', mixup=0.2, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-14 15:37:52 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 6, 'expand_ratio': 2.5, 'mamba_ratio': 0.75, 'd_state': 32, 'c_kernel_size': 32, 'num_head': 8, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-05-14 15:37:53 INFO: ...............checking the settings...............
+2024-05-14 15:37:53 INFO: ...............checking finished...............
+2024-05-14 15:37:53 INFO: ...............start train and evaluate process...............
+2024-05-14 15:45:18 INFO: 
+
+
+2024-05-14 15:45:18 INFO: Namespace(total_epochs=500, device='cuda:0', dataset_name='tju_pv600', num_classes=600, model_name='super_vim', mixup=0.2, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-14 15:45:38 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 6, 'expand_ratio': 2.5, 'mamba_ratio': 0.75, 'd_state': 32, 'c_kernel_size': 32, 'num_head': 8, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-05-14 15:45:38 INFO: ...............checking the settings...............
+2024-05-14 15:45:38 INFO: ...............checking finished...............
+2024-05-14 15:45:38 INFO: ...............start train and evaluate process...............
+2024-05-14 15:50:29 INFO: saving the best model
+2024-05-14 15:50:29 INFO: {'epoch': '1/500', 'Time_cost': '268.83s', 'Loss': '6.40139029', 'Train_Acc': '[0.0015 0.0093]', 'Test_Acc': '[0.007  0.0147]', 'Val_Acc': '[0.0047 0.012 ]', 'Best_Val_Acc[epoch:1]': '0.0047'}
+2024-05-14 15:52:01 INFO: 
+
+
+2024-05-14 15:52:01 INFO: Namespace(total_epochs=500, device='cuda:0', dataset_name='tju_pv600', num_classes=600, model_name='super_vim', mixup=0.2, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-14 15:52:19 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 6, 'expand_ratio': 2.5, 'mamba_ratio': 0.75, 'd_state': 32, 'c_kernel_size': 32, 'num_head': 8, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-05-14 15:52:19 INFO: ...............checking the settings...............
+2024-05-14 15:52:19 INFO: ...............checking finished...............
+2024-05-14 15:52:19 INFO: ...............start train and evaluate process...............
+2024-05-14 15:57:08 INFO: saving the best model
+2024-05-14 15:57:08 INFO: {'epoch': '1/500', 'Time_cost': '268.42s', 'Loss': '6.40026301', 'Train_Acc': '[0.0022 0.009 ]', 'Test_Acc': '[0.0077 0.018 ]', 'Val_Acc': '[0.0073 0.0163]', 'Best_Val_Acc[epoch:1]': '0.0073'}
+2024-05-14 16:01:55 INFO: saving the best model
+2024-05-14 16:01:55 INFO: {'epoch': '2/500', 'Time_cost': '267.49s', 'Loss': '6.26113877', 'Train_Acc': '[0.0048 0.0187]', 'Test_Acc': '[0.0077 0.0283]', 'Val_Acc': '[0.008  0.0273]', 'Best_Val_Acc[epoch:2]': '0.0080'}
+2024-05-14 17:17:58 INFO: 
+
+
+2024-05-14 17:17:58 INFO: Namespace(total_epochs=500, device='cuda:0', dataset_name='tju_pv600', num_classes=600, model_name='super_vim', mixup=1.0, cutmix=0.0, cutmix_minmax=None, mixup_prob=1.0, mixup_switch_prob=0.5, mixup_mode='batch', smoothing=0.1, opt='adamw', opt_eps=1e-08, opt_betas=None, clip_grad=None, momentum=0.9, weight_decay=0.05, sched='cosine', lr=0.001, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, warmup_lr=1e-06, min_lr=1e-05, lr_power=1.0, decay_epochs=30, warmup_epochs=5, cooldown_epochs=10, patience_epochs=10, decay_rate=0.1, ddp=False)
+2024-05-14 17:18:17 INFO: build model_name:super_vim 
+config:{'embed_dim': 320, 'depth': 6, 'expand_ratio': 2.5, 'mamba_ratio': 0.75, 'd_state': 32, 'c_kernel_size': 32, 'num_head': 8, 'img_size': 128, 'patch_size': 32, 'in_chans': 1, 'num_classes': 600, 'directions': None, 'drop_rate': 0.1, 'drop_path_rate': 0.2}
+2024-05-14 17:18:17 INFO: ...............checking the settings...............
+2024-05-14 17:18:17 INFO: ...............checking finished...............
+2024-05-14 17:18:17 INFO: ...............start train and evaluate process...............
+2024-05-14 17:23:06 INFO: saving the best model
+2024-05-14 17:23:06 INFO: {'epoch': '1/500', 'Time_cost': '268.87s', 'Loss': '6.44184141', 'Train_Acc': '[0.0015 0.0087]', 'Test_Acc': '[0.0033 0.015 ]', 'Val_Acc': '[0.0037 0.0153]', 'Best_Val_Acc[epoch:1]': '0.0037'}
